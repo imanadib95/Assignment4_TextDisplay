@@ -1,0 +1,10 @@
+Command line:
+   CharExtract_Test_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  55965
+
+Sat Sep 17 13:55:03 2016
+
+
+ Elaboration Time: 0.046875 sec

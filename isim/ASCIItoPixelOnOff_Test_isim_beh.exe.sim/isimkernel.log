@@ -1,0 +1,29 @@
+Command line:
+   ASCIItoPixelOnOff_Test_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  55210
+
+Sat Sep 17 01:35:06 2016
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 845.074 Meg
+
+ Total Signals          : 181
+ Total Nets             : 578
+ Total Signal Drivers   : 68
+ Total Blocks           : 23
+ Total Primitive Blocks : 17
+ Total Processes        : 82
+ Total Traceable Variables  : 343
+ Total Scalar Nets and Variables : 181834
+Total Line Count : 406
+
+ Total Simulation Time: 0.203125 sec
+
+ Current Memory Usage: 687.788 Meg
+
+Sat Sep 17 01:40:46 2016
+
