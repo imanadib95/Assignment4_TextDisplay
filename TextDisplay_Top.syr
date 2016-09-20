@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.25 secs
+Total CPU time to Xst completion: 0.07 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.26 secs
+Total CPU time to Xst completion: 0.07 secs
  
 --> Reading design: TextDisplay_Top.prj
 
@@ -162,6 +162,7 @@ Elaborating module <VGA_SignalGen>.
 Synthesizing Unit <TextDisplay_Top>.
     Related source file is "C:\Users\imana\Documents\SCHOOL\ECE3710\Assignment4_TextDisplay\TextDisplay_Top.v".
     Summary:
+	no macro.
 Unit <TextDisplay_Top> synthesized.
 
 Synthesizing Unit <CharExtract>.
@@ -199,7 +200,7 @@ Unit <ASCIItoGlyphAddress> synthesized.
 
 Synthesizing Unit <BitFromGlyphWord>.
     Related source file is "C:\Users\imana\Documents\SCHOOL\ECE3710\Assignment4_TextDisplay\BitFromGlyphWord.v".
-    Found 1-bit 8-to-1 multiplexer for signal <PixelOnOff> created at line 33.
+    Found 1-bit 8-to-1 multiplexer for signal <PixelOnOff> created at line 40.
     Summary:
 	inferred   9 Multiplexer(s).
 Unit <BitFromGlyphWord> synthesized.
@@ -260,8 +261,6 @@ Macro Statistics
 # Multiplexers                                         : 9
  1-bit 2-to-1 multiplexer                              : 8
  1-bit 8-to-1 multiplexer                              : 1
-# Xors                                                 : 1
- 8-bit xor2                                            : 1
 
 =========================================================================
 
@@ -297,8 +296,6 @@ Macro Statistics
 # Multiplexers                                         : 9
  1-bit 2-to-1 multiplexer                              : 8
  1-bit 8-to-1 multiplexer                              : 1
-# Xors                                                 : 1
- 8-bit xor2                                            : 1
 
 =========================================================================
 
@@ -461,7 +458,7 @@ Delay:               6.312ns (Levels of Logic = 7)
      LUT6:I2->O            1   0.203   0.808  k/_BitFromGlyphWord/Mmux_PixelOnOff_3_SW0 (N8)
      LUT5:I2->O            1   0.205   0.000  k/_BitFromGlyphWord/Mmux_PixelOnOff_3 (k/_BitFromGlyphWord/Mmux_PixelOnOff_3)
      MUXF7:I1->O           8   0.140   0.803  k/_BitFromGlyphWord/Mmux_PixelOnOff_2_f7 (PixelOnOff)
-     LUT2:I1->O            1   0.205   0.000  Mxor_TextColor[7]_PixelOnOff_xor_0_OUT_7_xo<0>1 (TextColor[7]_PixelOnOff_xor_0_OUT<7>)
+     LUT2:I1->O            1   0.205   0.000  TextColor[7]_PixelOnOff_and_0_OUT<7>1 (TextColor[7]_PixelOnOff_and_0_OUT<7>)
      FDRE:D                    0.102          h/ColorOut_7
     ----------------------------------------
     Total                      6.312ns (3.048ns logic, 3.264ns route)
@@ -523,7 +520,7 @@ clk            |    6.312|         |         |         |
 
 
 Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 7.22 secs
+Total CPU time to Xst completion: 7.23 secs
  
 --> 
 

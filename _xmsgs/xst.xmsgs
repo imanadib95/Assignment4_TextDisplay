@@ -5,16 +5,16 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Users\imana\Documents\SCHOOL\ECE3710\Assignment4_TextDisplay\ipcore_dir\TextAreaMemory.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">TextAreaMemory</arg>&gt; remains a black box.
+<msg type="warning" file="HDLCompiler" num="1499" delta="new" >"C:\Users\imana\Documents\SCHOOL\ECE3710\Assignment4_TextDisplay\ipcore_dir\TextAreaMemory.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">TextAreaMemory</arg>&gt; remains a black box.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Users\imana\Documents\SCHOOL\ECE3710\Assignment4_TextDisplay\ipcore_dir\GlyphTable.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">GlyphTable</arg>&gt; remains a black box.
+<msg type="warning" file="HDLCompiler" num="1499" delta="new" >"C:\Users\imana\Documents\SCHOOL\ECE3710\Assignment4_TextDisplay\ipcore_dir\GlyphTable.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">GlyphTable</arg>&gt; remains a black box.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\imana\Documents\SCHOOL\ECE3710\Assignment4_TextDisplay\CharExtract.v</arg>&quot; line <arg fmt="%s" index="2">33</arg>: Output port &lt;<arg fmt="%s" index="3">doutb</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">_TextAreaMemory</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\imana\Documents\SCHOOL\ECE3710\Assignment4_TextDisplay\CharExtract.v</arg>&quot; line <arg fmt="%s" index="2">33</arg>: Output port &lt;<arg fmt="%s" index="3">doutb</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">_TextAreaMemory</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\imana\Documents\SCHOOL\ECE3710\Assignment4_TextDisplay\ASCIItoGlyphWord.v</arg>&quot; line <arg fmt="%s" index="2">38</arg>: Output port &lt;<arg fmt="%s" index="3">doutb</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">_GlyphTable</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\imana\Documents\SCHOOL\ECE3710\Assignment4_TextDisplay\ASCIItoGlyphWord.v</arg>&quot; line <arg fmt="%s" index="2">38</arg>: Output port &lt;<arg fmt="%s" index="3">doutb</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">_GlyphTable</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 </messages>

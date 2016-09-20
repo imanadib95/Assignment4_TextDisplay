@@ -29,6 +29,13 @@ module BitFromGlyphWord(
 																				 // and horz position in the glyph.
 
 	assign GlyphHalfWord = LineCountLSB? GlyphWord[7:0]:GlyphWord[15:8];																		 // where n is dictated by the verticle
+
+
+
+
+	//assign PixelOnOff = GlyphHalfWord[PixelCount+:3];
+
+
 	always @(*)
 		case (PixelCount)
 		0: PixelOnOff = GlyphHalfWord[0];
