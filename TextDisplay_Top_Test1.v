@@ -55,6 +55,8 @@ module TextDisplay_Top_Test1;
 		// Add stimulus here
 
 	end
+	always 
+	#0.1 clk <=~clk;
       
 endmodule
 

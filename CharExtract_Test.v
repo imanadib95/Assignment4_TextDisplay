@@ -49,7 +49,7 @@ integer i;
 		LineCount = 0;
 
 		// Wait 100 ns for global reset to finish
-		for (i=0;i<200;i=i+1)
+		for (i=0;i<1028;i=i+1)
 		begin
 			{LineCount,HorzPos} = i;
 			#2;

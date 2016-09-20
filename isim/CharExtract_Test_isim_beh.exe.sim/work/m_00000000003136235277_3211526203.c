@@ -23,7 +23,7 @@
 #endif
 static const char *ng0 = "C:/Users/imana/Documents/SCHOOL/ECE3710/Assignment4_TextDisplay/CharExtract_Test.v";
 static int ng1[] = {0, 0};
-static int ng2[] = {200, 0};
+static int ng2[] = {1028, 0};
 static int ng3[] = {1, 0};
 
 

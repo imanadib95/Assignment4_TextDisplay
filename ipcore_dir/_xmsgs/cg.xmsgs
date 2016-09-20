@@ -8,28 +8,19 @@
 <msg type="info" file="sim" num="172" delta="old" >Generating IP...
 </msg>
 
-<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">Unable to find C:\Users\imana\Desktop\RAM-glyph256x4x16_.coe</arg>
+<msg type="warning" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">A core named &apos;TextAreaMemory&apos; already exists in the project. Output products for this core may be overwritten.</arg>
 </msg>
 
-<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">   Coregen is looking for C:\Users\imana\Desktop\RAM-glyph256x4x16_.coe</arg>
+<msg type="info" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">Pre-processing HDL files for &apos;TextAreaMemory&apos;...</arg>
 </msg>
 
-<msg type="warning" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">A core named &apos;GlyphTable&apos; already exists in the project. Output products for this core may be overwritten.</arg>
+<msg type="warning" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">Overwriting existing file C:/Users/imana/Documents/SCHOOL/ECE3710/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/TextAreaMemory/doc/blk_mem_gen_v7_3_vinfo.html with file from view xilinx_documentation</arg>
 </msg>
 
-<msg type="warning" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">A core named &apos;GlyphTable&apos; already exists in the project. Output products for this core may be overwritten.</arg>
+<msg type="info" file="sim" num="949" delta="new" >Finished generation of ASY schematic symbol.
 </msg>
 
-<msg type="info" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">Pre-processing HDL files for &apos;GlyphTable&apos;...</arg>
-</msg>
-
-<msg type="warning" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">Overwriting existing file C:/Users/imana/Documents/SCHOOL/ECE3710/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/GlyphTable/doc/blk_mem_gen_v7_3_vinfo.html with file from view xilinx_documentation</arg>
-</msg>
-
-<msg type="info" file="sim" num="949" delta="old" >Finished generation of ASY schematic symbol.
-</msg>
-
-<msg type="info" file="sim" num="948" delta="old" >Finished FLIST file generation.
+<msg type="info" file="sim" num="948" delta="new" >Finished FLIST file generation.
 </msg>
 
 </messages>

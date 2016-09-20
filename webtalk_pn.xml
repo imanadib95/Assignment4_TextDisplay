@@ -3,10 +3,10 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pn" timeStamp="Sat Sep 17 13:29:03 2016">
+<application name="pn" timeStamp="Tue Sep 20 14:08:03 2016">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="C97DA53B182646009527E9F7A09BB6EE" type="project"/>
-<property name="ProjectIteration" value="9" type="project"/>
+<property name="ProjectIteration" value="20" type="project"/>
 <property name="ProjectFile" value="C:/Users/imana/Documents/SCHOOL/ECE3710/Assignment4_TextDisplay/Assignment4_TextDisplay.xise" type="project"/>
 <property name="ProjectCreationTimestamp" value="2016-09-15T11:45:51" type="project"/>
 </section>
@@ -17,7 +17,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_LastAppliedStrategy" value="Xilinx Default (unlocked)" type="design"/>
 <property name="PROP_ManualCompileOrderImp" value="false" type="design"/>
 <property name="PROP_PropSpecInProjFile" value="Store all values" type="design"/>
-<property name="PROP_SelectedInstanceHierarchicalPath" value="/CharExtract_Test" type="process"/>
+<property name="PROP_SelectedInstanceHierarchicalPath" value="/ASCIItoGlyphAddress_Test" type="process"/>
 <property name="PROP_Simulator" value="ISim (VHDL/Verilog)" type="design"/>
 <property name="PROP_SynthTopFile" value="changed" type="process"/>
 <property name="PROP_Top_Level_Module_Type" value="HDL" type="design"/>
@@ -25,11 +25,11 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_UserConstraintEditorPreference" value="Text Editor" type="process"/>
 <property name="PROP_intProjectCreationTimestamp" value="2016-09-15T11:45:51" type="design"/>
 <property name="PROP_intWbtProjectID" value="C97DA53B182646009527E9F7A09BB6EE" type="design"/>
-<property name="PROP_intWbtProjectIteration" value="9" type="process"/>
+<property name="PROP_intWbtProjectIteration" value="20" type="process"/>
 <property name="PROP_intWorkingDirLocWRTProjDir" value="Same" type="design"/>
 <property name="PROP_intWorkingDirUsed" value="No" type="design"/>
 <property name="PROP_lockPinsUcfFile" value="changed" type="process"/>
-<property name="PROP_selectedSimRootSourceNode_behav" value="work.CharExtract_Test" type="process"/>
+<property name="PROP_selectedSimRootSourceNode_behav" value="work.ASCIItoGlyphAddress_Test" type="process"/>
 <property name="PROP_xilxBitgStart_IntDone" value="true" type="process"/>
 <property name="PROP_AutoTop" value="true" type="design"/>
 <property name="PROP_DevFamily" value="Spartan6" type="design"/>

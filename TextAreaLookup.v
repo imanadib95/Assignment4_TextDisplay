@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 module CharacterPosToASCIIAddress(
     input [6:0] HorzPos,
-    input [6:0] LineCount,
+    input [5:0] LineCount,
     output [12:0] TextAreaAddress
     );
 	 

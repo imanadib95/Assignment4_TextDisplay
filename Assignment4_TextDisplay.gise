@@ -22,7 +22,9 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="Assignment4_TextDisplay.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ASCIItoGlyphAddress_Test_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="ASCIItoGlyphAddress_Test_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="ASCIItoGlyphAddress_Test_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="ASCIItoGlyphWord.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="ASCIItoGlyphWord.lso"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="ASCIItoGlyphWord.ngc"/>
@@ -39,9 +41,7 @@
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="ASCIItoPixelOnOff_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ASCIItoPixelOnOff_stx_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="BitFromGlyphWord_Test_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="CharExtract_Test_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="CharExtract_Test_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="CharExtract_Test_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="CharExtract_Test_stx_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="GlyphTable_Test_isim_beh.exe"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="TextAreaMem_Test_isim_beh.exe"/>
@@ -66,6 +66,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="TextDisplay_Top.ut" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:fileType="FILE_XPI" xil_pn:name="TextDisplay_Top.xpi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="TextDisplay_Top.xst"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="TextDisplay_Top_Test1_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="TextDisplay_Top_envsettings.html"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="TextDisplay_Top_guide.ncd" xil_pn:origination="imported"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="TextDisplay_Top_map.map" xil_pn:subbranch="Map"/>
@@ -106,13 +107,17 @@
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1474043811" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1474043811">
+    <transform xil_pn:end_ts="1474178195" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1474178195">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1474142099" xil_pn:in_ck="-3766289344382830227" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1474142099">
+    <transform xil_pn:end_ts="1474318695" xil_pn:in_ck="-3766289344382830227" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1474318695">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="ASCIItoGlyphAddress_Test.v"/>
       <outfile xil_pn:name="ASCIItoGlyphWord.v"/>
       <outfile xil_pn:name="ASCIItoGlyphWord_Test.v"/>
@@ -130,25 +135,34 @@
       <outfile xil_pn:name="TextDisplay_Top_Test1.v"/>
       <outfile xil_pn:name="VGA_SignalGen.v"/>
     </transform>
-    <transform xil_pn:end_ts="1474133504" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="4734391958959416719" xil_pn:start_ts="1474133504">
+    <transform xil_pn:end_ts="1474318695" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-8564594783876816916" xil_pn:start_ts="1474318695">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1474133504" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-1077411972727227571" xil_pn:start_ts="1474133504">
+    <transform xil_pn:end_ts="1474318695" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-3397684051500314710" xil_pn:start_ts="1474318695">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1474142099" xil_pn:in_ck="-7228317266335803247" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-7678024091244055439" xil_pn:start_ts="1474142099">
+    <transform xil_pn:end_ts="1474318695" xil_pn:in_ck="-7228317266335803247" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-7678024091244055439" xil_pn:start_ts="1474318695">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="ipcore_dir/GlyphTable.ngc"/>
       <outfile xil_pn:name="ipcore_dir/GlyphTable.v"/>
       <outfile xil_pn:name="ipcore_dir/TextAreaMemory.ngc"/>
       <outfile xil_pn:name="ipcore_dir/TextAreaMemory.v"/>
     </transform>
-    <transform xil_pn:end_ts="1474142099" xil_pn:in_ck="1736589831433897302" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1474142099">
+    <transform xil_pn:end_ts="1474318695" xil_pn:in_ck="1736589831433897302" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1474318695">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="ASCIItoGlyphAddress_Test.v"/>
       <outfile xil_pn:name="ASCIItoGlyphWord.v"/>
       <outfile xil_pn:name="ASCIItoGlyphWord_Test.v"/>
@@ -168,24 +182,28 @@
       <outfile xil_pn:name="ipcore_dir/GlyphTable.v"/>
       <outfile xil_pn:name="ipcore_dir/TextAreaMemory.v"/>
     </transform>
-    <transform xil_pn:end_ts="1474142102" xil_pn:in_ck="1736589831433897302" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-6581963081074246755" xil_pn:start_ts="1474142099">
+    <transform xil_pn:end_ts="1474318696" xil_pn:in_ck="1736589831433897302" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-6574998019336761865" xil_pn:start_ts="1474318695">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="CharExtract_Test_beh.prj"/>
-      <outfile xil_pn:name="CharExtract_Test_isim_beh.exe"/>
+      <outfile xil_pn:name="ASCIItoGlyphAddress_Test_beh.prj"/>
+      <outfile xil_pn:name="ASCIItoGlyphAddress_Test_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1474142102" xil_pn:in_ck="-145367340931760433" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-4004257352687279200" xil_pn:start_ts="1474142102">
+    <transform xil_pn:end_ts="1474318697" xil_pn:in_ck="3060871251113620891" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-7884528113078502" xil_pn:start_ts="1474318696">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="CharExtract_Test_isim_beh.wdb"/>
+      <outfile xil_pn:name="ASCIItoGlyphAddress_Test_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
     </transform>
@@ -197,7 +215,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1474140521" xil_pn:in_ck="-7228317266335803247" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-7678024091244055439" xil_pn:start_ts="1474140521">
+    <transform xil_pn:end_ts="1474401248" xil_pn:in_ck="-7228317266335803247" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-7678024091244055439" xil_pn:start_ts="1474401248">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="ipcore_dir/GlyphTable.ngc"/>
@@ -221,7 +239,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1474140530" xil_pn:in_ck="452705933999757635" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="73281669199351072" xil_pn:start_ts="1474140521">
+    <transform xil_pn:end_ts="1474402070" xil_pn:in_ck="452705933999757635" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="73281669199351072" xil_pn:start_ts="1474402059">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -244,7 +262,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1474140536" xil_pn:in_ck="-2150217340653578485" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-4811373382114864846" xil_pn:start_ts="1474140530">
+    <transform xil_pn:end_ts="1474402075" xil_pn:in_ck="-2150217340653578485" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-4811373382114864846" xil_pn:start_ts="1474402070">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="TextDisplay_Top.bld"/>
@@ -253,11 +271,9 @@
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1474140543" xil_pn:in_ck="2345285003418214061" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1463976855095865663" xil_pn:start_ts="1474140536">
+    <transform xil_pn:end_ts="1474402083" xil_pn:in_ck="2345285003418214061" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1463976855095865663" xil_pn:start_ts="1474402075">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="TextDisplay_Top.pcf"/>
       <outfile xil_pn:name="TextDisplay_Top_map.map"/>
       <outfile xil_pn:name="TextDisplay_Top_map.mrp"/>
@@ -268,7 +284,7 @@
       <outfile xil_pn:name="TextDisplay_Top_usage.xml"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1474140553" xil_pn:in_ck="7557642930483547174" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-1178055513630676559" xil_pn:start_ts="1474140543">
+    <transform xil_pn:end_ts="1474402094" xil_pn:in_ck="7557642930483547174" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-1178055513630676559" xil_pn:start_ts="1474402083">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="TextDisplay_Top.ncd"/>
@@ -282,7 +298,7 @@
       <outfile xil_pn:name="TextDisplay_Top_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1474140562" xil_pn:in_ck="7019479585041565296" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1474140553">
+    <transform xil_pn:end_ts="1474402104" xil_pn:in_ck="7019479585041565296" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1474402094">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="TextDisplay_Top.ut"/>
@@ -294,11 +310,11 @@
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1474142453" xil_pn:in_ck="-4952912914999399270" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="8482462020707587906" xil_pn:start_ts="1474142452">
+    <transform xil_pn:end_ts="1474402106" xil_pn:in_ck="-4952912914999399270" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="8482462020707587906" xil_pn:start_ts="1474402104">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1474140553" xil_pn:in_ck="389953857474999465" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1474140548">
+    <transform xil_pn:end_ts="1474402094" xil_pn:in_ck="389953857474999465" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1474402090">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="TextDisplay_Top.twr"/>

@@ -21,7 +21,7 @@
 module CharExtract(
 	 input clk,
 	 input [6:0] HorzPos,
-    input [6:0] LineCount,
+    input [5:0] LineCount,
     output [7:0] ASCII,
 	 output [7:0] TextColor
     );
@@ -40,7 +40,7 @@ module CharExtract(
 	  .web(1'b0), // input [0 : 0] web
 	  .addrb(13'd0), // input [12 : 0] addrb
 	  .dinb(16'd0), // input [15 : 0] dinb
-	  .doutb(doutb) // output [15 : 0] doutb
+	  .doutb() // output [15 : 0] doutb
 	);
 
 

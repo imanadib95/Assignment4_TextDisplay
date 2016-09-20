@@ -20,8 +20,8 @@
 //////////////////////////////////////////////////////////////////////////////////
 module ASCIItoGlyphAddress(
     input [7:0] ASCII,
-    input [2:0] PixelCount,
-    input [2:0] LineCount,
+//    input [2:0] PixelCount,
+    input [2:1] LineCount,
 	 output reg[12:0] GlyphTableAddress
     );
 		always @(*)

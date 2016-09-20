@@ -30,10 +30,9 @@ module ASCIItoPixelOnOff(
 	 ASCIItoGlyphWord _ASCIItoGlyphWord(
 	 clk,
     ASCII,
-    PixelCount,
-    LineCount,
-    GlyphWord,
-    GlyphWord2
+//    PixelCount,
+    LineCount[2:1],
+    GlyphWord
     ); 
 	  
 	 BitFromGlyphWord _BitFromGlyphWord(

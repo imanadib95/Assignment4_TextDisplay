@@ -1,0 +1,29 @@
+Command line:
+   ASCIItoGlyphAddress_Test_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  64841
+
+Mon Sep 19 14:58:18 2016
+
+
+ Elaboration Time: 0.015625 sec
+
+ Current Memory Usage: 845.074 Meg
+
+ Total Signals          : 17
+ Total Nets             : 40
+ Total Signal Drivers   : 9
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 12
+ Total Traceable Variables  : 24
+ Total Scalar Nets and Variables : 211
+Total Line Count : 28
+
+ Total Simulation Time: 0.53125 sec
+
+ Current Memory Usage: 373.215 Meg
+
+Mon Sep 19 22:32:34 2016
+

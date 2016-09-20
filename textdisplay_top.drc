@@ -1,7 +1,7 @@
 Release 14.7 Drc P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Sat Sep 17 13:29:16 2016
+Tue Sep 20 14:08:17 2016
 
 drc -z TextDisplay_Top.ncd TextDisplay_Top.pcf
 
