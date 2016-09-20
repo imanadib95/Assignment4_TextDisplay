@@ -28,15 +28,14 @@ module TextDisplay_Top(input clk,
 		wire PixelOnOff;
 		wire [7:0] ASCII;
 		wire [7:0] TextColor;
-
-		CharExtract _CharExtract(clk,
-		 PixelCount[9:3],
-		 LineCount[8:3],
-		 ASCII, 
-	    TextColor);
-
-		ASCIItoPixelOnOff k(clk,ASCII,PixelCount[2:0],LineCount[2:0],PixelOnOff);
+		
+		//Extract text from memory
+		CharExtract _CharExtract(clk, PixelCount[9:3], LineCount[8:3], ASCII, TextColor);
 	
-	   VGA_SignalGen h(clk, rst,{TextColor&{8{PixelOnOff}}}, PixelCount, LineCount, Hsync,Vsync, ColorOut);
+		//Extract ASCII character from glyph memory 
+		ASCIItoPixelOnOff _ASCIItoPixelOnOff(clk,ASCII,PixelCount[2:0],LineCount[2:0],PixelOnOff);
+	
+		//Turn pixels on or off through VGA
+	   VGA_SignalGen _VGA_SignalGEn(clk, rst,{TextColor&{8{PixelOnOff}}}, PixelCount, LineCount, Hsync,Vsync, ColorOut);
 
 endmodule

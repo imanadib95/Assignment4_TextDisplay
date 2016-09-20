@@ -2,7 +2,7 @@ set -tmpdir "C:/Users/Kara/Documents/CS3700/Assignment4_TextDisplay/xst/projnav.
 set -xsthdpdir "C:/Users/Kara/Documents/CS3700/Assignment4_TextDisplay/xst"
 run -compileonly yes
 -p xc6slx16-3-csg324
--top ASCIItoGlyphWord
+-top BitFromGlyphWord
 -opt_mode Speed
 -opt_level 1
 -power NO
@@ -48,4 +48,4 @@ run -compileonly yes
 -iob Auto
 -equivalent_register_removal YES
 -slice_utilization_ratio_maxmargin 5
--ifn ASCIItoGlyphWord.prj
+-ifn BitFromGlyphWord.prj

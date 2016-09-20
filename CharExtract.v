@@ -25,10 +25,11 @@ module CharExtract(
     output [7:0] ASCII,
 	 output [7:0] TextColor
     );
-    wire [12:0] TextAreaAddress;
+    
+	 wire [12:0] TextAreaAddress;
 	 wire [15:0] doutb;
-	CharacterPosToASCIIAddress _CharacterPosToASCIIAddress(HorzPos,LineCount,TextAreaAddress);
 
+	 assign TextAreaAddress = {LineCount, HorzPos};
 
 	TextAreaMemory _TextAreaMemory (
 	  .clka(clk), // input clka
@@ -42,8 +43,5 @@ module CharExtract(
 	  .dinb(16'd0), // input [15 : 0] dinb
 	  .doutb() // output [15 : 0] doutb
 	);
-
-
-
 
 endmodule

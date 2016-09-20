@@ -27,17 +27,9 @@ module BitFromGlyphWord(
 	 wire [7:0] GlyphHalfWord;
 //assign PixelOnOff = GlyphWord[({LineCountLSB,PixelCount})];// Extract nth bit from GlyphWord
 																				 // and horz position in the glyph.
-
-	assign GlyphHalfWord = LineCountLSB? GlyphWord[7:0]:GlyphWord[15:8];																		 // where n is dictated by the verticle
-	always @(*)
-		case (PixelCount)
-		0: PixelOnOff = GlyphHalfWord[0];
-		1: PixelOnOff = GlyphHalfWord[1];
-		2: PixelOnOff = GlyphHalfWord[2];
-		3: PixelOnOff = GlyphHalfWord[3];
-		4: PixelOnOff = GlyphHalfWord[4];
-		5: PixelOnOff = GlyphHalfWord[5];
-		6: PixelOnOff = GlyphHalfWord[6];
-		7: PixelOnOff = GlyphHalfWord[7];
-		endcase
+																				 
+	// where n is dictated by the verticle
+	assign GlyphHalfWord = LineCountLSB? GlyphWord[7:0]:GlyphWord[15:8];	
+	assign PixleOnOff = GlyphHalfWord[PixelCount];
+	
 endmodule

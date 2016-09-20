@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.25 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.26 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Reading design: TextDisplay_Top.prj
 
@@ -108,25 +108,17 @@ Cores Search Directories           : {"ipcore_dir"  }
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "C:\Users\imana\Documents\SCHOOL\ECE3710\Assignment4_TextDisplay\ipcore_dir\GlyphTable.v" into library work
-Parsing module <GlyphTable>.
-Analyzing Verilog file "C:\Users\imana\Documents\SCHOOL\ECE3710\Assignment4_TextDisplay\GlyphPixelExtractor.v" into library work
-Parsing module <ASCIItoGlyphAddress>.
-Analyzing Verilog file "C:\Users\imana\Documents\SCHOOL\ECE3710\Assignment4_TextDisplay\TextAreaLookup.v" into library work
-Parsing module <CharacterPosToASCIIAddress>.
-Analyzing Verilog file "C:\Users\imana\Documents\SCHOOL\ECE3710\Assignment4_TextDisplay\ipcore_dir\TextAreaMemory.v" into library work
+Analyzing Verilog file "C:\Users\Kara\Documents\CS3700\Assignment4_TextDisplay\ipcore_dir\TextAreaMemory.v" into library work
 Parsing module <TextAreaMemory>.
-Analyzing Verilog file "C:\Users\imana\Documents\SCHOOL\ECE3710\Assignment4_TextDisplay\BitFromGlyphWord.v" into library work
-Parsing module <BitFromGlyphWord>.
-Analyzing Verilog file "C:\Users\imana\Documents\SCHOOL\ECE3710\Assignment4_TextDisplay\ASCIItoGlyphWord.v" into library work
-Parsing module <ASCIItoGlyphWord>.
-Analyzing Verilog file "C:\Users\imana\Documents\SCHOOL\ECE3710\Assignment4_TextDisplay\VGA_SignalGen.v" into library work
+Analyzing Verilog file "C:\Users\Kara\Documents\CS3700\Assignment4_TextDisplay\ipcore_dir\GlyphTable.v" into library work
+Parsing module <GlyphTable>.
+Analyzing Verilog file "C:\Users\Kara\Documents\CS3700\Assignment4_TextDisplay\VGA_SignalGen.v" into library work
 Parsing module <VGA_SignalGen>.
-Analyzing Verilog file "C:\Users\imana\Documents\SCHOOL\ECE3710\Assignment4_TextDisplay\CharExtract.v" into library work
+Analyzing Verilog file "C:\Users\Kara\Documents\CS3700\Assignment4_TextDisplay\CharExtract.v" into library work
 Parsing module <CharExtract>.
-Analyzing Verilog file "C:\Users\imana\Documents\SCHOOL\ECE3710\Assignment4_TextDisplay\ASCIItoPixelOnOff.v" into library work
+Analyzing Verilog file "C:\Users\Kara\Documents\CS3700\Assignment4_TextDisplay\ASCIItoPixelOnOff.v" into library work
 Parsing module <ASCIItoPixelOnOff>.
-Analyzing Verilog file "C:\Users\imana\Documents\SCHOOL\ECE3710\Assignment4_TextDisplay\TextDisplay_Top.v" into library work
+Analyzing Verilog file "C:\Users\Kara\Documents\CS3700\Assignment4_TextDisplay\TextDisplay_Top.v" into library work
 Parsing module <TextDisplay_Top>.
 
 =========================================================================
@@ -137,21 +129,17 @@ Elaborating module <TextDisplay_Top>.
 
 Elaborating module <CharExtract>.
 
-Elaborating module <CharacterPosToASCIIAddress>.
-
 Elaborating module <TextAreaMemory>.
-WARNING:HDLCompiler:1499 - "C:\Users\imana\Documents\SCHOOL\ECE3710\Assignment4_TextDisplay\ipcore_dir\TextAreaMemory.v" Line 39: Empty module <TextAreaMemory> remains a black box.
+WARNING:HDLCompiler:1499 - "C:\Users\Kara\Documents\CS3700\Assignment4_TextDisplay\ipcore_dir\TextAreaMemory.v" Line 39: Empty module <TextAreaMemory> remains a black box.
 
 Elaborating module <ASCIItoPixelOnOff>.
-
-Elaborating module <ASCIItoGlyphWord>.
-
-Elaborating module <ASCIItoGlyphAddress>.
+WARNING:HDLCompiler:1127 - "C:\Users\Kara\Documents\CS3700\Assignment4_TextDisplay\ASCIItoPixelOnOff.v" Line 34: Assignment to PixleOnOff ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "C:\Users\Kara\Documents\CS3700\Assignment4_TextDisplay\ASCIItoPixelOnOff.v" Line 37: Result of 11-bit expression is truncated to fit in 1-bit target.
 
 Elaborating module <GlyphTable>.
-WARNING:HDLCompiler:1499 - "C:\Users\imana\Documents\SCHOOL\ECE3710\Assignment4_TextDisplay\ipcore_dir\GlyphTable.v" Line 39: Empty module <GlyphTable> remains a black box.
-
-Elaborating module <BitFromGlyphWord>.
+WARNING:HDLCompiler:1499 - "C:\Users\Kara\Documents\CS3700\Assignment4_TextDisplay\ipcore_dir\GlyphTable.v" Line 39: Empty module <GlyphTable> remains a black box.
+WARNING:HDLCompiler:189 - "C:\Users\Kara\Documents\CS3700\Assignment4_TextDisplay\ASCIItoPixelOnOff.v" Line 42: Size mismatch in connection of port <addra>. Formal port size is 13-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Kara\Documents\CS3700\Assignment4_TextDisplay\ASCIItoPixelOnOff.v" Line 47: Size mismatch in connection of port <addrb>. Formal port size is 13-bit while actual signal size is 1-bit.
 
 Elaborating module <VGA_SignalGen>.
 
@@ -160,52 +148,32 @@ Elaborating module <VGA_SignalGen>.
 =========================================================================
 
 Synthesizing Unit <TextDisplay_Top>.
-    Related source file is "C:\Users\imana\Documents\SCHOOL\ECE3710\Assignment4_TextDisplay\TextDisplay_Top.v".
+    Related source file is "C:\Users\Kara\Documents\CS3700\Assignment4_TextDisplay\TextDisplay_Top.v".
     Summary:
+	no macro.
 Unit <TextDisplay_Top> synthesized.
 
 Synthesizing Unit <CharExtract>.
-    Related source file is "C:\Users\imana\Documents\SCHOOL\ECE3710\Assignment4_TextDisplay\CharExtract.v".
-INFO:Xst:3210 - "C:\Users\imana\Documents\SCHOOL\ECE3710\Assignment4_TextDisplay\CharExtract.v" line 33: Output port <doutb> of the instance <_TextAreaMemory> is unconnected or connected to loadless signal.
+    Related source file is "C:\Users\Kara\Documents\CS3700\Assignment4_TextDisplay\CharExtract.v".
+INFO:Xst:3210 - "C:\Users\Kara\Documents\CS3700\Assignment4_TextDisplay\CharExtract.v" line 34: Output port <doutb> of the instance <_TextAreaMemory> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <CharExtract> synthesized.
 
-Synthesizing Unit <CharacterPosToASCIIAddress>.
-    Related source file is "C:\Users\imana\Documents\SCHOOL\ECE3710\Assignment4_TextDisplay\TextAreaLookup.v".
-    Summary:
-	no macro.
-Unit <CharacterPosToASCIIAddress> synthesized.
-
 Synthesizing Unit <ASCIItoPixelOnOff>.
-    Related source file is "C:\Users\imana\Documents\SCHOOL\ECE3710\Assignment4_TextDisplay\ASCIItoPixelOnOff.v".
-    Summary:
-	no macro.
-Unit <ASCIItoPixelOnOff> synthesized.
-
-Synthesizing Unit <ASCIItoGlyphWord>.
-    Related source file is "C:\Users\imana\Documents\SCHOOL\ECE3710\Assignment4_TextDisplay\ASCIItoGlyphWord.v".
-INFO:Xst:3210 - "C:\Users\imana\Documents\SCHOOL\ECE3710\Assignment4_TextDisplay\ASCIItoGlyphWord.v" line 38: Output port <doutb> of the instance <_GlyphTable> is unconnected or connected to loadless signal.
-    Summary:
-	no macro.
-Unit <ASCIItoGlyphWord> synthesized.
-
-Synthesizing Unit <ASCIItoGlyphAddress>.
-    Related source file is "C:\Users\imana\Documents\SCHOOL\ECE3710\Assignment4_TextDisplay\GlyphPixelExtractor.v".
-    Found 11-bit adder for signal <n0010[10:0]> created at line 28.
+    Related source file is "C:\Users\Kara\Documents\CS3700\Assignment4_TextDisplay\ASCIItoPixelOnOff.v".
+WARNING:Xst:647 - Input <PixelCount> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <LineCount<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "C:\Users\Kara\Documents\CS3700\Assignment4_TextDisplay\ASCIItoPixelOnOff.v" line 39: Output port <douta> of the instance <_GlyphTable> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kara\Documents\CS3700\Assignment4_TextDisplay\ASCIItoPixelOnOff.v" line 39: Output port <doutb> of the instance <_GlyphTable> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <PixelOnOff> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 10-bit adder for signal <n0004> created at line 37.
     Summary:
 	inferred   1 Adder/Subtractor(s).
-Unit <ASCIItoGlyphAddress> synthesized.
-
-Synthesizing Unit <BitFromGlyphWord>.
-    Related source file is "C:\Users\imana\Documents\SCHOOL\ECE3710\Assignment4_TextDisplay\BitFromGlyphWord.v".
-    Found 1-bit 8-to-1 multiplexer for signal <PixelOnOff> created at line 33.
-    Summary:
-	inferred   9 Multiplexer(s).
-Unit <BitFromGlyphWord> synthesized.
+Unit <ASCIItoPixelOnOff> synthesized.
 
 Synthesizing Unit <VGA_SignalGen>.
-    Related source file is "C:\Users\imana\Documents\SCHOOL\ECE3710\Assignment4_TextDisplay\VGA_SignalGen.v".
+    Related source file is "C:\Users\Kara\Documents\CS3700\Assignment4_TextDisplay\VGA_SignalGen.v".
         HorzPixelCount = 800
         HorzPixNBITS = 10
         VertPixelCount = 525
@@ -226,15 +194,15 @@ Synthesizing Unit <VGA_SignalGen>.
     Found 1-bit register for signal <Hsync>.
     Found 8-bit register for signal <ColorOut>.
     Found 2-bit register for signal <subPixelCount>.
-    Found 2-bit adder for signal <subPixelCount[1]_GND_10_o_add_2_OUT> created at line 68.
-    Found 10-bit adder for signal <PixelCount[9]_GND_10_o_add_6_OUT> created at line 76.
-    Found 10-bit adder for signal <LineCount[9]_GND_10_o_add_10_OUT> created at line 86.
+    Found 2-bit adder for signal <subPixelCount[1]_GND_6_o_add_2_OUT> created at line 68.
+    Found 10-bit adder for signal <PixelCount[9]_GND_6_o_add_6_OUT> created at line 76.
+    Found 10-bit adder for signal <LineCount[9]_GND_6_o_add_10_OUT> created at line 86.
     Found 10-bit comparator lessequal for signal <n0010> created at line 89
-    Found 10-bit comparator greater for signal <LineCount[9]_GND_10_o_LessThan_14_o> created at line 89
+    Found 10-bit comparator greater for signal <LineCount[9]_GND_6_o_LessThan_14_o> created at line 89
     Found 10-bit comparator lessequal for signal <n0017> created at line 91
-    Found 10-bit comparator greater for signal <PixelCount[9]_PWR_10_o_LessThan_17_o> created at line 91
-    Found 10-bit comparator greater for signal <PixelCount[9]_PWR_10_o_LessThan_19_o> created at line 92
-    Found 10-bit comparator greater for signal <LineCount[9]_GND_10_o_LessThan_21_o> created at line 92
+    Found 10-bit comparator greater for signal <PixelCount[9]_PWR_6_o_LessThan_17_o> created at line 91
+    Found 10-bit comparator greater for signal <PixelCount[9]_PWR_6_o_LessThan_19_o> created at line 92
+    Found 10-bit comparator greater for signal <LineCount[9]_GND_6_o_LessThan_21_o> created at line 92
     Summary:
 	inferred   3 Adder/Subtractor(s).
 	inferred  32 D-type flip-flop(s).
@@ -246,8 +214,7 @@ HDL Synthesis Report
 
 Macro Statistics
 # Adders/Subtractors                                   : 4
- 10-bit adder                                          : 2
- 11-bit adder                                          : 1
+ 10-bit adder                                          : 3
  2-bit adder                                           : 1
 # Registers                                            : 6
  1-bit register                                        : 2
@@ -257,11 +224,6 @@ Macro Statistics
 # Comparators                                          : 6
  10-bit comparator greater                             : 4
  10-bit comparator lessequal                           : 2
-# Multiplexers                                         : 9
- 1-bit 2-to-1 multiplexer                              : 8
- 1-bit 8-to-1 multiplexer                              : 1
-# Xors                                                 : 1
- 8-bit xor2                                            : 1
 
 =========================================================================
 
@@ -273,6 +235,14 @@ Reading core <ipcore_dir/TextAreaMemory.ngc>.
 Reading core <ipcore_dir/GlyphTable.ngc>.
 Loading core <TextAreaMemory> for timing and area information for instance <_TextAreaMemory>.
 Loading core <GlyphTable> for timing and area information for instance <_GlyphTable>.
+WARNING:Xst:1710 - FF/Latch <ColorOut_0> (without init value) has a constant value of 0 in block <h>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ColorOut_1> (without init value) has a constant value of 0 in block <h>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ColorOut_2> (without init value) has a constant value of 0 in block <h>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ColorOut_3> (without init value) has a constant value of 0 in block <h>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ColorOut_4> (without init value) has a constant value of 0 in block <h>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ColorOut_5> (without init value) has a constant value of 0 in block <h>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ColorOut_6> (without init value) has a constant value of 0 in block <h>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ColorOut_7> (without init value) has a constant value of 0 in block <h>. This FF/Latch will be trimmed during the optimization process.
 
 Synthesizing (advanced) Unit <VGA_SignalGen>.
 The following registers are absorbed into counter <subPixelCount>: 1 register on signal <subPixelCount>.
@@ -285,7 +255,7 @@ Advanced HDL Synthesis Report
 
 Macro Statistics
 # Adders/Subtractors                                   : 1
- 11-bit adder                                          : 1
+ 1-bit adder                                           : 1
 # Counters                                             : 3
  10-bit up counter                                     : 2
  2-bit up counter                                      : 1
@@ -294,11 +264,6 @@ Macro Statistics
 # Comparators                                          : 6
  10-bit comparator greater                             : 4
  10-bit comparator lessequal                           : 2
-# Multiplexers                                         : 9
- 1-bit 2-to-1 multiplexer                              : 8
- 1-bit 8-to-1 multiplexer                              : 1
-# Xors                                                 : 1
- 8-bit xor2                                            : 1
 
 =========================================================================
 
@@ -308,13 +273,19 @@ Macro Statistics
 
 Optimizing unit <TextDisplay_Top> ...
 
-Optimizing unit <ASCIItoPixelOnOff> ...
-
 Optimizing unit <VGA_SignalGen> ...
+WARNING:Xst:1710 - FF/Latch <h/ColorOut_7> (without init value) has a constant value of 0 in block <TextDisplay_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <h/ColorOut_6> (without init value) has a constant value of 0 in block <TextDisplay_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <h/ColorOut_5> (without init value) has a constant value of 0 in block <TextDisplay_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <h/ColorOut_4> (without init value) has a constant value of 0 in block <TextDisplay_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <h/ColorOut_3> (without init value) has a constant value of 0 in block <TextDisplay_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <h/ColorOut_2> (without init value) has a constant value of 0 in block <TextDisplay_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <h/ColorOut_1> (without init value) has a constant value of 0 in block <TextDisplay_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <h/ColorOut_0> (without init value) has a constant value of 0 in block <TextDisplay_Top>. This FF/Latch will be trimmed during the optimization process.
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block TextDisplay_Top, actual ratio is 2.
+Found area constraint ratio of 100 (+ 5) on block TextDisplay_Top, actual ratio is 1.
 
 Final Macro Processing ...
 
@@ -322,8 +293,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 32
- Flip-Flops                                            : 32
+# Registers                                            : 24
+ Flip-Flops                                            : 24
 
 =========================================================================
 
@@ -346,23 +317,23 @@ Top Level Output File Name         : TextDisplay_Top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 328
+# BELS                             : 339
 #      GND                         : 3
 #      INV                         : 3
 #      LUT1                        : 18
-#      LUT2                        : 11
+#      LUT2                        : 13
 #      LUT3                        : 35
 #      LUT4                        : 3
-#      LUT5                        : 12
-#      LUT6                        : 137
+#      LUT5                        : 13
+#      LUT6                        : 146
 #      MUXCY                       : 18
-#      MUXF7                       : 65
+#      MUXF7                       : 64
 #      VCC                         : 3
 #      XORCY                       : 20
-# FlipFlops/Latches                : 44
+# FlipFlops/Latches                : 36
+#      FD                          : 20
 #      FDE                         : 14
 #      FDR                         : 2
-#      FDRE                        : 28
 # RAMS                             : 16
 #      RAMB16BWER                  : 16
 # Clock Buffers                    : 1
@@ -378,16 +349,16 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              44  out of  18224     0%  
- Number of Slice LUTs:                  219  out of   9112     2%  
-    Number used as Logic:               219  out of   9112     2%  
+ Number of Slice Registers:              36  out of  18224     0%  
+ Number of Slice LUTs:                  231  out of   9112     2%  
+    Number used as Logic:               231  out of   9112     2%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    231
-   Number with an unused Flip Flop:     187  out of    231    80%  
-   Number with an unused LUT:            12  out of    231     5%  
-   Number of fully used LUT-FF pairs:    32  out of    231    13%  
-   Number of unique control sets:        10
+ Number of LUT Flip Flop pairs used:    243
+   Number with an unused Flip Flop:     207  out of    243    85%  
+   Number with an unused LUT:            12  out of    243     4%  
+   Number of fully used LUT-FF pairs:    24  out of    243     9%  
+   Number of unique control sets:         8
 
 IO Utilization: 
  Number of IOs:                          12
@@ -419,7 +390,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk                                | BUFGP                  | 60    |
+clk                                | BUFGP                  | 52    |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -430,9 +401,9 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 6.312ns (Maximum Frequency: 158.426MHz)
-   Minimum input arrival time before clock: 3.648ns
-   Maximum output required time after clock: 3.597ns
+   Minimum period: 4.106ns (Maximum Frequency: 243.549MHz)
+   Minimum input arrival time before clock: 3.783ns
+   Maximum output required time after clock: 3.634ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -441,70 +412,76 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 6.312ns (frequency: 158.426MHz)
-  Total number of paths / destination ports: 5146 / 343
+  Clock period: 4.106ns (frequency: 243.549MHz)
+  Total number of paths / destination ports: 768 / 135
 -------------------------------------------------------------------------
-Delay:               6.312ns (Levels of Logic = 7)
-  Source:            k/_ASCIItoGlyphWord/_GlyphTable/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram (RAM)
-  Destination:       h/ColorOut_7 (FF)
+Delay:               4.106ns (Levels of Logic = 12)
+  Source:            h/LineCount_1 (FF)
+  Destination:       h/LineCount_9 (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: k/_ASCIItoGlyphWord/_GlyphTable/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram to h/ColorOut_7
+  Data Path: h/LineCount_1 to h/LineCount_9
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     RAMB16BWER:CLKA->DOA12    1   1.850   0.827  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.ram_douta<12>)
-     LUT6:I2->O            1   0.203   0.000  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_33 (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_33)
-     MUXF7:I1->O           1   0.140   0.827  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_2_f7_2 (douta<12>)
-     end scope: 'k/_ASCIItoGlyphWord/_GlyphTable:douta<12>'
-     LUT6:I2->O            1   0.203   0.808  k/_BitFromGlyphWord/Mmux_PixelOnOff_3_SW0 (N8)
-     LUT5:I2->O            1   0.205   0.000  k/_BitFromGlyphWord/Mmux_PixelOnOff_3 (k/_BitFromGlyphWord/Mmux_PixelOnOff_3)
-     MUXF7:I1->O           8   0.140   0.803  k/_BitFromGlyphWord/Mmux_PixelOnOff_2_f7 (PixelOnOff)
-     LUT2:I1->O            1   0.205   0.000  Mxor_TextColor[7]_PixelOnOff_xor_0_OUT_7_xo<0>1 (TextColor[7]_PixelOnOff_xor_0_OUT<7>)
-     FDRE:D                    0.102          h/ColorOut_7
+     FD:C->Q              20   0.447   1.093  h/LineCount_1 (h/LineCount_1)
+     LUT1:I0->O            1   0.205   0.000  h/Mcount_LineCount_cy<1>_rt (h/Mcount_LineCount_cy<1>_rt)
+     MUXCY:S->O            1   0.172   0.000  h/Mcount_LineCount_cy<1> (h/Mcount_LineCount_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  h/Mcount_LineCount_cy<2> (h/Mcount_LineCount_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  h/Mcount_LineCount_cy<3> (h/Mcount_LineCount_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  h/Mcount_LineCount_cy<4> (h/Mcount_LineCount_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  h/Mcount_LineCount_cy<5> (h/Mcount_LineCount_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  h/Mcount_LineCount_cy<6> (h/Mcount_LineCount_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  h/Mcount_LineCount_cy<7> (h/Mcount_LineCount_cy<7>)
+     MUXCY:CI->O           0   0.019   0.000  h/Mcount_LineCount_cy<8> (h/Mcount_LineCount_cy<8>)
+     XORCY:CI->O           1   0.180   0.684  h/Mcount_LineCount_xor<9> (h/Result<9>1)
+     LUT6:I4->O            1   0.203   0.684  h/LineCount_9_rstpot (h/LineCount_9_rstpot)
+     LUT2:I0->O            1   0.203   0.000  h/LineCount_9_rstpot1 (h/LineCount_9_rstpot1)
+     FD:D                      0.102          h/LineCount_9
     ----------------------------------------
-    Total                      6.312ns (3.048ns logic, 3.264ns route)
-                                       (48.3% logic, 51.7% route)
+    Total                      4.106ns (1.645ns logic, 2.461ns route)
+                                       (40.1% logic, 59.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 40 / 40
+  Total number of paths / destination ports: 24 / 24
 -------------------------------------------------------------------------
-Offset:              3.648ns (Levels of Logic = 2)
+Offset:              3.783ns (Levels of Logic = 3)
   Source:            rst (PAD)
-  Destination:       h/ColorOut_7 (FF)
+  Destination:       h/Vsync (FF)
   Destination Clock: clk rising
 
-  Data Path: rst to h/ColorOut_7
+  Data Path: rst to h/Vsync
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             6   1.222   0.992  rst_IBUF (rst_IBUF)
-     LUT5:I1->O            8   0.203   0.802  h/_n00967 (h/_n0096)
-     FDRE:R                    0.430          h/ColorOut_0
+     IBUF:I->O             6   1.222   1.109  rst_IBUF (rst_IBUF)
+     LUT6:I0->O            1   0.203   0.944  h/_n0109_inv1_rstpot (h/_n0109_inv1_rstpot)
+     LUT6:I0->O            1   0.203   0.000  h/Vsync_dpot (h/Vsync_dpot)
+     FDE:D                     0.102          h/Vsync
     ----------------------------------------
-    Total                      3.648ns (1.855ns logic, 1.793ns route)
-                                       (50.8% logic, 49.2% route)
+    Total                      3.783ns (1.730ns logic, 2.053ns route)
+                                       (45.7% logic, 54.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 10 / 10
+  Total number of paths / destination ports: 2 / 2
 -------------------------------------------------------------------------
-Offset:              3.597ns (Levels of Logic = 1)
-  Source:            h/ColorOut_7 (FF)
-  Destination:       ColorOut<7> (PAD)
+Offset:              3.634ns (Levels of Logic = 1)
+  Source:            h/Vsync (FF)
+  Destination:       Vsync (PAD)
   Source Clock:      clk rising
 
-  Data Path: h/ColorOut_7 to ColorOut<7>
+  Data Path: h/Vsync to Vsync
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q             1   0.447   0.579  h/ColorOut_7 (h/ColorOut_7)
-     OBUF:I->O                 2.571          ColorOut_7_OBUF (ColorOut<7>)
+     FDE:C->Q              2   0.447   0.616  h/Vsync (h/Vsync)
+     OBUF:I->O                 2.571          Vsync_OBUF (Vsync)
     ----------------------------------------
-    Total                      3.597ns (3.018ns logic, 0.579ns route)
-                                       (83.9% logic, 16.1% route)
+    Total                      3.634ns (3.018ns logic, 0.616ns route)
+                                       (83.0% logic, 17.0% route)
 
 =========================================================================
 
@@ -516,20 +493,20 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    6.312|         |         |         |
+clk            |    4.106|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 7.22 secs
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 7.52 secs
  
 --> 
 
-Total memory usage is 298016 kilobytes
+Total memory usage is 278424 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    2 (   0 filtered)
-Number of infos    :    2 (   0 filtered)
+Number of warnings :   25 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
 

@@ -129,3 +129,10 @@ map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -re
 par -w -intstyle ise -ol high -mt off TextDisplay_Top_map.ncd TextDisplay_Top.ncd TextDisplay_Top.pcf 
 trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TextDisplay_Top.twx TextDisplay_Top.ncd -o TextDisplay_Top.twr TextDisplay_Top.pcf -ucf TextDisplay_Top.ucf 
 bitgen -intstyle ise -f TextDisplay_Top.ut TextDisplay_Top.ncd 
+xst -intstyle ise -ifn "C:/Users/Kara/Documents/CS3700/Assignment4_TextDisplay/TextDisplay_Top.xst" -ofn "C:/Users/Kara/Documents/CS3700/Assignment4_TextDisplay/TextDisplay_Top.syr" 
+xst -intstyle ise -ifn "C:/Users/Kara/Documents/CS3700/Assignment4_TextDisplay/TextDisplay_Top.xst" -ofn "C:/Users/Kara/Documents/CS3700/Assignment4_TextDisplay/TextDisplay_Top.syr" 
+xst -intstyle ise -ifn "C:/Users/Kara/Documents/CS3700/Assignment4_TextDisplay/TextDisplay_Top.xst" -ofn "C:/Users/Kara/Documents/CS3700/Assignment4_TextDisplay/TextDisplay_Top.syr" 
+xst -intstyle ise -ifn "C:/Users/Kara/Documents/CS3700/Assignment4_TextDisplay/TextDisplay_Top.xst" -ofn "C:/Users/Kara/Documents/CS3700/Assignment4_TextDisplay/TextDisplay_Top.syr" 
+xst -intstyle ise -ifn "C:/Users/Kara/Documents/CS3700/Assignment4_TextDisplay/TextDisplay_Top.xst" -ofn "C:/Users/Kara/Documents/CS3700/Assignment4_TextDisplay/TextDisplay_Top.syr" 
+xst -intstyle ise -ifn "C:/Users/Kara/Documents/CS3700/Assignment4_TextDisplay/TextDisplay_Top.xst" -ofn "C:/Users/Kara/Documents/CS3700/Assignment4_TextDisplay/TextDisplay_Top.syr" 
+xst -intstyle ise -ifn "C:/Users/Kara/Documents/CS3700/Assignment4_TextDisplay/TextDisplay_Top.xst" -ofn "C:/Users/Kara/Documents/CS3700/Assignment4_TextDisplay/TextDisplay_Top.syr" 

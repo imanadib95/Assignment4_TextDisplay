@@ -24,11 +24,11 @@ module ASCIItoGlyphAddress(
     input [2:1] LineCount,
 	 output reg[12:0] GlyphTableAddress
     );
-		always @(*)
+		/*always @(*)
 		GlyphTableAddress = ({3'b000,ASCII,2'b00}+LineCount[2:1]);
 	
 	
-	
+	*/
 
 
 endmodule

@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-09-19T14:55:15</DateModified>
+  <DateModified>2016-09-20T14:50:08</DateModified>
   <ModuleName>TextDisplay_Top</ModuleName>
   <SummaryTimeStamp>2016-09-19T14:40:04</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/imana/Documents/SCHOOL/ECE3710/Assignment4_TextDisplay/iseconfig/TextDisplay_Top.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/imana/Documents/SCHOOL/ECE3710/Assignment4_TextDisplay\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/Kara/Documents/CS3700/Assignment4_TextDisplay/iseconfig/TextDisplay_Top.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/Kara/Documents/CS3700/Assignment4_TextDisplay\</ImplementationReportsDirectory>
   <DateInitialized>2016-09-16T20:47:05</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

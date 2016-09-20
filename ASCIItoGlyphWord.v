@@ -25,15 +25,14 @@ module ASCIItoGlyphWord(
     input [2:1] LineCount,
     output [15:0] GlyphWord
     );
+	/*
 	wire [15:0] doutb;
-	wire [12:0] GlyphTableAddress;
+	reg [12:0] GlyphTableAddress;
 	
-	ASCIItoGlyphAddress _ASCIItoGlyphAddress(
-		ASCII,
-//		PixelCount,
-		LineCount,
-		GlyphTableAddress
-    );
+
+	assign GlyphTableAddress = ({3'b000,ASCII,2'b00}+LineCount[2:1]);
+	
+	
 	 
    GlyphTable _GlyphTable(
 	  .clka(clk), // input clka
@@ -47,6 +46,8 @@ module ASCIItoGlyphWord(
 	  .dinb(16'b0), // input [15 : 0] dinb
 	  .doutb() // output [15 : 0] doutb
 	);
+	
+	*/
 
 
 endmodule

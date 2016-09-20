@@ -24,7 +24,7 @@ module CharacterPosToASCIIAddress(
     output [12:0] TextAreaAddress
     );
 	 
-	 assign TextAreaAddress = {LineCount[5:0],HorzPos};
+	// assign TextAreaAddress = {LineCount[5:0],HorzPos};
 
 
 endmodule

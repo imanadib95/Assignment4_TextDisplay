@@ -37,10 +37,19 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ASCIItoGlyphWord_Test_stx_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="ASCIItoGlyphWord_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="ASCIItoGlyphWord_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ASCIItoPixelOnOff.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="ASCIItoPixelOnOff.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="ASCIItoPixelOnOff.xst"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="ASCIItoPixelOnOff_Test_isim_beh.exe"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="ASCIItoPixelOnOff_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ASCIItoPixelOnOff_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="BitFromGlyphWord.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="BitFromGlyphWord.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="BitFromGlyphWord.xst"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="BitFromGlyphWord_Test_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="CharExtract.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="CharExtract.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="CharExtract.xst"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="CharExtract_Test_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="CharExtract_Test_stx_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="GlyphTable_Test_isim_beh.exe"/>
@@ -82,6 +91,9 @@
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="TextDisplay_Top_summary.xml"/>
     <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="TextDisplay_Top_usage.xml"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="TextDisplay_Top_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="VGA_SignalGen.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="VGA_SignalGen.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="VGA_SignalGen.xst"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
@@ -117,23 +129,9 @@
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="ASCIItoGlyphAddress_Test.v"/>
-      <outfile xil_pn:name="ASCIItoGlyphWord.v"/>
-      <outfile xil_pn:name="ASCIItoGlyphWord_Test.v"/>
-      <outfile xil_pn:name="ASCIItoPixelOnOff.v"/>
-      <outfile xil_pn:name="ASCIItoPixelOnOff_Test.v"/>
-      <outfile xil_pn:name="BitFromGlyphWord.v"/>
-      <outfile xil_pn:name="BitFromGlyphWord_Test.v"/>
-      <outfile xil_pn:name="CharExtract.v"/>
-      <outfile xil_pn:name="CharExtract_Test.v"/>
-      <outfile xil_pn:name="GlyphPixelExtractor.v"/>
-      <outfile xil_pn:name="GlyphTable_Test.v"/>
-      <outfile xil_pn:name="TextAreaLookup.v"/>
-      <outfile xil_pn:name="TextAreaMem_Test.v"/>
-      <outfile xil_pn:name="TextDisplay_Top.v"/>
-      <outfile xil_pn:name="TextDisplay_Top_Test1.v"/>
-      <outfile xil_pn:name="VGA_SignalGen.v"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1474318695" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-8564594783876816916" xil_pn:start_ts="1474318695">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -162,50 +160,30 @@
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="ASCIItoGlyphAddress_Test.v"/>
-      <outfile xil_pn:name="ASCIItoGlyphWord.v"/>
-      <outfile xil_pn:name="ASCIItoGlyphWord_Test.v"/>
-      <outfile xil_pn:name="ASCIItoPixelOnOff.v"/>
-      <outfile xil_pn:name="ASCIItoPixelOnOff_Test.v"/>
-      <outfile xil_pn:name="BitFromGlyphWord.v"/>
-      <outfile xil_pn:name="BitFromGlyphWord_Test.v"/>
-      <outfile xil_pn:name="CharExtract.v"/>
-      <outfile xil_pn:name="CharExtract_Test.v"/>
-      <outfile xil_pn:name="GlyphPixelExtractor.v"/>
-      <outfile xil_pn:name="GlyphTable_Test.v"/>
-      <outfile xil_pn:name="TextAreaLookup.v"/>
-      <outfile xil_pn:name="TextAreaMem_Test.v"/>
-      <outfile xil_pn:name="TextDisplay_Top.v"/>
-      <outfile xil_pn:name="TextDisplay_Top_Test1.v"/>
-      <outfile xil_pn:name="VGA_SignalGen.v"/>
-      <outfile xil_pn:name="ipcore_dir/GlyphTable.v"/>
-      <outfile xil_pn:name="ipcore_dir/TextAreaMemory.v"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1474318696" xil_pn:in_ck="1736589831433897302" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-6574998019336761865" xil_pn:start_ts="1474318695">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputChanged"/>
+      <status xil_pn:value="OutputRemoved"/>
+    </transform>
+    <transform xil_pn:end_ts="1474318697" xil_pn:in_ck="3060871251113620891" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-7884528113078502" xil_pn:start_ts="1474318696">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="ASCIItoGlyphAddress_Test_beh.prj"/>
-      <outfile xil_pn:name="ASCIItoGlyphAddress_Test_isim_beh.exe"/>
-      <outfile xil_pn:name="fuse.log"/>
-      <outfile xil_pn:name="isim"/>
-      <outfile xil_pn:name="isim.log"/>
-      <outfile xil_pn:name="xilinxsim.ini"/>
-    </transform>
-    <transform xil_pn:end_ts="1474318697" xil_pn:in_ck="3060871251113620891" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-7884528113078502" xil_pn:start_ts="1474318696">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="ASCIItoGlyphAddress_Test_isim_beh.wdb"/>
-      <outfile xil_pn:name="isim.cmd"/>
-      <outfile xil_pn:name="isim.log"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1474055659" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1474055659">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -239,13 +217,10 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1474402070" xil_pn:in_ck="452705933999757635" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="73281669199351072" xil_pn:start_ts="1474402059">
+    <transform xil_pn:end_ts="1474407007" xil_pn:in_ck="-2897484460769454630" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="73281669199351072" xil_pn:start_ts="1474406997">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="ASCIItoGlyphWord.ngr"/>
       <outfile xil_pn:name="TextDisplay_Top.lso"/>
       <outfile xil_pn:name="TextDisplay_Top.ngc"/>
       <outfile xil_pn:name="TextDisplay_Top.ngr"/>
@@ -265,61 +240,56 @@
     <transform xil_pn:end_ts="1474402075" xil_pn:in_ck="-2150217340653578485" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-4811373382114864846" xil_pn:start_ts="1474402070">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="TextDisplay_Top.bld"/>
-      <outfile xil_pn:name="TextDisplay_Top.ngd"/>
-      <outfile xil_pn:name="TextDisplay_Top_ngdbuild.xrpt"/>
-      <outfile xil_pn:name="_ngo"/>
-      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1474402083" xil_pn:in_ck="2345285003418214061" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1463976855095865663" xil_pn:start_ts="1474402075">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="TextDisplay_Top.pcf"/>
-      <outfile xil_pn:name="TextDisplay_Top_map.map"/>
-      <outfile xil_pn:name="TextDisplay_Top_map.mrp"/>
-      <outfile xil_pn:name="TextDisplay_Top_map.ncd"/>
-      <outfile xil_pn:name="TextDisplay_Top_map.ngm"/>
-      <outfile xil_pn:name="TextDisplay_Top_map.xrpt"/>
-      <outfile xil_pn:name="TextDisplay_Top_summary.xml"/>
-      <outfile xil_pn:name="TextDisplay_Top_usage.xml"/>
-      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1474402094" xil_pn:in_ck="7557642930483547174" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-1178055513630676559" xil_pn:start_ts="1474402083">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="TextDisplay_Top.ncd"/>
-      <outfile xil_pn:name="TextDisplay_Top.pad"/>
-      <outfile xil_pn:name="TextDisplay_Top.par"/>
-      <outfile xil_pn:name="TextDisplay_Top.ptwx"/>
-      <outfile xil_pn:name="TextDisplay_Top.unroutes"/>
-      <outfile xil_pn:name="TextDisplay_Top.xpi"/>
-      <outfile xil_pn:name="TextDisplay_Top_pad.csv"/>
-      <outfile xil_pn:name="TextDisplay_Top_pad.txt"/>
-      <outfile xil_pn:name="TextDisplay_Top_par.xrpt"/>
-      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1474402104" xil_pn:in_ck="7019479585041565296" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1474402094">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="TextDisplay_Top.ut"/>
-      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
-      <outfile xil_pn:name="textdisplay_top.bgn"/>
-      <outfile xil_pn:name="textdisplay_top.bit"/>
-      <outfile xil_pn:name="textdisplay_top.drc"/>
-      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
-      <outfile xil_pn:name="webtalk.log"/>
-      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputChanged"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1474402106" xil_pn:in_ck="-4952912914999399270" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="8482462020707587906" xil_pn:start_ts="1474402104">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1474402094" xil_pn:in_ck="389953857474999465" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1474402090">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="TextDisplay_Top.twr"/>
-      <outfile xil_pn:name="TextDisplay_Top.twx"/>
-      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
   </transforms>
 
