@@ -1,8 +1,8 @@
 INTSTYLE=ise
-INFILE=C:\Users\imana\Documents\SCHOOL\ECE3710\Assignment4_TextDisplay\TextDisplay_Top.ncd
-OUTFILE=C:\Users\imana\Documents\SCHOOL\ECE3710\Assignment4_TextDisplay\TextDisplay_Top.bit
+INFILE=C:\Users\Adam Rosenberg\Documents\Assignment4_TextDisplay\TextDisplay_Top.ncd
+OUTFILE=C:\Users\Adam Rosenberg\Documents\Assignment4_TextDisplay\TextDisplay_Top.bit
 FAMILY=Spartan6
 PART=xc6slx16-3csg324
-WORKINGDIR=C:\Users\imana\Documents\SCHOOL\ECE3710\Assignment4_TextDisplay
+WORKINGDIR=C:\Users\Adam Rosenberg\Documents\Assignment4_TextDisplay
 LICENSE=WebPack
-USER_INFO=211145540_0_0_352
+USER_INFO=211145826_0_0_051
