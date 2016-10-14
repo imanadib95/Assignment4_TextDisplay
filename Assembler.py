@@ -10,6 +10,6 @@ with open(assembly_input_file + ".txt") as file:
     elif "sub " in content: # sub is 01
         s += content
 
-
-with open ("output.coe") as file:
+output = open('output.coe', 'w+')
+with open (output) as file:
     file.write(content)
