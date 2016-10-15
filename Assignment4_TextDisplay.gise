@@ -128,6 +128,7 @@
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
@@ -221,7 +222,9 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="TextDisplay_Top.lso"/>
       <outfile xil_pn:name="TextDisplay_Top.ngc"/>
@@ -242,6 +245,7 @@
     <transform xil_pn:end_ts="1476460260" xil_pn:in_ck="-2150217340653578485" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-4811373382114864846" xil_pn:start_ts="1476460255">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="TextDisplay_Top.bld"/>
       <outfile xil_pn:name="TextDisplay_Top.ngd"/>
       <outfile xil_pn:name="TextDisplay_Top_ngdbuild.xrpt"/>
@@ -251,6 +255,7 @@
     <transform xil_pn:end_ts="1476460267" xil_pn:in_ck="2345285003418214061" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1463976855095865663" xil_pn:start_ts="1476460260">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="TextDisplay_Top.pcf"/>
@@ -266,6 +271,7 @@
     <transform xil_pn:end_ts="1476460277" xil_pn:in_ck="7557642930483547174" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-1178055513630676559" xil_pn:start_ts="1476460267">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="TextDisplay_Top.ncd"/>
       <outfile xil_pn:name="TextDisplay_Top.pad"/>
       <outfile xil_pn:name="TextDisplay_Top.par"/>
@@ -280,6 +286,7 @@
     <transform xil_pn:end_ts="1476460347" xil_pn:in_ck="7019479585041565296" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1476460338">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="TextDisplay_Top.ut"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="textdisplay_top.bgn"/>
@@ -292,10 +299,12 @@
     <transform xil_pn:end_ts="1476460362" xil_pn:in_ck="-4952912914999399270" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="8482462020707587906" xil_pn:start_ts="1476460347">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
     <transform xil_pn:end_ts="1476460277" xil_pn:in_ck="389953857474999465" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1476460273">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="TextDisplay_Top.twr"/>
       <outfile xil_pn:name="TextDisplay_Top.twx"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>

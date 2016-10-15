@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-10-14T09:50:47</DateModified>
+  <DateModified>2016-10-14T22:44:14</DateModified>
   <ModuleName>TextDisplay_Top</ModuleName>
   <SummaryTimeStamp>2016-09-19T14:40:04</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/Adam Rosenberg/Documents/Assignment4_TextDisplay/iseconfig/TextDisplay_Top.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/Adam Rosenberg/Documents/Assignment4_TextDisplay\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/Kara/Documents/GitHub/Assignment4_TextDisplay/iseconfig/TextDisplay_Top.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/Kara/Documents/GitHub/Assignment4_TextDisplay\</ImplementationReportsDirectory>
   <DateInitialized>2016-09-16T20:47:05</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
