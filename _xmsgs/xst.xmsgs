@@ -5,6 +5,7 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<<<<<<< HEAD
 <msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Users\imana\Documents\SCHOOL\ECE3710\VGA_w_Dispatch2\ipcore_dir\ram.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">ram</arg>&gt; remains a black box.
 </msg>
 
@@ -95,5 +96,7 @@
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DAR/Dispatch/ASCIIColChar_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
 </msg>
 
+=======
+>>>>>>> origin/master
 </messages>
 

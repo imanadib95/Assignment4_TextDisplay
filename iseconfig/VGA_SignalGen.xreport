@@ -1,12 +1,21 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
+<<<<<<< HEAD:iseconfig/VGA_SignalGen.xreport
   <DateModified>2016-10-14T20:50:51</DateModified>
   <ModuleName>Top</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/Users/imana/Documents/SCHOOL/ECE3710/VGA_w_Dispatch2/iseconfig/VGA_SignalGen.xreport</SavedFilePath>
   <ImplementationReportsDirectory>C:/Users/imana/Documents/SCHOOL/ECE3710/VGA_w_Dispatch2</ImplementationReportsDirectory>
   <DateInitialized>2016-10-14T20:50:51</DateInitialized>
+=======
+  <DateModified>2016-10-16T20:27:50</DateModified>
+  <ModuleName>TextDisplay_Top</ModuleName>
+  <SummaryTimeStamp>2016-09-19T14:40:04</SummaryTimeStamp>
+  <SavedFilePath>C:/Users/Kara/Documents/GitHub/Assignment4_TextDisplay/iseconfig/TextDisplay_Top.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/Kara/Documents/GitHub/Assignment4_TextDisplay\</ImplementationReportsDirectory>
+  <DateInitialized>2016-09-16T20:47:05</DateInitialized>
+>>>>>>> origin/master:iseconfig/TextDisplay_Top.xreport
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
  <body>

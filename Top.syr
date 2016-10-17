@@ -3,14 +3,24 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
+<<<<<<< HEAD:Top.syr
 Total REAL time to Xst completion: 0.00 secs
 Total CPU time to Xst completion: 0.09 secs
+=======
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.08 secs
+>>>>>>> origin/master:TextDisplay_Top.syr
  
 --> Parameter xsthdpdir set to xst
 
 
+<<<<<<< HEAD:Top.syr
 Total REAL time to Xst completion: 0.00 secs
 Total CPU time to Xst completion: 0.09 secs
+=======
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.08 secs
+>>>>>>> origin/master:TextDisplay_Top.syr
  
 --> Reading design: Top.prj
 
@@ -108,6 +118,7 @@ Cores Search Directories           : {"ipcore_dir"  }
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
+<<<<<<< HEAD:Top.syr
 Analyzing Verilog file "C:\Users\imana\Documents\SCHOOL\ECE3710\VGA_w_Dispatch2\VGA_SignalGen.v" into library work
 Parsing module <VGA_SignalGen>.
 Analyzing Verilog file "C:\Users\imana\Documents\SCHOOL\ECE3710\VGA_w_Dispatch2\VGA_Dispatch.v" into library work
@@ -120,6 +131,20 @@ Analyzing Verilog file "C:\Users\imana\Documents\SCHOOL\ECE3710\VGA_w_Dispatch2\
 Parsing module <DispatchAndRam>.
 Analyzing Verilog file "C:\Users\imana\Documents\SCHOOL\ECE3710\VGA_w_Dispatch2\Top.v" into library work
 Parsing module <Top>.
+=======
+Analyzing Verilog file "C:\Users\Kara\Documents\CS3700\Assignment4_TextDisplay\ipcore_dir\TextAreaMemory.v" into library work
+Parsing module <TextAreaMemory>.
+Analyzing Verilog file "C:\Users\Kara\Documents\CS3700\Assignment4_TextDisplay\ipcore_dir\GlyphTable.v" into library work
+Parsing module <GlyphTable>.
+Analyzing Verilog file "C:\Users\Kara\Documents\CS3700\Assignment4_TextDisplay\VGA_SignalGen.v" into library work
+Parsing module <VGA_SignalGen>.
+Analyzing Verilog file "C:\Users\Kara\Documents\CS3700\Assignment4_TextDisplay\CharExtract.v" into library work
+Parsing module <CharExtract>.
+Analyzing Verilog file "C:\Users\Kara\Documents\CS3700\Assignment4_TextDisplay\ASCIItoPixelOnOff.v" into library work
+Parsing module <ASCIItoPixelOnOff>.
+Analyzing Verilog file "C:\Users\Kara\Documents\CS3700\Assignment4_TextDisplay\TextDisplay_Top.v" into library work
+Parsing module <TextDisplay_Top>.
+>>>>>>> origin/master:TextDisplay_Top.syr
 
 =========================================================================
 *                            HDL Elaboration                            *
@@ -129,6 +154,7 @@ Elaborating module <Top>.
 
 Elaborating module <IBUFG>.
 
+<<<<<<< HEAD:Top.syr
 Elaborating module <BUFG>.
 
 Elaborating module <VGA_Controller>.
@@ -138,6 +164,19 @@ Elaborating module <VGA_SignalGen>.
 Elaborating module <DispatchAndRam>.
 
 Elaborating module <VGA_Dispatch>.
+=======
+Elaborating module <TextAreaMemory>.
+WARNING:HDLCompiler:1499 - "C:\Users\Kara\Documents\CS3700\Assignment4_TextDisplay\ipcore_dir\TextAreaMemory.v" Line 39: Empty module <TextAreaMemory> remains a black box.
+
+Elaborating module <ASCIItoPixelOnOff>.
+WARNING:HDLCompiler:1127 - "C:\Users\Kara\Documents\CS3700\Assignment4_TextDisplay\ASCIItoPixelOnOff.v" Line 34: Assignment to PixleOnOff ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "C:\Users\Kara\Documents\CS3700\Assignment4_TextDisplay\ASCIItoPixelOnOff.v" Line 37: Result of 11-bit expression is truncated to fit in 1-bit target.
+
+Elaborating module <GlyphTable>.
+WARNING:HDLCompiler:1499 - "C:\Users\Kara\Documents\CS3700\Assignment4_TextDisplay\ipcore_dir\GlyphTable.v" Line 39: Empty module <GlyphTable> remains a black box.
+WARNING:HDLCompiler:189 - "C:\Users\Kara\Documents\CS3700\Assignment4_TextDisplay\ASCIItoPixelOnOff.v" Line 42: Size mismatch in connection of port <addra>. Formal port size is 13-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Kara\Documents\CS3700\Assignment4_TextDisplay\ASCIItoPixelOnOff.v" Line 47: Size mismatch in connection of port <addrb>. Formal port size is 13-bit while actual signal size is 1-bit.
+>>>>>>> origin/master:TextDisplay_Top.syr
 
 Elaborating module <ram>.
 WARNING:HDLCompiler:1499 - "C:\Users\imana\Documents\SCHOOL\ECE3710\VGA_w_Dispatch2\ipcore_dir\ram.v" Line 39: Empty module <ram> remains a black box.
@@ -149,6 +188,7 @@ WARNING:HDLCompiler:1127 - "C:\Users\imana\Documents\SCHOOL\ECE3710\VGA_w_Dispat
 *                           HDL Synthesis                               *
 =========================================================================
 
+<<<<<<< HEAD:Top.syr
 Synthesizing Unit <Top>.
     Related source file is "C:\Users\imana\Documents\SCHOOL\ECE3710\VGA_w_Dispatch2\Top.v".
     Summary:
@@ -167,6 +207,35 @@ Unit <VGA_Controller> synthesized.
 
 Synthesizing Unit <VGA_SignalGen>.
     Related source file is "C:\Users\imana\Documents\SCHOOL\ECE3710\VGA_w_Dispatch2\VGA_SignalGen.v".
+=======
+Synthesizing Unit <TextDisplay_Top>.
+    Related source file is "C:\Users\Kara\Documents\CS3700\Assignment4_TextDisplay\TextDisplay_Top.v".
+    Summary:
+	no macro.
+Unit <TextDisplay_Top> synthesized.
+
+Synthesizing Unit <CharExtract>.
+    Related source file is "C:\Users\Kara\Documents\CS3700\Assignment4_TextDisplay\CharExtract.v".
+INFO:Xst:3210 - "C:\Users\Kara\Documents\CS3700\Assignment4_TextDisplay\CharExtract.v" line 34: Output port <doutb> of the instance <_TextAreaMemory> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <CharExtract> synthesized.
+
+Synthesizing Unit <ASCIItoPixelOnOff>.
+    Related source file is "C:\Users\Kara\Documents\CS3700\Assignment4_TextDisplay\ASCIItoPixelOnOff.v".
+WARNING:Xst:647 - Input <PixelCount> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <LineCount<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "C:\Users\Kara\Documents\CS3700\Assignment4_TextDisplay\ASCIItoPixelOnOff.v" line 39: Output port <douta> of the instance <_GlyphTable> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kara\Documents\CS3700\Assignment4_TextDisplay\ASCIItoPixelOnOff.v" line 39: Output port <doutb> of the instance <_GlyphTable> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <PixelOnOff> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 10-bit adder for signal <n0004> created at line 37.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <ASCIItoPixelOnOff> synthesized.
+
+Synthesizing Unit <VGA_SignalGen>.
+    Related source file is "C:\Users\Kara\Documents\CS3700\Assignment4_TextDisplay\VGA_SignalGen.v".
+>>>>>>> origin/master:TextDisplay_Top.syr
         HorzPixelCount = 800
         HorzPixNBITS = 10
         VertPixelCount = 525
@@ -187,6 +256,7 @@ Synthesizing Unit <VGA_SignalGen>.
     Found 1-bit register for signal <Hsync>.
     Found 8-bit register for signal <ColorOut>.
     Found 2-bit register for signal <subPixelCount>.
+<<<<<<< HEAD:Top.syr
     Found 2-bit adder for signal <subPixelCount[1]_GND_5_o_add_2_OUT> created at line 68.
     Found 10-bit adder for signal <PixelCount[9]_GND_5_o_add_6_OUT> created at line 76.
     Found 10-bit adder for signal <LineCount[9]_GND_5_o_add_10_OUT> created at line 86.
@@ -196,6 +266,17 @@ Synthesizing Unit <VGA_SignalGen>.
     Found 10-bit comparator greater for signal <PixelCount[9]_PWR_5_o_LessThan_17_o> created at line 91
     Found 10-bit comparator greater for signal <PixelCount[9]_PWR_5_o_LessThan_19_o> created at line 92
     Found 10-bit comparator greater for signal <LineCount[9]_GND_5_o_LessThan_21_o> created at line 92
+=======
+    Found 2-bit adder for signal <subPixelCount[1]_GND_6_o_add_2_OUT> created at line 68.
+    Found 10-bit adder for signal <PixelCount[9]_GND_6_o_add_6_OUT> created at line 76.
+    Found 10-bit adder for signal <LineCount[9]_GND_6_o_add_10_OUT> created at line 86.
+    Found 10-bit comparator lessequal for signal <n0010> created at line 89
+    Found 10-bit comparator greater for signal <LineCount[9]_GND_6_o_LessThan_14_o> created at line 89
+    Found 10-bit comparator lessequal for signal <n0017> created at line 91
+    Found 10-bit comparator greater for signal <PixelCount[9]_PWR_6_o_LessThan_17_o> created at line 91
+    Found 10-bit comparator greater for signal <PixelCount[9]_PWR_6_o_LessThan_19_o> created at line 92
+    Found 10-bit comparator greater for signal <LineCount[9]_GND_6_o_LessThan_21_o> created at line 92
+>>>>>>> origin/master:TextDisplay_Top.syr
     Summary:
 	inferred   3 Adder/Subtractor(s).
 	inferred  32 D-type flip-flop(s).
@@ -228,11 +309,16 @@ Unit <VGA_Dispatch> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
+<<<<<<< HEAD:Top.syr
 # Adders/Subtractors                                   : 6
  10-bit adder                                          : 2
  11-bit adder                                          : 1
  12-bit adder                                          : 1
  14-bit adder                                          : 1
+=======
+# Adders/Subtractors                                   : 4
+ 10-bit adder                                          : 3
+>>>>>>> origin/master:TextDisplay_Top.syr
  2-bit adder                                           : 1
 # Registers                                            : 8
  1-bit register                                        : 2
@@ -243,10 +329,13 @@ Macro Statistics
 # Comparators                                          : 6
  10-bit comparator greater                             : 4
  10-bit comparator lessequal                           : 2
+<<<<<<< HEAD:Top.syr
 # Multiplexers                                         : 12
  1-bit 2-to-1 multiplexer                              : 8
  1-bit 8-to-1 multiplexer                              : 1
  16-bit 2-to-1 multiplexer                             : 3
+=======
+>>>>>>> origin/master:TextDisplay_Top.syr
 
 =========================================================================
 
@@ -254,6 +343,7 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
+<<<<<<< HEAD:Top.syr
 Reading core <ipcore_dir/ram.ngc>.
 Loading core <ram> for timing and area information for instance <R>.
 WARNING:Xst:2677 - Node <ASCIIColChar_8> of sequential type is unconnected in block <Dispatch>.
@@ -266,6 +356,20 @@ WARNING:Xst:2677 - Node <ASCIIColChar_14> of sequential type is unconnected in b
 WARNING:Xst:2677 - Node <ASCIIColChar_15> of sequential type is unconnected in block <Dispatch>.
 WARNING:Xst:2677 - Node <AddressA_14> of sequential type is unconnected in block <Dispatch>.
 WARNING:Xst:2677 - Node <AddressA_15> of sequential type is unconnected in block <Dispatch>.
+=======
+Reading core <ipcore_dir/TextAreaMemory.ngc>.
+Reading core <ipcore_dir/GlyphTable.ngc>.
+Loading core <TextAreaMemory> for timing and area information for instance <_TextAreaMemory>.
+Loading core <GlyphTable> for timing and area information for instance <_GlyphTable>.
+WARNING:Xst:1710 - FF/Latch <ColorOut_0> (without init value) has a constant value of 0 in block <h>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ColorOut_1> (without init value) has a constant value of 0 in block <h>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ColorOut_2> (without init value) has a constant value of 0 in block <h>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ColorOut_3> (without init value) has a constant value of 0 in block <h>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ColorOut_4> (without init value) has a constant value of 0 in block <h>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ColorOut_5> (without init value) has a constant value of 0 in block <h>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ColorOut_6> (without init value) has a constant value of 0 in block <h>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ColorOut_7> (without init value) has a constant value of 0 in block <h>. This FF/Latch will be trimmed during the optimization process.
+>>>>>>> origin/master:TextDisplay_Top.syr
 
 Synthesizing (advanced) Unit <VGA_SignalGen>.
 The following registers are absorbed into counter <subPixelCount>: 1 register on signal <subPixelCount>.
@@ -277,10 +381,15 @@ Unit <VGA_SignalGen> synthesized (advanced).
 Advanced HDL Synthesis Report
 
 Macro Statistics
+<<<<<<< HEAD:Top.syr
 # Adders/Subtractors                                   : 3
  11-bit adder                                          : 1
  12-bit adder                                          : 1
  14-bit adder                                          : 1
+=======
+# Adders/Subtractors                                   : 1
+ 1-bit adder                                           : 1
+>>>>>>> origin/master:TextDisplay_Top.syr
 # Counters                                             : 3
  10-bit up counter                                     : 2
  2-bit up counter                                      : 1
@@ -289,10 +398,13 @@ Macro Statistics
 # Comparators                                          : 6
  10-bit comparator greater                             : 4
  10-bit comparator lessequal                           : 2
+<<<<<<< HEAD:Top.syr
 # Multiplexers                                         : 12
  1-bit 2-to-1 multiplexer                              : 8
  1-bit 8-to-1 multiplexer                              : 1
  16-bit 2-to-1 multiplexer                             : 3
+=======
+>>>>>>> origin/master:TextDisplay_Top.syr
 
 =========================================================================
 
@@ -303,9 +415,20 @@ INFO:Xst:2261 - The FF/Latch <ColorOut_0> in Unit <VGA_SignalGen> is equivalent 
 
 Optimizing unit <Top> ...
 
+<<<<<<< HEAD:Top.syr
 Optimizing unit <VGA_Controller> ...
 
+=======
+>>>>>>> origin/master:TextDisplay_Top.syr
 Optimizing unit <VGA_SignalGen> ...
+WARNING:Xst:1710 - FF/Latch <h/ColorOut_7> (without init value) has a constant value of 0 in block <TextDisplay_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <h/ColorOut_6> (without init value) has a constant value of 0 in block <TextDisplay_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <h/ColorOut_5> (without init value) has a constant value of 0 in block <TextDisplay_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <h/ColorOut_4> (without init value) has a constant value of 0 in block <TextDisplay_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <h/ColorOut_3> (without init value) has a constant value of 0 in block <TextDisplay_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <h/ColorOut_2> (without init value) has a constant value of 0 in block <TextDisplay_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <h/ColorOut_1> (without init value) has a constant value of 0 in block <TextDisplay_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <h/ColorOut_0> (without init value) has a constant value of 0 in block <TextDisplay_Top>. This FF/Latch will be trimmed during the optimization process.
 
 Optimizing unit <VGA_Dispatch> ...
 WARNING:Xst:2677 - Node <DAR/Dispatch/AddressA_15> of sequential type is unconnected in block <Top>.
@@ -321,7 +444,11 @@ WARNING:Xst:2677 - Node <DAR/Dispatch/ASCIIColChar_8> of sequential type is unco
 
 Mapping all equations...
 Building and optimizing final netlist ...
+<<<<<<< HEAD:Top.syr
 Found area constraint ratio of 100 (+ 5) on block Top, actual ratio is 4.
+=======
+Found area constraint ratio of 100 (+ 5) on block TextDisplay_Top, actual ratio is 1.
+>>>>>>> origin/master:TextDisplay_Top.syr
 
 Final Macro Processing ...
 
@@ -329,8 +456,13 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
+<<<<<<< HEAD:Top.syr
 # Registers                                            : 47
  Flip-Flops                                            : 47
+=======
+# Registers                                            : 24
+ Flip-Flops                                            : 24
+>>>>>>> origin/master:TextDisplay_Top.syr
 
 =========================================================================
 
@@ -353,6 +485,7 @@ Top Level Output File Name         : Top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
+<<<<<<< HEAD:Top.syr
 # BELS                             : 528
 #      GND                         : 2
 #      INV                         : 3
@@ -373,6 +506,27 @@ Primitive and Black Box Usage:
 #      FDRE                        : 21
 # RAMS                             : 32
 #      RAMB16BWER                  : 32
+=======
+# BELS                             : 339
+#      GND                         : 3
+#      INV                         : 3
+#      LUT1                        : 18
+#      LUT2                        : 13
+#      LUT3                        : 35
+#      LUT4                        : 3
+#      LUT5                        : 13
+#      LUT6                        : 146
+#      MUXCY                       : 18
+#      MUXF7                       : 64
+#      VCC                         : 3
+#      XORCY                       : 20
+# FlipFlops/Latches                : 36
+#      FD                          : 20
+#      FDE                         : 14
+#      FDR                         : 2
+# RAMS                             : 16
+#      RAMB16BWER                  : 16
+>>>>>>> origin/master:TextDisplay_Top.syr
 # Clock Buffers                    : 1
 #      BUFG                        : 1
 # IO Buffers                       : 12
@@ -387,6 +541,7 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
+<<<<<<< HEAD:Top.syr
  Number of Slice Registers:              57  out of  18224     0%  
  Number of Slice LUTs:                  453  out of   9112     4%  
     Number used as Logic:               453  out of   9112     4%  
@@ -397,6 +552,18 @@ Slice Logic Distribution:
    Number with an unused LUT:            17  out of    470     3%  
    Number of fully used LUT-FF pairs:    40  out of    470     8%  
    Number of unique control sets:        10
+=======
+ Number of Slice Registers:              36  out of  18224     0%  
+ Number of Slice LUTs:                  231  out of   9112     2%  
+    Number used as Logic:               231  out of   9112     2%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    243
+   Number with an unused Flip Flop:     207  out of    243    85%  
+   Number with an unused LUT:            12  out of    243     4%  
+   Number of fully used LUT-FF pairs:    24  out of    243     9%  
+   Number of unique control sets:         8
+>>>>>>> origin/master:TextDisplay_Top.syr
 
 IO Utilization: 
  Number of IOs:                          12
@@ -428,7 +595,11 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
+<<<<<<< HEAD:Top.syr
 extClk                             | IBUFG+BUFG             | 89    |
+=======
+clk                                | BUFGP                  | 52    |
+>>>>>>> origin/master:TextDisplay_Top.syr
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -439,9 +610,15 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
+<<<<<<< HEAD:Top.syr
    Minimum period: 6.420ns (Maximum Frequency: 155.772MHz)
    Minimum input arrival time before clock: 3.458ns
    Maximum output required time after clock: 3.820ns
+=======
+   Minimum period: 4.106ns (Maximum Frequency: 243.549MHz)
+   Minimum input arrival time before clock: 3.783ns
+   Maximum output required time after clock: 3.634ns
+>>>>>>> origin/master:TextDisplay_Top.syr
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -449,6 +626,7 @@ Timing Details:
 All values displayed in nanoseconds (ns)
 
 =========================================================================
+<<<<<<< HEAD:Top.syr
 Timing constraint: Default period analysis for Clock 'extClk'
   Clock period: 6.420ns (frequency: 155.772MHz)
   Total number of paths / destination ports: 2826 / 457
@@ -514,6 +692,79 @@ Offset:              3.820ns (Levels of Logic = 1)
     ----------------------------------------
     Total                      3.820ns (3.018ns logic, 0.802ns route)
                                        (79.0% logic, 21.0% route)
+=======
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.106ns (frequency: 243.549MHz)
+  Total number of paths / destination ports: 768 / 135
+-------------------------------------------------------------------------
+Delay:               4.106ns (Levels of Logic = 12)
+  Source:            h/LineCount_1 (FF)
+  Destination:       h/LineCount_9 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: h/LineCount_1 to h/LineCount_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              20   0.447   1.093  h/LineCount_1 (h/LineCount_1)
+     LUT1:I0->O            1   0.205   0.000  h/Mcount_LineCount_cy<1>_rt (h/Mcount_LineCount_cy<1>_rt)
+     MUXCY:S->O            1   0.172   0.000  h/Mcount_LineCount_cy<1> (h/Mcount_LineCount_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  h/Mcount_LineCount_cy<2> (h/Mcount_LineCount_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  h/Mcount_LineCount_cy<3> (h/Mcount_LineCount_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  h/Mcount_LineCount_cy<4> (h/Mcount_LineCount_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  h/Mcount_LineCount_cy<5> (h/Mcount_LineCount_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  h/Mcount_LineCount_cy<6> (h/Mcount_LineCount_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  h/Mcount_LineCount_cy<7> (h/Mcount_LineCount_cy<7>)
+     MUXCY:CI->O           0   0.019   0.000  h/Mcount_LineCount_cy<8> (h/Mcount_LineCount_cy<8>)
+     XORCY:CI->O           1   0.180   0.684  h/Mcount_LineCount_xor<9> (h/Result<9>1)
+     LUT6:I4->O            1   0.203   0.684  h/LineCount_9_rstpot (h/LineCount_9_rstpot)
+     LUT2:I0->O            1   0.203   0.000  h/LineCount_9_rstpot1 (h/LineCount_9_rstpot1)
+     FD:D                      0.102          h/LineCount_9
+    ----------------------------------------
+    Total                      4.106ns (1.645ns logic, 2.461ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 24 / 24
+-------------------------------------------------------------------------
+Offset:              3.783ns (Levels of Logic = 3)
+  Source:            rst (PAD)
+  Destination:       h/Vsync (FF)
+  Destination Clock: clk rising
+
+  Data Path: rst to h/Vsync
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   1.222   1.109  rst_IBUF (rst_IBUF)
+     LUT6:I0->O            1   0.203   0.944  h/_n0109_inv1_rstpot (h/_n0109_inv1_rstpot)
+     LUT6:I0->O            1   0.203   0.000  h/Vsync_dpot (h/Vsync_dpot)
+     FDE:D                     0.102          h/Vsync
+    ----------------------------------------
+    Total                      3.783ns (1.730ns logic, 2.053ns route)
+                                       (45.7% logic, 54.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              3.634ns (Levels of Logic = 1)
+  Source:            h/Vsync (FF)
+  Destination:       Vsync (PAD)
+  Source Clock:      clk rising
+
+  Data Path: h/Vsync to Vsync
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.447   0.616  h/Vsync (h/Vsync)
+     OBUF:I->O                 2.571          Vsync_OBUF (Vsync)
+    ----------------------------------------
+    Total                      3.634ns (3.018ns logic, 0.616ns route)
+                                       (83.0% logic, 17.0% route)
+>>>>>>> origin/master:TextDisplay_Top.syr
 
 =========================================================================
 
@@ -525,12 +776,17 @@ Clock to Setup on destination clock extClk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
+<<<<<<< HEAD:Top.syr
 extClk         |    6.420|         |         |         |
+=======
+clk            |    4.106|         |         |         |
+>>>>>>> origin/master:TextDisplay_Top.syr
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
+<<<<<<< HEAD:Top.syr
 Total REAL time to Xst completion: 9.00 secs
 Total CPU time to Xst completion: 8.87 secs
  
@@ -541,4 +797,16 @@ Total memory usage is 298632 kilobytes
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   28 (   0 filtered)
 Number of infos    :    2 (   0 filtered)
+=======
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 7.52 secs
+ 
+--> 
+
+Total memory usage is 278424 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   25 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+>>>>>>> origin/master:TextDisplay_Top.syr
 

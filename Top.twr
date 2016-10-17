@@ -36,7 +36,11 @@ Setup/Hold to clock extClk
             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
 Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------+------------+------------------+--------+
+<<<<<<< HEAD:Top.twr
 rst         |    4.852(R)|      SLOW  |   -1.595(R)|      FAST  |clk               |   0.000|
+=======
+rst         |    3.488(R)|      SLOW  |   -1.481(R)|      FAST  |clk_BUFGP         |   0.000|
+>>>>>>> origin/master:TextDisplay_Top.twr
 ------------+------------+------------+------------+------------+------------------+--------+
 
 Clock extClk to Pad
@@ -44,6 +48,7 @@ Clock extClk to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
+<<<<<<< HEAD:Top.twr
 ColorOut<0> |         8.674(R)|      SLOW  |         4.673(R)|      FAST  |clk               |   0.000|
 ColorOut<1> |         8.879(R)|      SLOW  |         4.781(R)|      FAST  |clk               |   0.000|
 ColorOut<2> |         8.425(R)|      SLOW  |         4.521(R)|      FAST  |clk               |   0.000|
@@ -54,6 +59,10 @@ ColorOut<6> |         8.496(R)|      SLOW  |         4.565(R)|      FAST  |clk  
 ColorOut<7> |         8.727(R)|      SLOW  |         4.702(R)|      FAST  |clk               |   0.000|
 Hsync       |         8.601(R)|      SLOW  |         4.570(R)|      FAST  |clk               |   0.000|
 Vsync       |         8.327(R)|      SLOW  |         4.418(R)|      FAST  |clk               |   0.000|
+=======
+Hsync       |         8.683(R)|      SLOW  |         4.653(R)|      FAST  |clk_BUFGP         |   0.000|
+Vsync       |         8.696(R)|      SLOW  |         4.661(R)|      FAST  |clk_BUFGP         |   0.000|
+>>>>>>> origin/master:TextDisplay_Top.twr
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock to Setup on destination clock extClk
@@ -61,18 +70,26 @@ Clock to Setup on destination clock extClk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
+<<<<<<< HEAD:Top.twr
 extClk         |    7.392|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
 Analysis completed Sun Oct 16 23:44:20 2016 
+=======
+clk            |    3.888|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Fri Oct 14 09:51:16 2016 
+>>>>>>> origin/master:TextDisplay_Top.twr
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 248 MB
+Peak Memory Usage: 243 MB
 
 
 

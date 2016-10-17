@@ -1,7 +1,11 @@
 Release 14.7 - par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
+<<<<<<< HEAD:Top_pad.txt
 Sun Oct 16 23:44:15 2016
+=======
+Fri Oct 14 09:51:12 2016
+>>>>>>> origin/master:TextDisplay_Top_pad.txt
 
 
 INFO: The IO information is provided in three file formats as part of the Place and Route (PAR) process.  These formats are:
