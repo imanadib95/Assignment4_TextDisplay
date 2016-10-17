@@ -23,7 +23,7 @@ SET_PREFERENCE implementationfiletype Ngc
 SET_PREFERENCE foundationsym false
 SET_PREFERENCE createndf false
 SET_PREFERENCE removerpms false
-SET_PARAMETER Component_Name GlyphTable
+SET_PARAMETER Component_Name TextAreaMemory
 SET_PARAMETER Interface_Type Native
 SET_PARAMETER AXI_Type AXI4_Full
 SET_PARAMETER AXI_Slave_Type Memory_Slave
@@ -60,7 +60,7 @@ SET_PARAMETER register_porta_input_of_softecc false
 SET_PARAMETER register_portb_output_of_softecc false
 SET_PARAMETER Pipeline_Stages 0
 SET_PARAMETER Load_Init_File true
-SET_PARAMETER Coe_File C:/Users/imana/Desktop/RAM-glyph256x4x16_1.coe
+SET_PARAMETER Coe_File C:/Users/imana/Desktop/AliceColor.coe
 SET_PARAMETER Fill_Remaining_Memory_Locations false
 SET_PARAMETER Remaining_Memory_Locations 0
 SET_PARAMETER Use_RSTA_Pin false

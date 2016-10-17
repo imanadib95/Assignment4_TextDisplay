@@ -41,7 +41,7 @@ SET_PARAMETER port_b_write_rate 50
 SET_PARAMETER ecctype No_ECC
 SET_PARAMETER write_width_a 16
 SET_PARAMETER write_width_b 16
-SET_PARAMETER component_name GlyphTable
+SET_PARAMETER component_name TextAreaMemory
 SET_PARAMETER reset_priority_a CE
 SET_PARAMETER reset_priority_b CE
 SET_PARAMETER operating_mode_a WRITE_FIRST
@@ -53,7 +53,7 @@ SET_PARAMETER reset_type SYNC
 SET_PARAMETER register_portb_output_of_memory_primitives false
 SET_PARAMETER use_rsta_pin false
 SET_PARAMETER port_b_enable_rate 100
-SET_PARAMETER coe_file C:/Users/imana/Desktop/RAM-glyph256x4x16_1.coe
+SET_PARAMETER coe_file C:/Users/imana/Desktop/AliceColor.coe
 SET_PARAMETER fill_remaining_memory_locations false
 SET_PARAMETER axi_slave_type Memory_Slave
 SET_PARAMETER axi_type AXI4_Full
