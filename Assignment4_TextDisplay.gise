@@ -52,6 +52,9 @@
     <file xil_pn:fileType="FILE_XST" xil_pn:name="CharExtract.xst"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="CharExtract_Test_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="CharExtract_Test_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Core.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Core.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="Core.xst"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="GlyphTable_Test_isim_beh.exe"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="TextAreaMem_Test_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="TextAreaMem_Test_stx_beh.prj"/>
@@ -225,6 +228,7 @@
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="TextDisplay_Top.lso"/>
       <outfile xil_pn:name="TextDisplay_Top.ngc"/>
