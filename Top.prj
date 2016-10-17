@@ -1,0 +1,6 @@
+verilog work "VGA_SignalGen.v"
+verilog work "VGA_Dispatch.v"
+verilog work "ipcore_dir/ram.v"
+verilog work "VGA_Controller.v"
+verilog work "DispatchAndRam.v"
+verilog work "Top.v"

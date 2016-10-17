@@ -9,62 +9,44 @@ INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.7/ISE_
 Parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
 Finished parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
 start_gui
-source C:/Users/imana/Documents/SCHOOL/ECE3710/Assignment4_TextDisplay/pa.fromHdl.tcl
-# create_project -name Assignment4_TextDisplay -dir "C:/Users/imana/Documents/SCHOOL/ECE3710/Assignment4_TextDisplay/planAhead_run_1" -part xc6slx16csg324-3
+source C:/Users/imana/Documents/SCHOOL/ECE3710/VGA_w_Dispatch2/pa.fromHdl.tcl
+# create_project -name VGA_w_Dispatch2 -dir "C:/Users/imana/Documents/SCHOOL/ECE3710/VGA_w_Dispatch2/planAhead_run_1" -part xc6slx16csg324-3
 # set_param project.pinAheadLayout yes
 # set srcset [get_property srcset [current_run -impl]]
-# set_property target_constrs_file "TextDisplay_Top.ucf" [current_fileset -constrset]
-Adding file 'C:/Users/imana/Documents/SCHOOL/ECE3710/Assignment4_TextDisplay/TextDisplay_Top.ucf' to fileset 'constrs_1'
-# add_files [list {ipcore_dir/GlyphTable.ngc}]
-# set hdlfile [add_files [list {ipcore_dir/GlyphTable.v}]]
+# set_property target_constrs_file "DispatchAndRam.ucf" [current_fileset -constrset]
+Adding file 'C:/Users/imana/Documents/SCHOOL/ECE3710/VGA_w_Dispatch2/DispatchAndRam.ucf' to fileset 'constrs_1'
+# add_files [list {ipcore_dir/ram.ngc}]
+# set hdlfile [add_files [list {VGA_Dispatch.v}]]
 # set_property file_type Verilog $hdlfile
 # set_property library work $hdlfile
-# set hdlfile [add_files [list {GlyphPixelExtractor.v}]]
+# set hdlfile [add_files [list {ipcore_dir/ram.v}]]
 # set_property file_type Verilog $hdlfile
 # set_property library work $hdlfile
-# set hdlfile [add_files [list {BitFromGlyphWord.v}]]
+# set hdlfile [add_files [list {DispatchAndRam.v}]]
 # set_property file_type Verilog $hdlfile
 # set_property library work $hdlfile
-# set hdlfile [add_files [list {ASCIItoGlyphWord.v}]]
-# set_property file_type Verilog $hdlfile
-# set_property library work $hdlfile
-# set hdlfile [add_files [list {VGA_SignalGen.v}]]
-# set_property file_type Verilog $hdlfile
-# set_property library work $hdlfile
-# set hdlfile [add_files [list {ASCIItoPixelOnOff.v}]]
-# set_property file_type Verilog $hdlfile
-# set_property library work $hdlfile
-# set hdlfile [add_files [list {TextDisplay_Top.v}]]
-# set_property file_type Verilog $hdlfile
-# set_property library work $hdlfile
-# set_property top TextDisplay_Top $srcset
-# add_files [list {TextDisplay_Top.ucf}] -fileset [get_property constrset [current_run]]
-# add_files [list {ipcore_dir/GlyphTable.ncf}] -fileset [get_property constrset [current_run]]
-# add_files [list {ipcore_dir/TextAreaMemory.ncf}] -fileset [get_property constrset [current_run]]
+# set_property top DispatchAndRam $srcset
+# add_files [list {DispatchAndRam.ucf}] -fileset [get_property constrset [current_run]]
 # open_rtl_design -part xc6slx16csg324-3
 Using Verific elaboration
 Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
-Analyzing Verilog file "C:/Users/imana/Documents/SCHOOL/ECE3710/Assignment4_TextDisplay/ipcore_dir/GlyphTable.v" into library work
-Analyzing Verilog file "C:/Users/imana/Documents/SCHOOL/ECE3710/Assignment4_TextDisplay/GlyphPixelExtractor.v" into library work
-Analyzing Verilog file "C:/Users/imana/Documents/SCHOOL/ECE3710/Assignment4_TextDisplay/BitFromGlyphWord.v" into library work
-Analyzing Verilog file "C:/Users/imana/Documents/SCHOOL/ECE3710/Assignment4_TextDisplay/ASCIItoGlyphWord.v" into library work
-Analyzing Verilog file "C:/Users/imana/Documents/SCHOOL/ECE3710/Assignment4_TextDisplay/VGA_SignalGen.v" into library work
-Analyzing Verilog file "C:/Users/imana/Documents/SCHOOL/ECE3710/Assignment4_TextDisplay/ASCIItoPixelOnOff.v" into library work
-Analyzing Verilog file "C:/Users/imana/Documents/SCHOOL/ECE3710/Assignment4_TextDisplay/TextDisplay_Top.v" into library work
+Analyzing Verilog file "C:/Users/imana/Documents/SCHOOL/ECE3710/VGA_w_Dispatch2/VGA_Dispatch.v" into library work
+Analyzing Verilog file "C:/Users/imana/Documents/SCHOOL/ECE3710/VGA_w_Dispatch2/ipcore_dir/ram.v" into library work
+Analyzing Verilog file "C:/Users/imana/Documents/SCHOOL/ECE3710/VGA_w_Dispatch2/DispatchAndRam.v" into library work
 Release 14.7 - ngc2edif P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
-Reading design GlyphTable.ngc ...
-WARNING:NetListWriters:298 - No output is written to GlyphTable.xncf, ignored.
+Reading design ram.ngc ...
+WARNING:NetListWriters:298 - No output is written to ram.xncf, ignored.
 Processing design ...
    Preping design's networks ...
    Preping design's macros ...
   finished :Prep
-Writing EDIF netlist file GlyphTable.edif ...
-ngc2edif: Total memory usage is 88956 kilobytes
+Writing EDIF netlist file ram.edif ...
+ngc2edif: Total memory usage is 84432 kilobytes
 
-Reading core file 'C:/Users/imana/Documents/SCHOOL/ECE3710/Assignment4_TextDisplay/ipcore_dir/GlyphTable.ngc' for (cell view 'GlyphTable', library 'work', file 'GlyphTable.v')
-Parsing EDIF File [./.Xil/PlanAhead-10868-LAPTOP-CVFKU9UR/ngc2edif/GlyphTable.edif]
-Finished Parsing EDIF File [./.Xil/PlanAhead-10868-LAPTOP-CVFKU9UR/ngc2edif/GlyphTable.edif]
+Reading core file 'C:/Users/imana/Documents/SCHOOL/ECE3710/VGA_w_Dispatch2/ipcore_dir/ram.ngc' for (cell view 'ram', library 'work', file 'ram.v')
+Parsing EDIF File [./.Xil/PlanAhead-1620-LAPTOP-CVFKU9UR/ngc2edif/ram.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-1620-LAPTOP-CVFKU9UR/ngc2edif/ram.edif]
 Loading clock regions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/ClockRegion.xml
 Loading clock buffers from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/ClockBuffers.xml
 Loading package pin functions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
@@ -72,19 +54,15 @@ Loading package from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/
 Loading io standards from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
 Loading device configuration modes from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
 Loading list of drcs for the architecture : C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
-Parsing UCF File [C:/Users/imana/Documents/SCHOOL/ECE3710/Assignment4_TextDisplay/TextDisplay_Top.ucf]
-Finished Parsing UCF File [C:/Users/imana/Documents/SCHOOL/ECE3710/Assignment4_TextDisplay/TextDisplay_Top.ucf]
+Parsing UCF File [C:/Users/imana/Documents/SCHOOL/ECE3710/VGA_w_Dispatch2/DispatchAndRam.ucf]
+Finished Parsing UCF File [C:/Users/imana/Documents/SCHOOL/ECE3710/VGA_w_Dispatch2/DispatchAndRam.ucf]
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Phase 0 | Netlist Checksum: 210d18e0
-open_rtl_design: Time (s): elapsed = 00:00:10 . Memory (MB): peak = 608.289 ; gain = 180.809
+Phase 0 | Netlist Checksum: d5345355
+open_rtl_design: Time (s): elapsed = 00:00:09 . Memory (MB): peak = 608.141 ; gain = 156.715
 update_compile_order -fileset sim_1
-startgroup
-set_property package_pin B8 [get_ports clk]
-endgroup
-save_constraints
 exit
 ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
-INFO: [Common 17-206] Exiting PlanAhead at Fri Sep 16 20:46:17 2016...
+INFO: [Common 17-206] Exiting PlanAhead at Fri Oct 14 20:50:30 2016...
 INFO: [Common 17-83] Releasing license: PlanAhead

@@ -1,6 +1,0 @@
-verilog isim_temp "ipcore_dir/GlyphTable.v"
-verilog isim_temp "GlyphPixelExtractor.v"
-verilog isim_temp "BitFromGlyphWord.v"
-verilog isim_temp "ASCIItoGlyphWord.v"
-verilog isim_temp "ASCIItoPixelOnOff.v"
-verilog isim_temp "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

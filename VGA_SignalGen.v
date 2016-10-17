@@ -3,7 +3,7 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    20:26:38 09/16/2016 
+// Create Date:    20:17:58 10/14/2016 
 // Design Name: 
 // Module Name:    VGA_SignalGen 
 // Project Name: 
@@ -18,10 +18,10 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module VGA_SignalGen(clk, rst,ColorIn, PixelCount, LineCount, Hsync,Vsync, ColorOut);
+module VGA_SignalGen(clk, rst,ColorIn, subPixelCount, PixelCount, LineCount, Hsync,Vsync, ColorOut);
 	input clk, rst;
 	input [7:0] ColorIn;
-	reg [subPixelCountNBITS-1:0] subPixelCount;
+	output reg [subPixelCountNBITS-1:0] subPixelCount;
 	output reg [HorzPixNBITS-1:0] PixelCount;
 	output reg [VertPixNBITS-1:0] LineCount;
 	output reg Hsync;
