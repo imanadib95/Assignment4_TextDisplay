@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=C:\Users\Adam Rosenberg\Documents\Assignment4_TextDisplay\TextDisplay_Top.ncd
-OUTFILE=C:\Users\Adam Rosenberg\Documents\Assignment4_TextDisplay\TextDisplay_Top.bit
-FAMILY=Spartan6
-PART=xc6slx16-3csg324
-WORKINGDIR=C:\Users\Adam Rosenberg\Documents\Assignment4_TextDisplay
-LICENSE=WebPack
-USER_INFO=211145826_0_0_051

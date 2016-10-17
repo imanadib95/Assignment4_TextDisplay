@@ -1,6 +1,0 @@
-verilog work "ipcore_dir/TextAreaMemory.v"
-verilog work "ipcore_dir/GlyphTable.v"
-verilog work "VGA_SignalGen.v"
-verilog work "CharExtract.v"
-verilog work "ASCIItoPixelOnOff.v"
-verilog work "TextDisplay_Top.v"
