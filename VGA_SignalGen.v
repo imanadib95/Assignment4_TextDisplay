@@ -88,8 +88,8 @@ module VGA_SignalGen(clk, rst,ColorIn, subPixelCount, PixelCount, LineCount, Hsy
 				// Sync Assignment
 				Vsync <= ~(LineCount>=(VertActiveReg + VertFrontPorch - 1)  && LineCount <(VertActiveReg + VertFrontPorch +VSyncReg-1));
 				end
-				Hsync <= ~(PixelCount>=(HorzActiveReg + HorzFrontPorch - 1)  && PixelCount <(HorzActiveReg + HorzFrontPorch +HSyncReg- 1));
-				ColorOut <= ((PixelCount == (HorzPixelCount-1) || PixelCount <HorzActiveReg-1) && (LineCount == VertPixelCount || LineCount <VertActiveReg))? ColorIn:8'd0;
+				Hsync <= ~(PixelCount>=(HorzActiveReg + HorzFrontPorch +8)  && PixelCount <(HorzActiveReg + HorzFrontPorch +HSyncReg +8));
+				ColorOut <= ((PixelCount == (HorzPixelCount+8) || PixelCount <HorzActiveReg+8) && (LineCount == VertPixelCount || LineCount <VertActiveReg))? ColorIn:8'd0;
 			end
 		end
 	end

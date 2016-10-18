@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Reading design: Top.prj
 
@@ -334,15 +334,15 @@ Top Level Output File Name         : Top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 531
+# BELS                             : 532
 #      GND                         : 2
 #      INV                         : 3
 #      LUT1                        : 18
-#      LUT2                        : 11
+#      LUT2                        : 12
 #      LUT3                        : 2
-#      LUT4                        : 14
+#      LUT4                        : 13
 #      LUT5                        : 76
-#      LUT6                        : 332
+#      LUT6                        : 333
 #      MUXCY                       : 18
 #      MUXF7                       : 33
 #      VCC                         : 2
@@ -369,14 +369,14 @@ Selected Device : 6slx16csg324-3
 
 Slice Logic Utilization: 
  Number of Slice Registers:              72  out of  18224     0%  
- Number of Slice LUTs:                  456  out of   9112     5%  
-    Number used as Logic:               456  out of   9112     5%  
+ Number of Slice LUTs:                  457  out of   9112     5%  
+    Number used as Logic:               457  out of   9112     5%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    481
-   Number with an unused Flip Flop:     409  out of    481    85%  
-   Number with an unused LUT:            25  out of    481     5%  
-   Number of fully used LUT-FF pairs:    47  out of    481     9%  
+ Number of LUT Flip Flop pairs used:    482
+   Number with an unused Flip Flop:     410  out of    482    85%  
+   Number with an unused LUT:            25  out of    482     5%  
+   Number of fully used LUT-FF pairs:    47  out of    482     9%  
    Number of unique control sets:        10
 
 IO Utilization: 
@@ -432,7 +432,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'extClk'
   Clock period: 7.465ns (frequency: 133.966MHz)
-  Total number of paths / destination ports: 11672 / 494
+  Total number of paths / destination ports: 11693 / 494
 -------------------------------------------------------------------------
 Delay:               7.465ns (Levels of Logic = 8)
   Source:            DAR/R/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/sel_pipe_2 (FF)
@@ -472,7 +472,7 @@ Offset:              3.648ns (Levels of Logic = 2)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             6   1.222   0.992  rst_IBUF (rst_IBUF)
-     LUT6:I2->O            8   0.203   0.802  Cont/SignalGen/_n00965 (Cont/SignalGen/_n0096)
+     LUT6:I2->O            8   0.203   0.802  Cont/SignalGen/_n01017 (Cont/SignalGen/_n0101)
      FDRE:R                    0.430          Cont/SignalGen/ColorOut_0
     ----------------------------------------
     Total                      3.648ns (1.855ns logic, 1.793ns route)
@@ -513,8 +513,8 @@ extClk         |    7.465|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 9.00 secs
-Total CPU time to Xst completion: 9.71 secs
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 9.23 secs
  
 --> 
 

@@ -38,5 +38,8 @@ module Top(input extClk, input rst, output [7:0] ColorOut,output Hsync,output Vs
 
 	DispatchAndRam DAR(clk, TextAreaAddress, SubPixelCount,LineCount[2:1], ASCIIColChar,GlyphWord,
 							 readDataB, writeDataB, writeEnableB, addressB);
+							 
+							 
+	//Core c(clk, readDataB, writeDataB, writeEnableB, addressb);
 
 endmodule
