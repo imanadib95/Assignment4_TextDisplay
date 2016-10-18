@@ -22,16 +22,21 @@ module Top(input extClk, input rst, output [7:0] ColorOut,output Hsync,output Vs
 
 	wire [1:0] SubPixelCount;
 	wire [9:0] PixelCount;
-	wire [9:0] LineCount;
+	wire [2:1] LineCount;
 	wire [15:0] TextAreaAddress;
 	wire [15:0] ASCIIColChar;
 	wire [15:0] GlyphWord;
+	wire [15:0] readDataB;
+	wire [15:0] writeDataB;
+	wire writeEnableB;
+	wire [15:0] addressB;
 	
 	IBUFG buf1(.I(extClk),.O(intClk));
 	BUFG buf2(.I(intClk),.O(clk));
 
-	VGA_Controller Cont(clk, rst, ASCIIColChar,GlyphWord,SubPixelCount,PixelCount,LineCount,TextAreaAddress,ColorOut,Hsync,Vsync);
+	VGA_Controller Cont(clk, rst, ASCIIColChar,GlyphWord,SubPixelCount,LineCount,TextAreaAddress,ColorOut,Hsync,Vsync);
 
-	DispatchAndRam DAR(clk, TextAreaAddress, SubPixelCount,PixelCount,LineCount, ASCIIColChar,GlyphWord);
+	DispatchAndRam DAR(clk, TextAreaAddress, SubPixelCount,LineCount[2:1], ASCIIColChar,GlyphWord,
+							 readDataB, writeDataB, writeEnableB, addressB);
 
 endmodule

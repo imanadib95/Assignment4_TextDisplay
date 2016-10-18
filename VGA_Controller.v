@@ -18,15 +18,15 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module VGA_Controller(clk, rst, ASCIIColChar,GlyphWord,SubPixelCount,PixelCount,LineCount,TextAreaAddress,ColorOut,Hsync,Vsync
+module VGA_Controller(clk, rst, ASCIIColChar,GlyphWord,SubPixelCount,LineCountOut,TextAreaAddress,ColorOut,Hsync,Vsync
     );
 	 input clk, rst;
 	 input [15:0] ASCIIColChar;
 	 input [15:0] GlyphWord;
 	 //Signals for Dispatch
 	 output [1:0] SubPixelCount;
-	 output [9:0] PixelCount;
-	 output [9:0] LineCount;
+//	 output [9:0] PixelCount;
+	 output [2:1] LineCountOut;
 	 output [15:0] TextAreaAddress;
 //	 output [15:0] GlyphAreaAddress;
 	 // Signals for Screen
@@ -34,7 +34,11 @@ module VGA_Controller(clk, rst, ASCIIColChar,GlyphWord,SubPixelCount,PixelCount,
 	 output Hsync, Vsync;
 
 	// Intermodule Wires
-	wire [9:0] PixelCount, LineCount;
+	wire [9:0] PixelCount;
+	wire [9:0]	LineCount;
+	
+	//Assign Output LineCount Values
+		assign LineCountOut = LineCount[2:1];
 	
 	// Intermediate Wires
 	wire [7:0] GlyphHalfWord;
@@ -64,7 +68,7 @@ module VGA_Controller(clk, rst, ASCIIColChar,GlyphWord,SubPixelCount,PixelCount,
 		endcase
 
 // Signal Generator and Output to Screen
-	VGA_SignalGen SignalGen(clk, rst,{8'b11111111&{8{PixelOnOff}}}, SubPixelCount, PixelCount, LineCount, Hsync,Vsync, ColorOut);
+	VGA_SignalGen SignalGen(clk, rst,{ASCIIColChar[15:8]&{8{PixelOnOff}}}, SubPixelCount, PixelCount, LineCount, Hsync,Vsync, ColorOut);
 
 
 

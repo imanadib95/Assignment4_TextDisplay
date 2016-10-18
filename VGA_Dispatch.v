@@ -23,8 +23,8 @@ module VGA_Dispatch(
     input [15:0] TextAreaAddress,
 //    input [15:0] GlyphAreaAddress,
     input [1:0] SubPixelCount,
-	 input [9:0] PixelCount,
-	 input [9:0] LineCount,
+//	 input [9:0] PixelCount,
+	 input [2:1] LineCount,
 	 input [15:0] doutA,
     output reg [15:0] ASCIIColChar,
     output [15:0] GlyphWord,
@@ -33,7 +33,7 @@ module VGA_Dispatch(
 	
 	wire [15:0] GlyphAreaAddress;
 	// Determine address of ASCII Character in glyph table
-	assign GlyphAreaAddress = ({5'b00000,ASCIIColChar[7:0],2'b00}+LineCount[2:1] +3'd4);
+	assign GlyphAreaAddress = ({5'b00000,ASCIIColChar[7:0],2'b00}+LineCount[2:1]);
 	always @(posedge clk)
 	begin
 		case(SubPixelCount)

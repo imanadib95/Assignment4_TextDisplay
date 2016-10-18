@@ -6,7 +6,7 @@ Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
 xc6slx16-csg324-3 Top.ngc Top.ngd
 
 Reading NGO file
-"C:/Users/imana/Documents/SCHOOL/ECE3710/VGA_w_Dispatch2/Top.ngc" ...
+"C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/Top.ngc" ...
 Loading design module "ipcore_dir/ram.ngc"...
 Gathering constraint information from source properties...
 Done.
@@ -29,10 +29,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 210156 kilobytes
+Total memory usage is 210168 kilobytes
 
 Writing NGD file "Top.ngd" ...
-Total REAL time to NGDBUILD completion:  3 sec
-Total CPU time to NGDBUILD completion:   3 sec
+Total REAL time to NGDBUILD completion:  4 sec
+Total CPU time to NGDBUILD completion:   4 sec
 
 Writing NGDBUILD log file "Top.bld"...

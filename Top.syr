@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Reading design: Top.prj
 
@@ -108,17 +108,17 @@ Cores Search Directories           : {"ipcore_dir"  }
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "C:\Users\imana\Documents\SCHOOL\ECE3710\VGA_w_Dispatch2\VGA_SignalGen.v" into library work
+Analyzing Verilog file "C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\VGA_SignalGen.v" into library work
 Parsing module <VGA_SignalGen>.
-Analyzing Verilog file "C:\Users\imana\Documents\SCHOOL\ECE3710\VGA_w_Dispatch2\VGA_Dispatch.v" into library work
+Analyzing Verilog file "C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\VGA_Dispatch.v" into library work
 Parsing module <VGA_Dispatch>.
-Analyzing Verilog file "C:\Users\imana\Documents\SCHOOL\ECE3710\VGA_w_Dispatch2\ipcore_dir\ram.v" into library work
+Analyzing Verilog file "C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\ipcore_dir\ram.v" into library work
 Parsing module <ram>.
-Analyzing Verilog file "C:\Users\imana\Documents\SCHOOL\ECE3710\VGA_w_Dispatch2\VGA_Controller.v" into library work
+Analyzing Verilog file "C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\VGA_Controller.v" into library work
 Parsing module <VGA_Controller>.
-Analyzing Verilog file "C:\Users\imana\Documents\SCHOOL\ECE3710\VGA_w_Dispatch2\DispatchAndRam.v" into library work
+Analyzing Verilog file "C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\DispatchAndRam.v" into library work
 Parsing module <DispatchAndRam>.
-Analyzing Verilog file "C:\Users\imana\Documents\SCHOOL\ECE3710\VGA_w_Dispatch2\Top.v" into library work
+Analyzing Verilog file "C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\Top.v" into library work
 Parsing module <Top>.
 
 =========================================================================
@@ -140,33 +140,38 @@ Elaborating module <DispatchAndRam>.
 Elaborating module <VGA_Dispatch>.
 
 Elaborating module <ram>.
-WARNING:HDLCompiler:1499 - "C:\Users\imana\Documents\SCHOOL\ECE3710\VGA_w_Dispatch2\ipcore_dir\ram.v" Line 39: Empty module <ram> remains a black box.
-WARNING:HDLCompiler:189 - "C:\Users\imana\Documents\SCHOOL\ECE3710\VGA_w_Dispatch2\DispatchAndRam.v" Line 49: Size mismatch in connection of port <addra>. Formal port size is 15-bit while actual signal size is 14-bit.
-WARNING:HDLCompiler:189 - "C:\Users\imana\Documents\SCHOOL\ECE3710\VGA_w_Dispatch2\DispatchAndRam.v" Line 54: Size mismatch in connection of port <addrb>. Formal port size is 15-bit while actual signal size is 14-bit.
-WARNING:HDLCompiler:1127 - "C:\Users\imana\Documents\SCHOOL\ECE3710\VGA_w_Dispatch2\DispatchAndRam.v" Line 56: Assignment to db ignored, since the identifier is never used
+WARNING:HDLCompiler:1499 - "C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\ipcore_dir\ram.v" Line 39: Empty module <ram> remains a black box.
+WARNING:HDLCompiler:1127 - "C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\Top.v" Line 40: Assignment to readDataB ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\Top.v" Line 30: Net <writeDataB[15]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\Top.v" Line 31: Net <writeEnableB> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\Top.v" Line 32: Net <addressB[15]> does not have a driver.
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <Top>.
-    Related source file is "C:\Users\imana\Documents\SCHOOL\ECE3710\VGA_w_Dispatch2\Top.v".
+    Related source file is "C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\Top.v".
+INFO:Xst:3210 - "C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\Top.v" line 39: Output port <readDataB> of the instance <DAR> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <writeDataB> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <addressB> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <writeEnableB> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Summary:
 	no macro.
 Unit <Top> synthesized.
 
 Synthesizing Unit <VGA_Controller>.
-    Related source file is "C:\Users\imana\Documents\SCHOOL\ECE3710\VGA_w_Dispatch2\VGA_Controller.v".
-WARNING:Xst:647 - Input <ASCIIColChar> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Found 14-bit adder for signal <n0018[13:0]> created at line 48.
-    Found 1-bit 8-to-1 multiplexer for signal <PixelOnOff> created at line 55.
+    Related source file is "C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\VGA_Controller.v".
+WARNING:Xst:647 - Input <ASCIIColChar<7:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 14-bit adder for signal <n0020[13:0]> created at line 52.
+    Found 1-bit 8-to-1 multiplexer for signal <PixelOnOff> created at line 59.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred   9 Multiplexer(s).
 Unit <VGA_Controller> synthesized.
 
 Synthesizing Unit <VGA_SignalGen>.
-    Related source file is "C:\Users\imana\Documents\SCHOOL\ECE3710\VGA_w_Dispatch2\VGA_SignalGen.v".
+    Related source file is "C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\VGA_SignalGen.v".
         HorzPixelCount = 800
         HorzPixNBITS = 10
         VertPixelCount = 525
@@ -203,23 +208,19 @@ Synthesizing Unit <VGA_SignalGen>.
 Unit <VGA_SignalGen> synthesized.
 
 Synthesizing Unit <DispatchAndRam>.
-    Related source file is "C:\Users\imana\Documents\SCHOOL\ECE3710\VGA_w_Dispatch2\DispatchAndRam.v".
-INFO:Xst:3210 - "C:\Users\imana\Documents\SCHOOL\ECE3710\VGA_w_Dispatch2\DispatchAndRam.v" line 46: Output port <doutb> of the instance <R> is unconnected or connected to loadless signal.
+    Related source file is "C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\DispatchAndRam.v".
+WARNING:Xst:647 - Input <addressB<15:15>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Summary:
 	no macro.
 Unit <DispatchAndRam> synthesized.
 
 Synthesizing Unit <VGA_Dispatch>.
-    Related source file is "C:\Users\imana\Documents\SCHOOL\ECE3710\VGA_w_Dispatch2\VGA_Dispatch.v".
-WARNING:Xst:647 - Input <PixelCount> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <LineCount<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <LineCount<9:3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Related source file is "C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\VGA_Dispatch.v".
     Found 16-bit register for signal <ASCIIColChar>.
     Found 16-bit register for signal <AddressA>.
-    Found 11-bit adder for signal <n0030[10:0]> created at line 36.
-    Found 12-bit adder for signal <n0032[11:0]> created at line 36.
+    Found 11-bit adder for signal <n0026[10:0]> created at line 36.
     Summary:
-	inferred   2 Adder/Subtractor(s).
+	inferred   1 Adder/Subtractor(s).
 	inferred  32 D-type flip-flop(s).
 	inferred   3 Multiplexer(s).
 Unit <VGA_Dispatch> synthesized.
@@ -228,10 +229,9 @@ Unit <VGA_Dispatch> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 6
+# Adders/Subtractors                                   : 5
  10-bit adder                                          : 2
  11-bit adder                                          : 1
- 12-bit adder                                          : 1
  14-bit adder                                          : 1
  2-bit adder                                           : 1
 # Registers                                            : 8
@@ -256,15 +256,6 @@ Macro Statistics
 
 Reading core <ipcore_dir/ram.ngc>.
 Loading core <ram> for timing and area information for instance <R>.
-WARNING:Xst:2677 - Node <ASCIIColChar_8> of sequential type is unconnected in block <Dispatch>.
-WARNING:Xst:2677 - Node <ASCIIColChar_9> of sequential type is unconnected in block <Dispatch>.
-WARNING:Xst:2677 - Node <ASCIIColChar_10> of sequential type is unconnected in block <Dispatch>.
-WARNING:Xst:2677 - Node <ASCIIColChar_11> of sequential type is unconnected in block <Dispatch>.
-WARNING:Xst:2677 - Node <ASCIIColChar_12> of sequential type is unconnected in block <Dispatch>.
-WARNING:Xst:2677 - Node <ASCIIColChar_13> of sequential type is unconnected in block <Dispatch>.
-WARNING:Xst:2677 - Node <ASCIIColChar_14> of sequential type is unconnected in block <Dispatch>.
-WARNING:Xst:2677 - Node <ASCIIColChar_15> of sequential type is unconnected in block <Dispatch>.
-WARNING:Xst:2677 - Node <AddressA_14> of sequential type is unconnected in block <Dispatch>.
 WARNING:Xst:2677 - Node <AddressA_15> of sequential type is unconnected in block <Dispatch>.
 
 Synthesizing (advanced) Unit <VGA_SignalGen>.
@@ -277,9 +268,8 @@ Unit <VGA_SignalGen> synthesized (advanced).
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 3
+# Adders/Subtractors                                   : 2
  11-bit adder                                          : 1
- 12-bit adder                                          : 1
  14-bit adder                                          : 1
 # Counters                                             : 3
  10-bit up counter                                     : 2
@@ -299,7 +289,6 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-INFO:Xst:2261 - The FF/Latch <ColorOut_0> in Unit <VGA_SignalGen> is equivalent to the following 7 FFs/Latches, which will be removed : <ColorOut_1> <ColorOut_2> <ColorOut_3> <ColorOut_4> <ColorOut_5> <ColorOut_6> <ColorOut_7> 
 
 Optimizing unit <Top> ...
 
@@ -308,16 +297,8 @@ Optimizing unit <VGA_Controller> ...
 Optimizing unit <VGA_SignalGen> ...
 
 Optimizing unit <VGA_Dispatch> ...
+WARNING:Xst:1710 - FF/Latch <DAR/Dispatch/AddressA_14> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2677 - Node <DAR/Dispatch/AddressA_15> of sequential type is unconnected in block <Top>.
-WARNING:Xst:2677 - Node <DAR/Dispatch/AddressA_14> of sequential type is unconnected in block <Top>.
-WARNING:Xst:2677 - Node <DAR/Dispatch/ASCIIColChar_15> of sequential type is unconnected in block <Top>.
-WARNING:Xst:2677 - Node <DAR/Dispatch/ASCIIColChar_14> of sequential type is unconnected in block <Top>.
-WARNING:Xst:2677 - Node <DAR/Dispatch/ASCIIColChar_13> of sequential type is unconnected in block <Top>.
-WARNING:Xst:2677 - Node <DAR/Dispatch/ASCIIColChar_12> of sequential type is unconnected in block <Top>.
-WARNING:Xst:2677 - Node <DAR/Dispatch/ASCIIColChar_11> of sequential type is unconnected in block <Top>.
-WARNING:Xst:2677 - Node <DAR/Dispatch/ASCIIColChar_10> of sequential type is unconnected in block <Top>.
-WARNING:Xst:2677 - Node <DAR/Dispatch/ASCIIColChar_9> of sequential type is unconnected in block <Top>.
-WARNING:Xst:2677 - Node <DAR/Dispatch/ASCIIColChar_8> of sequential type is unconnected in block <Top>.
 
 Mapping all equations...
 Building and optimizing final netlist ...
@@ -329,8 +310,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 47
- Flip-Flops                                            : 47
+# Registers                                            : 62
+ Flip-Flops                                            : 62
 
 =========================================================================
 
@@ -353,24 +334,24 @@ Top Level Output File Name         : Top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 528
+# BELS                             : 531
 #      GND                         : 2
 #      INV                         : 3
 #      LUT1                        : 18
-#      LUT2                        : 3
-#      LUT3                        : 4
-#      LUT4                        : 6
-#      LUT5                        : 80
-#      LUT6                        : 339
+#      LUT2                        : 11
+#      LUT3                        : 2
+#      LUT4                        : 14
+#      LUT5                        : 76
+#      LUT6                        : 332
 #      MUXCY                       : 18
 #      MUXF7                       : 33
 #      VCC                         : 2
 #      XORCY                       : 20
-# FlipFlops/Latches                : 57
+# FlipFlops/Latches                : 72
 #      FD                          : 14
-#      FDE                         : 20
+#      FDE                         : 28
 #      FDR                         : 2
-#      FDRE                        : 21
+#      FDRE                        : 28
 # RAMS                             : 32
 #      RAMB16BWER                  : 32
 # Clock Buffers                    : 1
@@ -387,15 +368,15 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              57  out of  18224     0%  
- Number of Slice LUTs:                  453  out of   9112     4%  
-    Number used as Logic:               453  out of   9112     4%  
+ Number of Slice Registers:              72  out of  18224     0%  
+ Number of Slice LUTs:                  456  out of   9112     5%  
+    Number used as Logic:               456  out of   9112     5%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    470
-   Number with an unused Flip Flop:     413  out of    470    87%  
-   Number with an unused LUT:            17  out of    470     3%  
-   Number of fully used LUT-FF pairs:    40  out of    470     8%  
+ Number of LUT Flip Flop pairs used:    481
+   Number with an unused Flip Flop:     409  out of    481    85%  
+   Number with an unused LUT:            25  out of    481     5%  
+   Number of fully used LUT-FF pairs:    47  out of    481     9%  
    Number of unique control sets:        10
 
 IO Utilization: 
@@ -428,7 +409,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-extClk                             | IBUFG+BUFG             | 89    |
+extClk                             | IBUFG+BUFG             | 104   |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -439,9 +420,9 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 6.420ns (Maximum Frequency: 155.772MHz)
-   Minimum input arrival time before clock: 3.458ns
-   Maximum output required time after clock: 3.820ns
+   Minimum period: 7.465ns (Maximum Frequency: 133.966MHz)
+   Minimum input arrival time before clock: 3.648ns
+   Maximum output required time after clock: 3.597ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -450,70 +431,71 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'extClk'
-  Clock period: 6.420ns (frequency: 155.772MHz)
-  Total number of paths / destination ports: 2826 / 457
+  Clock period: 7.465ns (frequency: 133.966MHz)
+  Total number of paths / destination ports: 11672 / 494
 -------------------------------------------------------------------------
-Delay:               6.420ns (Levels of Logic = 7)
+Delay:               7.465ns (Levels of Logic = 8)
   Source:            DAR/R/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/sel_pipe_2 (FF)
-  Destination:       Cont/SignalGen/ColorOut_0 (FF)
+  Destination:       Cont/SignalGen/ColorOut_7 (FF)
   Source Clock:      extClk rising
   Destination Clock: extClk rising
 
-  Data Path: DAR/R/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/sel_pipe_2 to Cont/SignalGen/ColorOut_0
+  Data Path: DAR/R/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/sel_pipe_2 to Cont/SignalGen/ColorOut_7
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDE:C->Q            128   0.447   2.315  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/sel_pipe_2 (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/sel_pipe<2>)
      LUT6:I0->O            1   0.203   0.827  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_87 (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_87)
      LUT6:I2->O            1   0.203   0.000  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_32 (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_32)
-     MUXF7:I1->O           1   0.140   0.827  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_2_f7_1 (douta<11>)
+     MUXF7:I1->O           2   0.140   0.864  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_2_f7_1 (douta<11>)
      end scope: 'DAR/R:douta<11>'
-     LUT6:I2->O            1   0.203   0.808  Cont/Mmux_PixelOnOff_3_SW0 (N14)
+     LUT6:I2->O            1   0.203   0.808  Cont/Mmux_PixelOnOff_3_SW0 (N8)
      LUT5:I2->O            1   0.205   0.000  Cont/Mmux_PixelOnOff_3 (Cont/Mmux_PixelOnOff_3)
-     MUXF7:I1->O           1   0.140   0.000  Cont/Mmux_PixelOnOff_2_f7 (Cont/PixelOnOff)
+     MUXF7:I1->O           8   0.140   0.803  Cont/Mmux_PixelOnOff_2_f7 (Cont/PixelOnOff)
+     LUT2:I1->O            1   0.205   0.000  Cont/ASCIIColChar[15]_PixelOnOff_and_4_OUT<0>1 (Cont/ASCIIColChar[15]_PixelOnOff_and_4_OUT<0>)
      FDRE:D                    0.102          Cont/SignalGen/ColorOut_0
     ----------------------------------------
-    Total                      6.420ns (1.643ns logic, 4.777ns route)
-                                       (25.6% logic, 74.4% route)
+    Total                      7.465ns (1.848ns logic, 5.617ns route)
+                                       (24.8% logic, 75.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'extClk'
-  Total number of paths / destination ports: 26 / 26
+  Total number of paths / destination ports: 40 / 40
 -------------------------------------------------------------------------
-Offset:              3.458ns (Levels of Logic = 2)
+Offset:              3.648ns (Levels of Logic = 2)
   Source:            rst (PAD)
-  Destination:       Cont/SignalGen/LineCount_0 (FF)
+  Destination:       Cont/SignalGen/ColorOut_7 (FF)
   Destination Clock: extClk rising
 
-  Data Path: rst to Cont/SignalGen/LineCount_0
+  Data Path: rst to Cont/SignalGen/ColorOut_7
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             6   1.222   0.745  rst_IBUF (rst_IBUF)
-     LUT5:I4->O           10   0.205   0.856  Cont/SignalGen/Mcount_PixelCount_val11 (Cont/SignalGen/Mcount_PixelCount_val)
-     FDRE:R                    0.430          Cont/SignalGen/PixelCount_0
+     IBUF:I->O             6   1.222   0.992  rst_IBUF (rst_IBUF)
+     LUT6:I2->O            8   0.203   0.802  Cont/SignalGen/_n00965 (Cont/SignalGen/_n0096)
+     FDRE:R                    0.430          Cont/SignalGen/ColorOut_0
     ----------------------------------------
-    Total                      3.458ns (1.857ns logic, 1.601ns route)
-                                       (53.7% logic, 46.3% route)
+    Total                      3.648ns (1.855ns logic, 1.793ns route)
+                                       (50.8% logic, 49.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'extClk'
   Total number of paths / destination ports: 10 / 10
 -------------------------------------------------------------------------
-Offset:              3.820ns (Levels of Logic = 1)
-  Source:            Cont/SignalGen/ColorOut_0 (FF)
+Offset:              3.597ns (Levels of Logic = 1)
+  Source:            Cont/SignalGen/ColorOut_7 (FF)
   Destination:       ColorOut<7> (PAD)
   Source Clock:      extClk rising
 
-  Data Path: Cont/SignalGen/ColorOut_0 to ColorOut<7>
+  Data Path: Cont/SignalGen/ColorOut_7 to ColorOut<7>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q             8   0.447   0.802  Cont/SignalGen/ColorOut_0 (Cont/SignalGen/ColorOut_0)
+     FDRE:C->Q             1   0.447   0.579  Cont/SignalGen/ColorOut_7 (Cont/SignalGen/ColorOut_7)
      OBUF:I->O                 2.571          ColorOut_7_OBUF (ColorOut<7>)
     ----------------------------------------
-    Total                      3.820ns (3.018ns logic, 0.802ns route)
-                                       (79.0% logic, 21.0% route)
+    Total                      3.597ns (3.018ns logic, 0.579ns route)
+                                       (83.9% logic, 16.1% route)
 
 =========================================================================
 
@@ -525,20 +507,20 @@ Clock to Setup on destination clock extClk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-extClk         |    6.420|         |         |         |
+extClk         |    7.465|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
 Total REAL time to Xst completion: 9.00 secs
-Total CPU time to Xst completion: 8.87 secs
+Total CPU time to Xst completion: 9.71 secs
  
 --> 
 
 Total memory usage is 298632 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   28 (   0 filtered)
-Number of infos    :    2 (   0 filtered)
+Number of warnings :   13 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
 
