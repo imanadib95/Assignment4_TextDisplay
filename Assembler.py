@@ -17,10 +17,12 @@ with open(assembly_input_file + ".txt") as file:
         # load reg data
         # next 4 bits are register, next 8 trash, next
             s += '0001'
-            s += str("{:0>14b}".format(int(content2[1], 16)))
-            s += str("{:0>8b}".format(int(content2[2], 16)))
+            s += str("{:0>12b}".format(int(content2[1], 16)))
+            s += ",\n"
+            s += str("{:0>16b}".format(int(content2[2], 16)))
+            s += ",\n"
 
-        elif content2[0].lower() == "store": # store is 0010
+        elif content2[0].lower() == "store": # store is 0010 - 4 bits reg - 8 bits junk - 16 bits mem location
             s += '0010'
             s += str("{:0>16b}".format(int(content2[1],16)))
 
@@ -40,6 +42,7 @@ with open(assembly_input_file + ".txt") as file:
             s += '0110'
             s += str("{:0>16b}".format(int(content2[1],16)))
 
+void append_end()
 
 output = open('output.coe', 'w+')
 with output as file:
