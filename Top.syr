@@ -3,13 +3,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
+Total REAL time to Xst completion: 0.00 secs
 Total CPU time to Xst completion: 0.09 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
+Total REAL time to Xst completion: 0.00 secs
 Total CPU time to Xst completion: 0.09 secs
  
 --> Reading design: Top.prj
@@ -118,6 +118,8 @@ Analyzing Verilog file "C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_Tex
 Parsing module <VGA_Controller>.
 Analyzing Verilog file "C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\DispatchAndRam.v" into library work
 Parsing module <DispatchAndRam>.
+Analyzing Verilog file "C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\CoreI.v" into library work
+Parsing module <CoreI>.
 Analyzing Verilog file "C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\Top.v" into library work
 Parsing module <Top>.
 
@@ -141,10 +143,8 @@ Elaborating module <VGA_Dispatch>.
 
 Elaborating module <ram>.
 WARNING:HDLCompiler:1499 - "C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\ipcore_dir\ram.v" Line 39: Empty module <ram> remains a black box.
-WARNING:HDLCompiler:1127 - "C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\Top.v" Line 40: Assignment to readDataB ignored, since the identifier is never used
-WARNING:HDLCompiler:634 - "C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\Top.v" Line 30: Net <writeDataB[15]> does not have a driver.
-WARNING:HDLCompiler:634 - "C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\Top.v" Line 31: Net <writeEnableB> does not have a driver.
-WARNING:HDLCompiler:634 - "C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\Top.v" Line 32: Net <addressB[15]> does not have a driver.
+
+Elaborating module <CoreI>.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -152,10 +152,6 @@ WARNING:HDLCompiler:634 - "C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_
 
 Synthesizing Unit <Top>.
     Related source file is "C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\Top.v".
-INFO:Xst:3210 - "C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\Top.v" line 39: Output port <readDataB> of the instance <DAR> is unconnected or connected to loadless signal.
-WARNING:Xst:653 - Signal <writeDataB> is used but never assigned. This sourceless signal will be automatically connected to value GND.
-WARNING:Xst:653 - Signal <addressB> is used but never assigned. This sourceless signal will be automatically connected to value GND.
-WARNING:Xst:653 - Signal <writeEnableB> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Summary:
 	no macro.
 Unit <Top> synthesized.
@@ -225,28 +221,57 @@ Synthesizing Unit <VGA_Dispatch>.
 	inferred   3 Multiplexer(s).
 Unit <VGA_Dispatch> synthesized.
 
+Synthesizing Unit <CoreI>.
+    Related source file is "C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\CoreI.v".
+        Fetch = 4'b0000
+        Receive = 4'b0001
+        Reset = 4'b0010
+        Load = 4'b0011
+        Store = 4'b0100
+        Advance = 4'b0101
+        Increment = 4'b0110
+        Pause = 4'b0111
+    Found 16-bit register for signal <PC>.
+    Found 16-bit register for signal <MemAddress>.
+    Found 16-bit register for signal <WriteData>.
+    Found 16-bit register for signal <Count>.
+    Found 3-bit register for signal <PS>.
+    Found 16-bit adder for signal <PC[15]_GND_9_o_add_7_OUT> created at line 105.
+    Found 16-bit adder for signal <MemAddress[15]_GND_9_o_add_8_OUT> created at line 139.
+    Found 16-bit adder for signal <Data[15]_GND_9_o_add_9_OUT> created at line 148.
+    Found 16-bit adder for signal <Count[15]_GND_9_o_add_10_OUT> created at line 156.
+    HDL ADVISOR - Describing an operational reset or an explicit power-up state for register <PS> would allow inference of a finite state machine and as consequence better performance and smaller area.
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred  67 D-type flip-flop(s).
+	inferred  11 Multiplexer(s).
+Unit <CoreI> synthesized.
+
 =========================================================================
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 5
+# Adders/Subtractors                                   : 9
  10-bit adder                                          : 2
  11-bit adder                                          : 1
  14-bit adder                                          : 1
+ 16-bit adder                                          : 4
  2-bit adder                                           : 1
-# Registers                                            : 8
+# Registers                                            : 13
  1-bit register                                        : 2
  10-bit register                                       : 2
- 16-bit register                                       : 2
+ 16-bit register                                       : 6
  2-bit register                                        : 1
+ 3-bit register                                        : 1
  8-bit register                                        : 1
 # Comparators                                          : 6
  10-bit comparator greater                             : 4
  10-bit comparator lessequal                           : 2
-# Multiplexers                                         : 12
- 1-bit 2-to-1 multiplexer                              : 8
+# Multiplexers                                         : 23
+ 1-bit 2-to-1 multiplexer                              : 9
  1-bit 8-to-1 multiplexer                              : 1
- 16-bit 2-to-1 multiplexer                             : 3
+ 16-bit 2-to-1 multiplexer                             : 8
+ 3-bit 2-to-1 multiplexer                              : 5
 
 =========================================================================
 
@@ -258,6 +283,12 @@ Reading core <ipcore_dir/ram.ngc>.
 Loading core <ram> for timing and area information for instance <R>.
 WARNING:Xst:2677 - Node <AddressA_15> of sequential type is unconnected in block <Dispatch>.
 
+Synthesizing (advanced) Unit <CoreI>.
+The following registers are absorbed into counter <PC>: 1 register on signal <PC>.
+The following registers are absorbed into counter <MemAddress>: 1 register on signal <MemAddress>.
+The following registers are absorbed into counter <Count>: 1 register on signal <Count>.
+Unit <CoreI> synthesized (advanced).
+
 Synthesizing (advanced) Unit <VGA_SignalGen>.
 The following registers are absorbed into counter <subPixelCount>: 1 register on signal <subPixelCount>.
 The following registers are absorbed into counter <PixelCount>: 1 register on signal <PixelCount>.
@@ -268,21 +299,24 @@ Unit <VGA_SignalGen> synthesized (advanced).
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 2
+# Adders/Subtractors                                   : 3
  11-bit adder                                          : 1
  14-bit adder                                          : 1
-# Counters                                             : 3
+ 16-bit adder                                          : 1
+# Counters                                             : 6
  10-bit up counter                                     : 2
+ 16-bit up counter                                     : 3
  2-bit up counter                                      : 1
-# Registers                                            : 42
- Flip-Flops                                            : 42
+# Registers                                            : 61
+ Flip-Flops                                            : 61
 # Comparators                                          : 6
  10-bit comparator greater                             : 4
  10-bit comparator lessequal                           : 2
-# Multiplexers                                         : 12
- 1-bit 2-to-1 multiplexer                              : 8
+# Multiplexers                                         : 21
+ 1-bit 2-to-1 multiplexer                              : 9
  1-bit 8-to-1 multiplexer                              : 1
- 16-bit 2-to-1 multiplexer                             : 3
+ 16-bit 2-to-1 multiplexer                             : 6
+ 3-bit 2-to-1 multiplexer                              : 5
 
 =========================================================================
 
@@ -297,12 +331,18 @@ Optimizing unit <VGA_Controller> ...
 Optimizing unit <VGA_SignalGen> ...
 
 Optimizing unit <VGA_Dispatch> ...
+
+Optimizing unit <CoreI> ...
 WARNING:Xst:1710 - FF/Latch <DAR/Dispatch/AddressA_14> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2677 - Node <DAR/Dispatch/AddressA_15> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <c/PC_15> of sequential type is unconnected in block <Top>.
+WARNING:Xst:1293 - FF/Latch <c/MemAddress_15> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <c/MemAddress_14> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <c/MemAddress_13> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block Top, actual ratio is 4.
+Found area constraint ratio of 100 (+ 5) on block Top, actual ratio is 5.
 
 Final Macro Processing ...
 
@@ -310,8 +350,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 62
- Flip-Flops                                            : 62
+# Registers                                            : 125
+ Flip-Flops                                            : 125
 
 =========================================================================
 
@@ -334,22 +374,22 @@ Top Level Output File Name         : Top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 532
+# BELS                             : 810
 #      GND                         : 2
-#      INV                         : 3
-#      LUT1                        : 18
-#      LUT2                        : 12
-#      LUT3                        : 2
-#      LUT4                        : 13
-#      LUT5                        : 76
-#      LUT6                        : 333
-#      MUXCY                       : 18
+#      INV                         : 18
+#      LUT1                        : 61
+#      LUT2                        : 14
+#      LUT3                        : 41
+#      LUT4                        : 35
+#      LUT5                        : 77
+#      LUT6                        : 347
+#      MUXCY                       : 87
 #      MUXF7                       : 33
 #      VCC                         : 2
-#      XORCY                       : 20
-# FlipFlops/Latches                : 72
-#      FD                          : 14
-#      FDE                         : 28
+#      XORCY                       : 93
+# FlipFlops/Latches                : 135
+#      FD                          : 17
+#      FDE                         : 88
 #      FDR                         : 2
 #      FDRE                        : 28
 # RAMS                             : 32
@@ -368,16 +408,16 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              72  out of  18224     0%  
- Number of Slice LUTs:                  457  out of   9112     5%  
-    Number used as Logic:               457  out of   9112     5%  
+ Number of Slice Registers:             135  out of  18224     0%  
+ Number of Slice LUTs:                  593  out of   9112     6%  
+    Number used as Logic:               593  out of   9112     6%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    482
-   Number with an unused Flip Flop:     410  out of    482    85%  
-   Number with an unused LUT:            25  out of    482     5%  
-   Number of fully used LUT-FF pairs:    47  out of    482     9%  
-   Number of unique control sets:        10
+ Number of LUT Flip Flop pairs used:    615
+   Number with an unused Flip Flop:     480  out of    615    78%  
+   Number with an unused LUT:            22  out of    615     3%  
+   Number of fully used LUT-FF pairs:   113  out of    615    18%  
+   Number of unique control sets:        14
 
 IO Utilization: 
  Number of IOs:                          12
@@ -409,7 +449,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-extClk                             | IBUFG+BUFG             | 104   |
+extClk                             | IBUFG+BUFG             | 167   |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -420,7 +460,7 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 7.465ns (Maximum Frequency: 133.966MHz)
+   Minimum period: 8.230ns (Maximum Frequency: 121.506MHz)
    Minimum input arrival time before clock: 3.648ns
    Maximum output required time after clock: 3.597ns
    Maximum combinational path delay: No path found
@@ -431,32 +471,31 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'extClk'
-  Clock period: 7.465ns (frequency: 133.966MHz)
-  Total number of paths / destination ports: 11693 / 494
+  Clock period: 8.230ns (frequency: 121.506MHz)
+  Total number of paths / destination ports: 166773 / 1614
 -------------------------------------------------------------------------
-Delay:               7.465ns (Levels of Logic = 8)
-  Source:            DAR/R/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/sel_pipe_2 (FF)
-  Destination:       Cont/SignalGen/ColorOut_7 (FF)
+Delay:               8.230ns (Levels of Logic = 6)
+  Source:            DAR/R/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/sel_pipe_2 (FF)
+  Destination:       DAR/R/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[31].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram (RAM)
   Source Clock:      extClk rising
   Destination Clock: extClk rising
 
-  Data Path: DAR/R/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/sel_pipe_2 to Cont/SignalGen/ColorOut_7
+  Data Path: DAR/R/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/sel_pipe_2 to DAR/R/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[31].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q            128   0.447   2.315  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/sel_pipe_2 (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/sel_pipe<2>)
-     LUT6:I0->O            1   0.203   0.827  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_87 (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_87)
-     LUT6:I2->O            1   0.203   0.000  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_32 (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_32)
-     MUXF7:I1->O           2   0.140   0.864  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_2_f7_1 (douta<11>)
-     end scope: 'DAR/R:douta<11>'
-     LUT6:I2->O            1   0.203   0.808  Cont/Mmux_PixelOnOff_3_SW0 (N8)
-     LUT5:I2->O            1   0.205   0.000  Cont/Mmux_PixelOnOff_3 (Cont/Mmux_PixelOnOff_3)
-     MUXF7:I1->O           8   0.140   0.803  Cont/Mmux_PixelOnOff_2_f7 (Cont/PixelOnOff)
-     LUT2:I1->O            1   0.205   0.000  Cont/ASCIIColChar[15]_PixelOnOff_and_4_OUT<0>1 (Cont/ASCIIColChar[15]_PixelOnOff_and_4_OUT<0>)
-     FDRE:D                    0.102          Cont/SignalGen/ColorOut_0
+     FDE:C->Q            128   0.447   2.315  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/sel_pipe_2 (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/sel_pipe<2>)
+     LUT6:I0->O            1   0.203   0.827  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/Mmux_dout_mux_81 (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/Mmux_dout_mux_81)
+     LUT6:I2->O            1   0.203   0.000  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/Mmux_dout_mux_3 (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/Mmux_dout_mux_3)
+     MUXF7:I1->O          10   0.140   1.085  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/Mmux_dout_mux_2_f7 (doutb<0>)
+     end scope: 'DAR/R:doutb<0>'
+     LUT6:I3->O           10   0.205   0.961  c/Mmux_Address191 (c/Mmux_Address19)
+     LUT4:I2->O           32   0.203   1.291  c/Mmux_Address91 (addressB<2>)
+     begin scope: 'DAR/R:addrb<2>'
+     RAMB16BWER:ADDRB6         0.350          U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[31].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram
     ----------------------------------------
-    Total                      7.465ns (1.848ns logic, 5.617ns route)
-                                       (24.8% logic, 75.2% route)
+    Total                      8.230ns (1.751ns logic, 6.479ns route)
+                                       (21.3% logic, 78.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'extClk'
@@ -507,20 +546,20 @@ Clock to Setup on destination clock extClk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-extClk         |    7.465|         |         |         |
+extClk         |    8.230|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 10.00 secs
-Total CPU time to Xst completion: 9.23 secs
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 9.14 secs
  
 --> 
 
-Total memory usage is 298632 kilobytes
+Total memory usage is 295736 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   13 (   0 filtered)
-Number of infos    :    1 (   0 filtered)
+Number of warnings :   10 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
 

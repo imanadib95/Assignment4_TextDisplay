@@ -49,7 +49,7 @@ module VGA_Controller(clk, rst, ASCIIColChar,GlyphWord,SubPixelCount,LineCountOu
 	
 	
 	// Determine address in text area
-	assign TextAreaAddress = {LineCount[8:3],PixelCount[9:3]} +16'd512;
+	assign TextAreaAddress = {LineCount[8:3],PixelCount[9:3]} +16'd895;
 //	// Determine address of ASCII Character in glyph table
 //	assign GlyphAreaAddress = ({3'b000,ASCIIColChar[7:0],2'b00}+LineCount[2:1]);
 	// Extract Proper line from 16'b glyph word

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/CoreAndRam_Test_isim_beh.exe" -prj "C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/CoreAndRam_Test_beh.prj" "work.CoreAndRam_Test" "work.glbl" 
