@@ -1,4 +1,5 @@
 import os
+import re
 ##########################################################################
 #     ASSEMBLER FOR FPGA CORE
 #     Created by Ken Bonar
@@ -23,60 +24,89 @@ s = ""
 s += "memory_initialization_radix= {};\n".format(mem_radix)
 s += "memory_initialization_vector={}\n".format(init_vector)
 
+instructions = set(["add", "addi", "sub", "load", "store", "seq", "slt", "beq", "j", "jal", "shr", "shl", "nand", "loadi"])
+coe_count = 0
+coe_dict = {}
+with open(assembly_input_file + ".txt") as file:
+    for count, line in enumerate(file):
+
+        content = line.split()
+        if content[0] is not '\n':
+            m = re.match('[a-z]+(:)', content[0])
+        if m:
+            print(m.string)
+            coe_dict[m.string] = coe_count
+
+        elif content[0] == 'load':
+            coe_count += 2
+
+        elif content[0] == 'store':
+            coe_count += 2
+
+        # checks for any instruction
+        elif content[0] in instructions:
+            coe_count += 1
+
+
+        #TODO add check for load
+
+        #TODO add check for store
+
+    file.close()
+
 
 with open(assembly_input_file + ".txt") as file:
     for count, line in enumerate(file):
-        content = line
-        content2 = content.split()
+        content = line.split()
         if content is not '\n':
 
             ########### add is 0000 - 4 bits dest - 4 bits source 1 - 4 bits source 2
 
-            if content2[0].lower() == "add":
+            if content[0].lower() == "add":
                 s += '0000'
                 # argument 1 check
-                if (int(content2[1], 16) <= int('0xf', 16)):
-                    s += "{:0>4b}".format(int(content2[1], 16))
+                if (int(content[1], 16) <= int('0xf', 16)):
+                    s += "{:0>4b}".format(int(content[1], 16))
                 else:
-                    error_print(count, content2[1])
+                    error_print(count, content[1])
                     os.system('pause')
                     break
                 # argument 2 check
-                if (int(content2[2], 16) <= int('0xf', 16)):
-                    s += "{:0>4b}".format(int(content2[2], 16))
+                if (int(content[2], 16) <= int('0xf', 16)):
+                    s += "{:0>4b}".format(int(content[2], 16))
                 else:
-                    error_print(count, content2[2])
+                    error_print(count, content[2])
                     os.system('pause')
                     break
-                if (int(content2[3], 16) <= int('0xf', 16)):
-                    s += end_line("{:0>4b}".format(int(content2[3], 16)))
+                if (int(content[3], 16) <= int('0xf', 16)):
+                    s += end_line("{:0>4b}".format(int(content[3], 16)))
                 else:
-                    error_print(count, content2[3])
+                    error_print(count, content[3])
                     os.system('pause')
                     break
 
                 ########### addi is 0001 - 4 bits dest - 4 bits source 1 - 4 bits source 2 (immediate)
 
-            elif content2[0].lower() == "addi":
+            elif content[0].lower() == "addi":
                 s += "0001"
                 # argument 1 check
-                if (int(content2[1], 16) <= int('0xf', 16)):
-                    s += "{:0>4b}".format(int(content2[1], 16))
+                if (int(content[1], 16) <= int('0xf', 16)):
+                    s += "{:0>4b}".format(int(content[1], 16))
                 else:
-                    error_print(count, content2[1])
+                    error_print(count, content[1])
                     os.system('pause')
                     break
                 # argument 2 check
-                if (int(content2[2], 16) <= int('0xf', 16)):
-                    s += "{:0>4b}".format(int(content2[2], 16))
+                if (int(content[2], 16) <= int('0xf', 16)):
+                    s += "{:0>4b}".format(int(content[2], 16))
                 else:
-                    error_print(count, content2[2])
+                    error_print(count, content[2])
                     os.system('pause')
                     break
-                if (int(content2[3], 16) <= int('0xf', 16)):
-                    s += end_line("{:0>4b}".format(int(content2[3], 16)))
+                if (int(content[3], 16) <= int('0xf', 16)):
+                    s += end_line("{:0>4b}".format(int(content[3], 16)))
                 else:
-                    error_print(count, content2[3])
+                    error_print(count, content[3])
                     os.system('pause')
                     break
 
@@ -85,104 +115,143 @@ with open(assembly_input_file + ".txt") as file:
             elif content[0].lower() == "sub":
                 s += '0010'
                 # argument 1 check
-                if (int(content2[1], 16) <= int('0xf', 16)):
-                    s += "{:0>4b}".format(int(content2[1], 16))
+                if (int(content[1], 16) <= int('0xf', 16)):
+                    s += "{:0>4b}".format(int(content[1], 16))
                 else:
-                    error_print(count, content2[1])
+                    error_print(count, content[1])
                     os.system('pause')
                     break
                 # argument 2 check
-                if (int(content2[2], 16) <= int('0xf', 16)):
-                    s += "{:0>4b}".format(int(content2[2], 16))
+                if (int(content[2], 16) <= int('0xf', 16)):
+                    s += "{:0>4b}".format(int(content[2], 16))
                 else:
-                    error_print(count, content2[2])
+                    error_print(count, content[2])
                     os.system('pause')
                     break
 
-                if (int(content2[3], 16) <= int('0xf', 16)):
-                    s += end_line("{:0>4b}".format(int(content2[3], 16)))
+                if (int(content[3], 16) <= int('0xf', 16)):
+                    s += end_line("{:0>4b}".format(int(content[3], 16)))
                 else:
-                    error_print(count, content2[3])
+                    error_print(count, content[3])
                     os.system('pause')
                     break
 
 
                 ########### load is 0011 - 4 bits dest - 4 bits source 1 - 4 bits source 2 (immediate)
 
-            elif content2[0].lower() == "load":
+            elif content[0].lower() == "load":
                 s += '0011'
-                if(int(content2[1],16) <= int('0xf', 16)):
-                    s += "{:0>4b}".format(int(content2[1], 16))
+                if(int(content[1],16) <= int('0xf', 16)):
+                    s += "{:0>4b}".format(int(content[1], 16))
                 else:
-                    error_print(count, content2[1])
+                    error_print(count, content[1])
                     os.system('pause')
                     break
 
-                if (int(content2[2], 16) <= int('0xff', 16)):
-                    s += end_line("{:0>8b}".format(int(content2[2], 16)))
+                if (int(content[2], 16) <= int('0xff', 16)):
+                    s += end_line("{:0>8b}".format(int(content[2], 16)))
                 else:
-                    error_print(count, content2[2])
+                    error_print(count, content[2])
                     os.system('pause')
                     break
 
-                if (int(content2[3],16) <= int('0xffff', 16)):
-                    s += end_line(str("{:0>16b}".format(int(content2[3], 16))))
+                if (int(content[3],16) <= int('0xffff', 16)):
+                    s += end_line(str("{:0>16b}".format(int(content[3], 16))))
                 else:
-                    error_print(count, content2[3])
+                    error_print(count, content[3])
                     os.system('pause')
                     break
 
                 ########### store is 0100 - 4 bits reg - 8 bits junk - 16 bits mem location
 
-            elif content2[0].lower() == "store":
+            elif content[0].lower() == "store":
                 s += '0100'
-                if(int(content2[1], 16) <= int('0xf', 16)):
-                    s += str("{:0>4b}".format(int(content2[1],16)))
+                if(int(content[1], 16) <= int('0xf', 16)):
+                    s += str("{:0>4b}".format(int(content[1],16)))
                 else:
-                    error_print(count, content2[1])
+                    error_print(count, content[1])
                     os.system('pause')
                     break
 
-                if (int(content2[2], 16) <= int('0xff', 16)):
-                    s += end_line("{:0>8b}".format(int(content2[2], 16)))
+                if (int(content[2], 16) <= int('0xff', 16)):
+                    s += end_line("{:0>8b}".format(int(content[2], 16)))
                 else:
-                    error_print(count, content2[2])
+                    error_print(count, content[2])
                     os.system('pause')
                     break
 
-                if(int(content2[3], 16) <= int('0xffff', 16)):
-                    s += end_line(str("{:0>16}".format(int(content2[3], 16))))
+                if(int(content[3], 16) <= int('0xffff', 16)):
+                    s += end_line(str("{:0>16}".format(int(content[3], 16))))
                 else:
-                    error_print(count, content2[3])
+                    error_print(count, content[3])
                     os.system('pause')
                     break
 
                     ########### Set Equal is 0101 - 4 bits dest - 4 bits source - 4 bits source
 
-            elif content2[0].lower() == "seq":
+            elif content[0].lower() == "seq":
                 s += '0101'
-                if(int(content2[1], 16) <= int('0xf', 16)):
-                    s += str("{:0>4b}".format(int(content2[1],16)))
+                if (int(content[1], 16) <= int('0xf', 16)):
+                    s += str("{:0>4b}".format(int(content[1],16)))
                 else:
-                    error_print(count, content2[1])
+                    error_print(count, content[1])
                     os.system('pause')
                     break
 
-                if (int(content2[2], 16) <= int('0xff', 16)):
-                    s += end_line("{:0>8b}".format(int(content2[2], 16)))
+                if (int(content[2], 16) <= int('0xf', 16)):
+                    s += end_line("{:0>4b}".format(int(content[2], 16)))
                 else:
-                    error_print(count, content2[2])
+                    error_print(count, content[2])
                     os.system('pause')
                     break
 
-                if(int(content2[3], 16) <= int('0xffff', 16)):
-                    s += end_line(str("{:0>16}".format(int(content2[3], 16))))
+                if(int(content[3], 16) <= int('0xf', 16)):
+                    s += end_line(str("{:0>4}".format(int(content[3], 16))))
                 else:
-                    error_print(count, content2[3])
+                    error_print(count, content[3])
                     os.system('pause')
                     break
 
+                    ########### Set Less Than is 0110 - 4 bits dest - 4 bits source - 4 bits source
 
+            elif content[0].lower() == "slt":
+                s += '0101'
+                if (int(content[1], 16) <= int('0xf', 16)):
+                    s += str("{:0>4b}".format(int(content[1], 16)))
+                else:
+                    error_print(count, content[1])
+                    os.system('pause')
+                    break
+
+                if (int(content[2], 16) <= int('0xf', 16)):
+                    s += end_line("{:0>4b}".format(int(content[2], 16)))
+                else:
+                    error_print(count, content[2])
+                    os.system('pause')
+                    break
+
+                if (int(content[3], 16) <= int('0xf', 16)):
+                    s += end_line(str("{:0>4}".format(int(content[3], 16))))
+                else:
+                    error_print(count, content[3])
+                    os.system('pause')
+                    break
+
+                ########### Set Less Than is 1000 - label bits
+# TODO change to jump instructions
+            elif(content[0] is not '\n' and not None):
+                m = re.match('[a-z]+(:)', content[0])
+                if m:
+                    s += '1000'
+                    s += end_line(str("{:0>16}".format(coe_dict[m.string])))
+
+
+
+
+
+
+            else:
+                print("nonvalid operation recieved")
 
         else:
             continue
