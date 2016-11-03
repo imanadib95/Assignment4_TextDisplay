@@ -39,9 +39,9 @@ with open(assembly_input_file + ".txt") as file:
         content = line.split()
         if content[0] is not '\n':
             m = re.match('[a-z]+(:)', content[0])
-            if m:
-                print(m.string)
-                coe_dict[m.string] = coe_count
+        if m:
+            #print(m.string)
+            coe_dict[m.string] = coe_count
 
         elif content[0] == 'load':
             coe_count += 2
@@ -251,10 +251,11 @@ with open(assembly_input_file + ".txt") as file:
                     error_print(count, content[2])
                     os.system('pause')
                     break
+                s+= end_line('0000')
                 if type(content[3]) == str:
                     a = coe_dict.get(content[3])
                     try:
-                        s += end_line(str("{:0>4b}".format(int(str(coe_dict[content[3] + ':'])))))
+                        s += end_line(str("{:0>16b}".format(int(str(coe_dict[content[3] + ':'])))))
                     except KeyError:
                         print("Label not found in program: line {}".format(count))
                         break
@@ -375,12 +376,35 @@ with open(assembly_input_file + ".txt") as file:
                     os.system('pause')
                     break
 
-                    ########### Set Less Than is 1000 - label bits
-                    # TODO change to jump instructions
+
+            ########## Write is 1110  - 4 bits source register - 4 bits register containing address
+
+            elif content[0].lower() == "wr":
+                s += '1110'
+                if (int(content[1], 16) <= int('0xf', 16)):
+                    s += str("{:0>4b}".format(int(content[1], 16)))
+                else:
+                    error_print(count, content[1])
+                    os.system('pause')
+                    break
+                if (int(content[2], 16) <= int('0xf', 16)):
+                    s += end_line("{:0>8b}".format(int(content[2], 16)))
+                else:
+                    error_print(count, content[2])
+                    os.system('pause')
+                    break
+
+
+
+
+
+
+            # else if label, skip adding to coe
             elif (content[0] is not '\n' and not None):
                 m = re.match('[a-z]+(:)', content[0])
                 if m:
                     continue
+
 
 
 
