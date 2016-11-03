@@ -108,19 +108,27 @@ Cores Search Directories           : {"ipcore_dir"  }
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\VGA_SignalGen.v" into library work
+Analyzing Verilog file "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\VGA_SignalGen.v" into library work
 Parsing module <VGA_SignalGen>.
-Analyzing Verilog file "C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\VGA_Dispatch.v" into library work
+Analyzing Verilog file "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\VGA_Dispatch.v" into library work
 Parsing module <VGA_Dispatch>.
-Analyzing Verilog file "C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\ipcore_dir\ram.v" into library work
+Analyzing Verilog file "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\ipcore_dir\ram.v" into library work
 Parsing module <ram>.
-Analyzing Verilog file "C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\VGA_Controller.v" into library work
+Analyzing Verilog file "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Encoder.v" into library work
+Parsing module <Encoder>.
+Analyzing Verilog file "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\DisplayController.v" into library work
+Parsing module <DisplayController>.
+Analyzing Verilog file "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Debouncer.v" into library work
+Parsing module <Debouncer>.
+Analyzing Verilog file "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\VGA_Controller.v" into library work
 Parsing module <VGA_Controller>.
-Analyzing Verilog file "C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\DispatchAndRam.v" into library work
+Analyzing Verilog file "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Pmod.v" into library work
+Parsing module <Pmod>.
+Analyzing Verilog file "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\DispatchAndRam.v" into library work
 Parsing module <DispatchAndRam>.
-Analyzing Verilog file "C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\CoreI.v" into library work
+Analyzing Verilog file "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\CoreI.v" into library work
 Parsing module <CoreI>.
-Analyzing Verilog file "C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\Top.v" into library work
+Analyzing Verilog file "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Top.v" into library work
 Parsing module <Top>.
 
 =========================================================================
@@ -142,22 +150,33 @@ Elaborating module <DispatchAndRam>.
 Elaborating module <VGA_Dispatch>.
 
 Elaborating module <ram>.
-WARNING:HDLCompiler:1499 - "C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\ipcore_dir\ram.v" Line 39: Empty module <ram> remains a black box.
+WARNING:HDLCompiler:1499 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\ipcore_dir\ram.v" Line 39: Empty module <ram> remains a black box.
 
 Elaborating module <CoreI>.
+
+Elaborating module <Pmod>.
+
+Elaborating module <Debouncer>.
+
+Elaborating module <Encoder>.
+WARNING:HDLCompiler:1127 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Pmod.v" Line 66: Assignment to Led ignored, since the identifier is never used
+
+Elaborating module <DisplayController>.
+WARNING:HDLCompiler:1127 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Top.v" Line 47: Assignment to dir ignored, since the identifier is never used
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <Top>.
-    Related source file is "C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\Top.v".
+    Related source file is "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Top.v".
+INFO:Xst:3210 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Top.v" line 47: Output port <dir> of the instance <knob> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <Top> synthesized.
 
 Synthesizing Unit <VGA_Controller>.
-    Related source file is "C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\VGA_Controller.v".
+    Related source file is "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\VGA_Controller.v".
 WARNING:Xst:647 - Input <ASCIIColChar<7:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 14-bit adder for signal <n0020[13:0]> created at line 52.
     Found 1-bit 8-to-1 multiplexer for signal <PixelOnOff> created at line 59.
@@ -167,7 +186,7 @@ WARNING:Xst:647 - Input <ASCIIColChar<7:0>> is never used. This port will be pre
 Unit <VGA_Controller> synthesized.
 
 Synthesizing Unit <VGA_SignalGen>.
-    Related source file is "C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\VGA_SignalGen.v".
+    Related source file is "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\VGA_SignalGen.v".
         HorzPixelCount = 800
         HorzPixNBITS = 10
         VertPixelCount = 525
@@ -204,14 +223,14 @@ Synthesizing Unit <VGA_SignalGen>.
 Unit <VGA_SignalGen> synthesized.
 
 Synthesizing Unit <DispatchAndRam>.
-    Related source file is "C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\DispatchAndRam.v".
+    Related source file is "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\DispatchAndRam.v".
 WARNING:Xst:647 - Input <addressB<15:15>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Summary:
 	no macro.
 Unit <DispatchAndRam> synthesized.
 
 Synthesizing Unit <VGA_Dispatch>.
-    Related source file is "C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\VGA_Dispatch.v".
+    Related source file is "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\VGA_Dispatch.v".
     Found 16-bit register for signal <ASCIIColChar>.
     Found 16-bit register for signal <AddressA>.
     Found 11-bit adder for signal <n0026[10:0]> created at line 36.
@@ -222,7 +241,7 @@ Synthesizing Unit <VGA_Dispatch>.
 Unit <VGA_Dispatch> synthesized.
 
 Synthesizing Unit <CoreI>.
-    Related source file is "C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\CoreI.v".
+    Related source file is "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\CoreI.v".
         Fetch = 4'b0000
         Receive = 4'b0001
         Reset = 4'b0010
@@ -247,33 +266,121 @@ Synthesizing Unit <CoreI>.
 	inferred  11 Multiplexer(s).
 Unit <CoreI> synthesized.
 
+Synthesizing Unit <Pmod>.
+    Related source file is "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Pmod.v".
+INFO:Xst:3210 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Pmod.v" line 60: Output port <LED> of the instance <C1_Encoder> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <Pmod> synthesized.
+
+Synthesizing Unit <Debouncer>.
+    Related source file is "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Debouncer.v".
+    Found 1-bit register for signal <sampledB>.
+    Found 1-bit register for signal <Aout>.
+    Found 1-bit register for signal <Bout>.
+    Found 7-bit register for signal <sclk>.
+    Found 1-bit register for signal <sampledA>.
+    Found 7-bit adder for signal <sclk[6]_GND_11_o_add_4_OUT> created at line 70.
+    Found 1-bit comparator not equal for signal <sampledA_Ain_equal_3_o> created at line 59
+    Found 1-bit comparator not equal for signal <sampledB_Bin_equal_4_o> created at line 63
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  11 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+Unit <Debouncer> synthesized.
+
+Synthesizing Unit <Encoder>.
+    Related source file is "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Encoder.v".
+    Found 5-bit register for signal <EncOut>.
+    Found 32-bit register for signal <curState>.
+    Found 2-bit register for signal <dir>.
+    Found finite state machine <FSM_2> for signal <curState>.
+    -----------------------------------------------------------------------
+    | States             | 9                                              |
+    | Transitions        | 39                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 57                                             |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | BTN (positive)                                 |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 01101001011001000110110001100101               |
+    | Power Up State     | 01101001011001000110110001100101               |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 5-bit subtractor for signal <EncOut[4]_GND_12_o_sub_9_OUT> created at line 83.
+    Found 5-bit adder for signal <EncOut[4]_GND_12_o_add_4_OUT> created at line 73.
+    Found 32-bit comparator equal for signal <n0001> created at line 70
+    Found 5-bit comparator greater for signal <EncOut[4]_PWR_12_o_LessThan_4_o> created at line 72
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   7 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   8 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <Encoder> synthesized.
+
+Synthesizing Unit <DisplayController>.
+    Related source file is "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\DisplayController.v".
+    Found 7-bit register for signal <segOut>.
+    Found 18-bit register for signal <sclk>.
+    Found 4-bit register for signal <anode>.
+    Found 18-bit adder for signal <sclk[17]_GND_14_o_add_10_OUT> created at line 92.
+    Found 32x7-bit Read Only RAM for signal <seg>
+    Found 5-bit comparator lessequal for signal <GND_14_o_DispVal[4]_LessThan_6_o> created at line 74
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  29 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <DisplayController> synthesized.
+
 =========================================================================
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 9
+# RAMs                                                 : 1
+ 32x7-bit single-port Read Only RAM                    : 1
+# Adders/Subtractors                                   : 12
  10-bit adder                                          : 2
  11-bit adder                                          : 1
  14-bit adder                                          : 1
  16-bit adder                                          : 4
+ 18-bit adder                                          : 1
  2-bit adder                                           : 1
-# Registers                                            : 13
- 1-bit register                                        : 2
+ 5-bit addsub                                          : 1
+ 7-bit adder                                           : 1
+# Registers                                            : 23
+ 1-bit register                                        : 6
  10-bit register                                       : 2
  16-bit register                                       : 6
- 2-bit register                                        : 1
+ 18-bit register                                       : 1
+ 2-bit register                                        : 2
  3-bit register                                        : 1
+ 4-bit register                                        : 1
+ 5-bit register                                        : 1
+ 7-bit register                                        : 2
  8-bit register                                        : 1
-# Comparators                                          : 6
+# Comparators                                          : 11
+ 1-bit comparator not equal                            : 2
  10-bit comparator greater                             : 4
  10-bit comparator lessequal                           : 2
-# Multiplexers                                         : 23
+ 32-bit comparator equal                               : 1
+ 5-bit comparator greater                              : 1
+ 5-bit comparator lessequal                            : 1
+# Multiplexers                                         : 32
  1-bit 2-to-1 multiplexer                              : 9
  1-bit 8-to-1 multiplexer                              : 1
  16-bit 2-to-1 multiplexer                             : 8
+ 2-bit 2-to-1 multiplexer                              : 2
  3-bit 2-to-1 multiplexer                              : 5
+ 5-bit 2-to-1 multiplexer                              : 6
+ 7-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
 
 =========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
 
 =========================================================================
 *                       Advanced HDL Synthesis                          *
@@ -281,6 +388,8 @@ Macro Statistics
 
 Reading core <ipcore_dir/ram.ngc>.
 Loading core <ram> for timing and area information for instance <R>.
+INFO:Xst:2261 - The FF/Latch <anode_2> in Unit <C2_DisplayController> is equivalent to the following FF/Latch, which will be removed : <anode_3> 
+WARNING:Xst:1710 - FF/Latch <anode_2> (without init value) has a constant value of 1 in block <C2_DisplayController>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2677 - Node <AddressA_15> of sequential type is unconnected in block <Dispatch>.
 
 Synthesizing (advanced) Unit <CoreI>.
@@ -288,6 +397,25 @@ The following registers are absorbed into counter <PC>: 1 register on signal <PC
 The following registers are absorbed into counter <MemAddress>: 1 register on signal <MemAddress>.
 The following registers are absorbed into counter <Count>: 1 register on signal <Count>.
 Unit <CoreI> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Debouncer>.
+The following registers are absorbed into counter <sclk>: 1 register on signal <sclk>.
+Unit <Debouncer> synthesized (advanced).
+
+Synthesizing (advanced) Unit <DisplayController>.
+The following registers are absorbed into counter <sclk>: 1 register on signal <sclk>.
+INFO:Xst:3231 - The small RAM <Mram_seg> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <DispVal>       |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <seg>           |          |
+    -----------------------------------------------------------------------
+Unit <DisplayController> synthesized (advanced).
 
 Synthesizing (advanced) Unit <VGA_SignalGen>.
 The following registers are absorbed into counter <subPixelCount>: 1 register on signal <subPixelCount>.
@@ -299,32 +427,68 @@ Unit <VGA_SignalGen> synthesized (advanced).
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 3
+# RAMs                                                 : 1
+ 32x7-bit single-port distributed Read Only RAM        : 1
+# Adders/Subtractors                                   : 4
  11-bit adder                                          : 1
  14-bit adder                                          : 1
  16-bit adder                                          : 1
-# Counters                                             : 6
+ 5-bit addsub                                          : 1
+# Counters                                             : 8
  10-bit up counter                                     : 2
  16-bit up counter                                     : 3
+ 18-bit up counter                                     : 1
  2-bit up counter                                      : 1
-# Registers                                            : 61
- Flip-Flops                                            : 61
-# Comparators                                          : 6
+ 7-bit up counter                                      : 1
+# Registers                                            : 83
+ Flip-Flops                                            : 83
+# Comparators                                          : 11
+ 1-bit comparator not equal                            : 2
  10-bit comparator greater                             : 4
  10-bit comparator lessequal                           : 2
-# Multiplexers                                         : 21
+ 32-bit comparator equal                               : 1
+ 5-bit comparator greater                              : 1
+ 5-bit comparator lessequal                            : 1
+# Multiplexers                                         : 30
  1-bit 2-to-1 multiplexer                              : 9
  1-bit 8-to-1 multiplexer                              : 1
  16-bit 2-to-1 multiplexer                             : 6
+ 2-bit 2-to-1 multiplexer                              : 2
  3-bit 2-to-1 multiplexer                              : 5
+ 5-bit 2-to-1 multiplexer                              : 6
+ 7-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
 
 =========================================================================
 
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
+WARNING:Xst:1710 - FF/Latch <anode_2> (without init value) has a constant value of 1 in block <DisplayController>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <anode_3> (without init value) has a constant value of 1 in block <DisplayController>. This FF/Latch will be trimmed during the optimization process.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <knob/C1_Encoder/FSM_2> on signal <curState[1:9]> with one-hot encoding.
+-----------------------------------------------
+ State                            | Encoding
+-----------------------------------------------
+ 01101001011001000110110001100101 | 000000001
+ 00000000000000000101001000110001 | 000000010
+ 00000000000000000101001000110010 | 000000100
+ 00000000011000010110010001100100 | 000001000
+ 00000000000000000100110000110001 | 000010000
+ 00000000000000000100110000110010 | 000100000
+ 00000000000000000100110000110011 | 001000000
+ 00000000000000000101001000110011 | 010000000
+ 00000000011100110111010101100010 | 100000000
+-----------------------------------------------
 
 Optimizing unit <Top> ...
+
+Optimizing unit <Debouncer> ...
+
+Optimizing unit <Encoder> ...
+
+Optimizing unit <DisplayController> ...
 
 Optimizing unit <VGA_Controller> ...
 
@@ -334,6 +498,8 @@ Optimizing unit <VGA_Dispatch> ...
 
 Optimizing unit <CoreI> ...
 WARNING:Xst:1710 - FF/Latch <DAR/Dispatch/AddressA_14> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <knob/C1_Encoder/dir_1> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <knob/C1_Encoder/dir_0> of sequential type is unconnected in block <Top>.
 WARNING:Xst:2677 - Node <DAR/Dispatch/AddressA_15> of sequential type is unconnected in block <Top>.
 WARNING:Xst:2677 - Node <c/PC_15> of sequential type is unconnected in block <Top>.
 WARNING:Xst:1293 - FF/Latch <c/MemAddress_15> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
@@ -342,7 +508,7 @@ WARNING:Xst:1293 - FF/Latch <c/MemAddress_13> has a constant value of 0 in block
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block Top, actual ratio is 5.
+Found area constraint ratio of 100 (+ 5) on block Top, actual ratio is 7.
 
 Final Macro Processing ...
 
@@ -350,8 +516,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 125
- Flip-Flops                                            : 125
+# Registers                                            : 177
+ Flip-Flops                                            : 177
 
 =========================================================================
 
@@ -374,32 +540,35 @@ Top Level Output File Name         : Top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 810
+# BELS                             : 945
 #      GND                         : 2
-#      INV                         : 18
-#      LUT1                        : 61
-#      LUT2                        : 14
-#      LUT3                        : 41
-#      LUT4                        : 35
-#      LUT5                        : 77
-#      LUT6                        : 347
-#      MUXCY                       : 87
+#      INV                         : 21
+#      LUT1                        : 78
+#      LUT2                        : 18
+#      LUT3                        : 52
+#      LUT4                        : 45
+#      LUT5                        : 98
+#      LUT6                        : 375
+#      MUXCY                       : 110
 #      MUXF7                       : 33
 #      VCC                         : 2
-#      XORCY                       : 93
-# FlipFlops/Latches                : 135
-#      FD                          : 17
-#      FDE                         : 88
-#      FDR                         : 2
-#      FDRE                        : 28
+#      XORCY                       : 111
+# FlipFlops/Latches                : 187
+#      FD                          : 19
+#      FDC                         : 13
+#      FDE                         : 97
+#      FDP                         : 1
+#      FDR                         : 9
+#      FDRE                        : 46
+#      FDSE                        : 2
 # RAMS                             : 32
 #      RAMB16BWER                  : 32
 # Clock Buffers                    : 1
 #      BUFG                        : 1
-# IO Buffers                       : 12
-#      IBUF                        : 1
+# IO Buffers                       : 27
+#      IBUF                        : 5
 #      IBUFG                       : 1
-#      OBUF                        : 10
+#      OBUF                        : 21
 
 Device utilization summary:
 ---------------------------
@@ -408,20 +577,20 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             135  out of  18224     0%  
- Number of Slice LUTs:                  593  out of   9112     6%  
-    Number used as Logic:               593  out of   9112     6%  
+ Number of Slice Registers:             187  out of  18224     1%  
+ Number of Slice LUTs:                  687  out of   9112     7%  
+    Number used as Logic:               687  out of   9112     7%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    615
-   Number with an unused Flip Flop:     480  out of    615    78%  
-   Number with an unused LUT:            22  out of    615     3%  
-   Number of fully used LUT-FF pairs:   113  out of    615    18%  
-   Number of unique control sets:        14
+ Number of LUT Flip Flop pairs used:    716
+   Number with an unused Flip Flop:     529  out of    716    73%  
+   Number with an unused LUT:            29  out of    716     4%  
+   Number of fully used LUT-FF pairs:   158  out of    716    22%  
+   Number of unique control sets:        21
 
 IO Utilization: 
- Number of IOs:                          12
- Number of bonded IOBs:                  12  out of    232     5%  
+ Number of IOs:                          27
+ Number of bonded IOBs:                  27  out of    232    11%  
 
 Specific Feature Utilization:
  Number of Block RAM/FIFO:               32  out of     32   100%  
@@ -449,7 +618,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-extClk                             | IBUFG+BUFG             | 167   |
+extClk                             | IBUFG+BUFG             | 219   |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -461,7 +630,7 @@ Timing Summary:
 Speed Grade: -3
 
    Minimum period: 8.230ns (Maximum Frequency: 121.506MHz)
-   Minimum input arrival time before clock: 3.648ns
+   Minimum input arrival time before clock: 4.804ns
    Maximum output required time after clock: 3.597ns
    Maximum combinational path delay: No path found
 
@@ -472,7 +641,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'extClk'
   Clock period: 8.230ns (frequency: 121.506MHz)
-  Total number of paths / destination ports: 166773 / 1614
+  Total number of paths / destination ports: 169092 / 1698
 -------------------------------------------------------------------------
 Delay:               8.230ns (Levels of Logic = 6)
   Source:            DAR/R/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/sel_pipe_2 (FF)
@@ -499,27 +668,28 @@ Delay:               8.230ns (Levels of Logic = 6)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'extClk'
-  Total number of paths / destination ports: 40 / 40
+  Total number of paths / destination ports: 105 / 105
 -------------------------------------------------------------------------
-Offset:              3.648ns (Levels of Logic = 2)
-  Source:            rst (PAD)
-  Destination:       Cont/SignalGen/ColorOut_7 (FF)
+Offset:              4.804ns (Levels of Logic = 3)
+  Source:            JA<7> (PAD)
+  Destination:       knob/C2_DisplayController/sclk_17 (FF)
   Destination Clock: extClk rising
 
-  Data Path: rst to Cont/SignalGen/ColorOut_7
+  Data Path: JA<7> to knob/C2_DisplayController/sclk_17
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             6   1.222   0.992  rst_IBUF (rst_IBUF)
-     LUT6:I2->O            8   0.203   0.802  Cont/SignalGen/_n01017 (Cont/SignalGen/_n0101)
-     FDRE:R                    0.430          Cont/SignalGen/ColorOut_0
+     IBUF:I->O            21   1.222   1.114  JA_7_IBUF (JA_7_IBUF)
+     LUT3:I2->O            1   0.205   0.580  knob/C2_DisplayController/_n0050_SW0 (N10)
+     LUT6:I5->O           18   0.205   1.049  knob/C2_DisplayController/_n0050 (knob/C2_DisplayController/_n0050)
+     FDRE:R                    0.430          knob/C2_DisplayController/sclk_0
     ----------------------------------------
-    Total                      3.648ns (1.855ns logic, 1.793ns route)
-                                       (50.8% logic, 49.2% route)
+    Total                      4.804ns (2.062ns logic, 2.742ns route)
+                                       (42.9% logic, 57.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'extClk'
-  Total number of paths / destination ports: 10 / 10
+  Total number of paths / destination ports: 19 / 19
 -------------------------------------------------------------------------
 Offset:              3.597ns (Levels of Logic = 1)
   Source:            Cont/SignalGen/ColorOut_7 (FF)
@@ -552,14 +722,14 @@ extClk         |    8.230|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 9.00 secs
-Total CPU time to Xst completion: 9.14 secs
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 10.39 secs
  
 --> 
 
-Total memory usage is 295736 kilobytes
+Total memory usage is 295704 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   10 (   0 filtered)
-Number of infos    :    0 (   0 filtered)
+Number of warnings :   17 (   0 filtered)
+Number of infos    :    5 (   0 filtered)
 

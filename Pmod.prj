@@ -1,0 +1,4 @@
+verilog work "Encoder.v"
+verilog work "DisplayController.v"
+verilog work "Debouncer.v"
+verilog work "Pmod.v"

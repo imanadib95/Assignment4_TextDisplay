@@ -18,7 +18,7 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module Top(input extClk, input rst, output [7:0] ColorOut,output Hsync,output Vsync);
+module Top(input extClk, input rst, input [7:4] JA, output [7:0] ColorOut,output Hsync,output Vsync, output [3:0] an, output [6:0] seg);
 
 	wire [1:0] SubPixelCount;
 	wire [9:0] PixelCount;
@@ -30,6 +30,7 @@ module Top(input extClk, input rst, output [7:0] ColorOut,output Hsync,output Vs
 	wire [15:0] writeDataB;
 	wire writeEnableB;
 	wire [15:0] addressB;
+	wire [1:0] dir;
 	
 	IBUFG buf1(.I(extClk),.O(intClk));
 	BUFG buf2(.I(intClk),.O(clk));
@@ -42,5 +43,7 @@ module Top(input extClk, input rst, output [7:0] ColorOut,output Hsync,output Vs
 							 
 	CoreI c(clk, readDataB, addressB, writeDataB, writeEnableB);
 	//Core c(clk, readDataB, writeDataB, writeEnableB, addressb);
-
+	
+	Pmod knob(clk, JA, an, seg, dir);
+	
 endmodule
