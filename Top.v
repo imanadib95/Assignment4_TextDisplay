@@ -22,13 +22,14 @@ module Top(
 	input extClk, 
 	input rst, 
 	input [7:4] JA, 
+	input [7:4] JB,
 	input [7:4] JC, 
 	input [1:0] sw,
 	input sdi,				
 	output [7:0] ColorOut,
 	output Hsync,
 	output Vsync,
-	output led,
+	output [7:0]led,
 	output sdo,
 	output sclk,
 	output ss
@@ -44,13 +45,14 @@ module Top(
 	wire [15:0] writeDataB;
 	wire writeEnableB;
 	wire [15:0] addressB;
-	wire [15:0] xPixelPos, yPixelPos; //Position of curser
-	wire [9:0] aclMag;							//magnitude of acceleration in x direction
-	wire [1:0] xDir, yDir; 				//Direction of pixel movement
+	wire [15:0] xPixelPos, yPixelPos, colorPos;//**pixel output 
+	wire [9:0] aclMag;					
+	wire [1:0] xDir, yDir, colorDir; 
 	wire [1:0] x;
 	wire [1:0] y; 
-	wire aclRead;
-	wire [15:0]aclOut; 
+	wire aclRead; //**use this to flag when acl signal has been read
+	wire [15:0]aclOut; //**acl signal
+	wire ledHolder;
 	
 	IBUFG buf1(.I(extClk),.O(intClk));
 	BUFG buf2(.I(intClk),.O(clk));
@@ -64,19 +66,17 @@ module Top(
 	CoreI c(clk, readDataB, addressB, writeDataB, writeEnableB);
 	//Core c(clk, readDataB, writeDataB, writeEnableB, addressb);
 	
-	PmodEnc xEnc(clk, JA, xDir); // dir: 00 = idle, 01 = right, 10 = left
-	PmodEnc yEnc(clk, JC, yDir); // dir: 00 = idle, 01 = right, 10 = left
+	PmodEnc xEnc(clk, JA, xDir); 
+	PmodEnc yEnc(clk, JC, yDir); 
+	PmodEnc color(clk, JB, colorDir); 
 	
-	EncCounter #(160) xPos(clk, xDir, xPixelPos);
-	EncCounter #(120) yPos(clk, yDir, yPixelPos);
-	
-	//color encoder - 16 digits 
-	//8 color, 8 bits of 0's
-	//16 bit output, either 0 or 1. //input hasBeenRead
-	
+	EncCounter #(160, 1) xPos(clk, xDir, xPixelPos);
+	EncCounter #(120, 1) yPos(clk, yDir, yPixelPos);
+	EncCounter #(256, 2) colorEnc(clk, colorDir, colorPos);
 	
 	ACL _ACL(clk, rst, sw, sdi, sdo, sclk, ss, aclMag);
-	ACL_Controller aclCon(clk, aclRead, aclMag, aclOut, led);
+	ACL_Controller aclCon(clk, aclRead, aclMag, aclOut, ledHolder);
 	
+	assign led = colorPos[7:0];
 	
 endmodule

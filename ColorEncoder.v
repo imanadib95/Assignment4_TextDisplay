@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    15:06:38 11/10/2016 
+// Create Date:    15:29:51 11/15/2016 
 // Design Name: 
-// Module Name:    EncCounter 
+// Module Name:    ColorEncoder 
 // Project Name: 
 // Target Devices: 
 // Tool versions: 
@@ -18,18 +18,14 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module EncCounter(
-	input clk,
+module ColorEnc(
+   input clk,
 	input [1:0] move,
-	output reg [15:0] pixel
+	output reg [15:0] color
 	 );
 	
 	//initialize cursor 
-	initial pixel = 16'b0;
-	
-	//Max number of pixels
-	parameter max = 0; 
-	parameter factor = 1;
+	initial color = 16'b0;
 	
 	always @ (posedge clk) begin
 		case(move)
@@ -37,12 +33,12 @@ module EncCounter(
 			
 			2'b10: begin
 				if(pixel < max)
-					pixel <= pixel + (1'b1 << factor);
+					pixel <= pixel + 1'b1;
 			end
 			
 			2'b01: begin
 				if(pixel > 0)
-					pixel <= pixel - (1'b1 << factor);
+					pixel <= pixel - 1'b1;
 			end
 			
 			default: pixel <= pixel;

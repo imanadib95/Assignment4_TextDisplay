@@ -30,14 +30,13 @@ module ACL_Controller(
 	 parameter receive = 1'b0, send = 1'b1;
 	 
 	 initial aclOut = 16'b0;
-	 initial PS <= receive;
+	 initial PS = receive;
 	 
 	 always@(posedge clk) begin
 		PS <= NS;	
 	 end
 	 
 	 assign led = aclOut[0] & 1'b1;
-	 
 	 
 	 always@(*) begin
 		case(PS)
@@ -47,12 +46,20 @@ module ACL_Controller(
 					aclOut = 16'b1;
 					NS = send;
 				end
+				else begin
+					aclOut = 16'b0;
+					NS = receive;
+				end
 			end
 			
 			send: begin
 				if(hasBeenRead) begin
 					aclOut = 16'b0;
 					NS = receive;
+				end
+				else begin
+					aclOut = 16'b1;
+					NS = send;
 				end
 			end
 			
