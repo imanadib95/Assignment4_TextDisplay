@@ -1,0 +1,32 @@
+Loop:
+	load R2, 0x020000
+	slt R4, R2, R0
+	beq R4, R14, xgtCheck
+	add R0, R0, R13
+xgtCheck:
+	seq R4, R2, R0
+	beq R4, R14, yChecks
+	addi R0, R0, 1
+yChecks:
+	load R3, 0x010000
+	slt R4, R3, R1
+	beq R4, R14, ygtChecks
+	add R1, R1, R13
+ygtChecks:
+	seq R4, R3, R1
+	beq R4, R15, accCheck
+	addi R1, R1, 1
+accCheck:
+	load R5, 0x030000
+	beq R4, R15, clearScreen
+Map: 
+	loadi R6, 0x00
+	shl R6, R1, 8
+	add R6, R6, R0
+	add R6, R6, R12
+
+	load R7, 0x040000
+	write R7, R6
+
+	j Loop
+	
