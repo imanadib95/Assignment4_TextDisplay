@@ -7,7 +7,15 @@
    <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/ACL C:|Users|Kara|Documents|GitHub|Assignment4_TextDisplay|ACL.v/Disp - ssdCtrl</ClosedNode>
+         <ClosedNode>/ACL C:|Users|Kara|Documents|GitHub|Assignment4_TextDisplay|ACL.v/SPI - SPIcomponent</ClosedNode>
+         <ClosedNode>/CoreAndRam C:|Users|Kara|Documents|GitHub|Assignment4_TextDisplay|CoreAndRam.v</ClosedNode>
          <ClosedNode>/DispatchAndRam C:|Users|imana|Documents|SCHOOL|ECE3710|VGA_w_Dispatch2|DispatchAndRam.v</ClosedNode>
+         <ClosedNode>/SPIcomponent C:|Users|Kara|Desktop|pmodacl_demo_verilog|PmodACL_Demo|spicomponent.v</ClosedNode>
+         <ClosedNode>/Top C:|Users|Kara|Documents|GitHub|Assignment4_TextDisplay|Top.v/Cont - VGA_Controller</ClosedNode>
+         <ClosedNode>/Top C:|Users|Kara|Documents|GitHub|Assignment4_TextDisplay|Top.v/DAR - DispatchAndRam</ClosedNode>
+         <ClosedNode>/Top C:|Users|Kara|Documents|GitHub|Assignment4_TextDisplay|Top.v/_ACL - ACL</ClosedNode>
+         <ClosedNode>/Top C:|Users|Kara|Documents|GitHub|Assignment4_TextDisplay|Top.v/xEnc - PmodEnc</ClosedNode>
          <ClosedNode>/Top C:|Users|imana|OneDrive|Documents|GitHub|Assignment4_TextDisplay|Top.v</ClosedNode>
          <ClosedNode>/Top C:|Users|imana|OneDrive|Documents|GitHub|Assignment4_TextDisplay|Top.v/Cont - VGA_Controller</ClosedNode>
          <ClosedNode>/VGA_Controller C:|Users|imana|Documents|SCHOOL|ECE3710|VGA_w_Dispatch2|VGA_Controller.v</ClosedNode>
@@ -15,9 +23,9 @@
       <SelectedItems>
          <SelectedItem>Top (C:/Users/Kara/Documents/GitHub/Assignment4_TextDisplay/Top.v)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >2</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001af000000020000000000000000000000000200000064ffffffff000000810000000300000002000001af0000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000146000000020000000000000000000000000200000064ffffffff000000810000000300000002000001460000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
       <CurrentItem>Top (C:/Users/Kara/Documents/GitHub/Assignment4_TextDisplay/Top.v)</CurrentItem>
    </ItemView>
@@ -27,13 +35,13 @@
          <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000184000000010000000100000000000000000000000064ffffffff000000810000000000000001000001840000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000016c000000010000000100000000000000000000000064ffffffff0000008100000000000000010000016c0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>
@@ -42,7 +50,7 @@
       <SelectedItems/>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000002d1000000040101000100000000000000000000000064ffffffff0000008100000000000000040000003d00000001000000000000002100000001000000000000005d0000000100000000000002160000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000002c0000000040101000100000000000000000000000064ffffffff0000008100000000000000040000003d00000001000000000000002100000001000000000000005d0000000100000000000002050000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>DispatchAndRam.v</CurrentItem>
    </ItemView>
@@ -73,7 +81,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000b8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000b80000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000015b000000010000000100000000000000000000000064ffffffff0000008100000000000000010000015b0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>Synthesize - XST</CurrentItem>
    </ItemView>
@@ -87,7 +95,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000c9000000010000000100000000000000000000000064ffffffff000000810000000000000001000000c90000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000016c000000010000000100000000000000000000000064ffffffff0000008100000000000000010000016c0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>
@@ -96,13 +104,13 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>Edit Constraints (Text)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000c9000000010000000100000000000000000000000064ffffffff000000810000000000000001000000c90000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000016c000000010000000100000000000000000000000064ffffffff0000008100000000000000010000016c0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>Edit Constraints (Text)</CurrentItem>
    </ItemView>
    <SourceProcessView>000000ff00000000000000020000011b0000011b01000000050100000002</SourceProcessView>
    <CurrentView>Implementation</CurrentView>
@@ -114,13 +122,13 @@
          <ClosedNode>/Top C:|Users|imana|OneDrive|Documents|GitHub|Assignment4_TextDisplay|Top.v</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>c - CoreI (C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/CoreI.v)</SelectedItem>
+         <SelectedItem>Unassigned User Library Modules</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000011a000000020000000000000000000000000200000064ffffffff0000008100000003000000020000011a0000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001af000000020000000000000000000000000200000064ffffffff000000810000000300000002000001af0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>c - CoreI (C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/CoreI.v)</CurrentItem>
+      <CurrentItem>Unassigned User Library Modules</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -132,7 +140,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f3000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f30000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000016c000000010000000100000000000000000000000064ffffffff0000008100000000000000010000016c0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem/>
    </ItemView>

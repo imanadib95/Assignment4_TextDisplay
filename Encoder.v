@@ -19,13 +19,12 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module Encoder(
-      clk,
+    clk,
     A,
     B,
     BTN,
-    EncOut,
-    LED,
-	 dir
+    LED
+	
     );
 
 	 // ===========================================================================
@@ -35,9 +34,8 @@ module Encoder(
     input A;
     input B;
     input BTN;
-    output [4:0] EncOut;
     output [1:0] LED;
-	 output reg [1:0] dir;
+	
 
 	 // ===========================================================================
 	 // 							  Parameters, Regsiters, and Wires
@@ -71,31 +69,25 @@ module Encoder(
 						if(curState == "add") begin
 								if(EncOut < 5'b10011) begin
 									EncOut <= EncOut + 1'b1;
-									dir <= 2'b01;									
 								end
 								else begin
 									EncOut <= 5'b00000;
-									dir <= 2'b01;
 								end
 						end
 						else if(curState == "sub") begin
 								if(EncOut > 5'b00000) begin
 									EncOut <= EncOut - 1'b1;
-									dir <= 2'b10;
 								end
 								else begin
 									EncOut <= 5'b10011;
-									dir <= 2'b10; 
 								end
 						end
 						else begin
 								EncOut <= EncOut;
-								dir <= dir;
 						end
 				 end
 				 else begin
 						EncOut <= EncOut;
-						dir <= dir; 						
 				 end
 
             curState <= nextState;
@@ -239,7 +231,5 @@ module Encoder(
 							 nextState <= "idle";
 					  end
 				 endcase
-
 	 end
-
 endmodule

@@ -18,13 +18,10 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module Pmod(
-      clk,
-    JA,
-    an,
-    seg, 
-	 dir
-    //Led
+module PmodEnc(
+    clk,
+    JA, 
+    Dir
     );
 
 	 // ===========================================================================
@@ -32,24 +29,20 @@ module Pmod(
 	 // ===========================================================================
     input clk;
     input [7:4] JA;
-    output [3:0] an;
-    output [6:0] seg;
-	 output [1:0] dir; // 00 - idle, 01 - right, 10 - left
-    //output [1:0] Led;
+    output [1:0] Dir;
 
 	 // ===========================================================================
 	 // 							  Parameters, Regsiters, and Wires
 	 // ===========================================================================
 	 wire [3:0] an;
 	 wire [6:0] seg;
-	 wire [1:0] Led;
-	 wire [1:0] DIR; 
+	 wire [1:0] Dir;
 	 wire [4:0] EncO;
 	 
 	 // ===========================================================================
 	 // 										Implementation
 	 // ===========================================================================
- 	 Debouncer C0_Debouncer (
+ 	 Debouncer _Debouncer (
 				  .clk(clk),
 				  .Ain(JA[4]),
 				  .Bin(JA[5]),
@@ -57,21 +50,12 @@ module Pmod(
 				  .Bout(BO)
 	 );
 	 
- 	Encoder C1_Encoder (
+ 	Encoder _Encoder (
 				  .clk(clk),
 				  .A(AO),
 				  .B(BO),
 				  .BTN(JA[6]),
-				  .EncOut(EncO),
-				  .LED(Led),
-				  .dir(dir)
+				  .LED(Dir)
 	 ); 
 
- 	 DisplayController C2_DisplayController (
-				  .clk(clk),
-				  .SWT(JA[7]),
-				  .DispVal(EncO),
-				  .anode(an),
-				  .segOut(seg)
-	 );
 endmodule

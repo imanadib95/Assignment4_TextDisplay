@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Thu Nov 10 15:56:58 2016
+# Process ID: 18756
+# Log file: C:/Users/Kara/Documents/GitHub/Assignment4_TextDisplay/planAhead_run_4/planAhead.log
+# Journal file: C:/Users/Kara/Documents/GitHub/Assignment4_TextDisplay/planAhead_run_4/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+ERROR: [Common 17-132] XML syntax error: No element found (C:/Xilinx/14.7/ISE_DS/PlanAhead/strategies/ISE14.psg:1)
+ERROR: [Common 17-132] XML syntax error: No element found (C:/Xilinx/14.7/ISE_DS/PlanAhead/strategies/ISE7.psg:1)
+ERROR: [Common 17-132] XML syntax error: No element found (C:/Xilinx/14.7/ISE_DS/PlanAhead/strategies/RDS13.psg:1)
+ERROR: [Common 17-132] XML syntax error: No element found (C:/Xilinx/14.7/ISE_DS/PlanAhead/strategies/VDI2012.psg:1)
+ERROR: [Common 17-132] XML syntax error: No element found (C:/Xilinx/14.7/ISE_DS/PlanAhead/strategies/XST14.psg:1)
+start_gui
+source C:/Users/Kara/Documents/GitHub/Assignment4_TextDisplay/pa.fromNetlist.tcl
+# create_project -name VGA_w_Dispatch2 -dir "C:/Users/Kara/Documents/GitHub/Assignment4_TextDisplay/planAhead_run_4" -part xc6slx16csg324-3
+ERROR: [Common 17-70] Application Exception: Can't apply null strategy to run
+
+    while executing
+"create_project -name VGA_w_Dispatch2 -dir "C:/Users/Kara/Documents/GitHub/Assignment4_TextDisplay/planAhead_run_4" -part xc6slx16csg324-3"
+    (file "C:/Users/Kara/Documents/GitHub/Assignment4_TextDisplay/pa.fromNetlist.tcl" line 4)

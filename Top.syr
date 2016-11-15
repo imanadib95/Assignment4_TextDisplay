@@ -3,13 +3,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.07 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
+Total REAL time to Xst completion: 1.00 secs
 Total CPU time to Xst completion: 0.09 secs
  
 --> Reading design: Top.prj
@@ -108,6 +108,12 @@ Cores Search Directories           : {"ipcore_dir"  }
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
+Analyzing Verilog file "C:\Users\Kara\Desktop\pmodacl_demo_verilog\PmodACL_Demo\spimaster.v" into library work
+Parsing module <SPImaster>.
+Analyzing Verilog file "C:\Users\Kara\Desktop\pmodacl_demo_verilog\PmodACL_Demo\spiinterface.v" into library work
+Parsing module <SPIinterface>.
+Analyzing Verilog file "C:\Users\Kara\Desktop\pmodacl_demo_verilog\PmodACL_Demo\slaveselect.v" into library work
+Parsing module <slaveSelect>.
 Analyzing Verilog file "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\VGA_SignalGen.v" into library work
 Parsing module <VGA_SignalGen>.
 Analyzing Verilog file "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\VGA_Dispatch.v" into library work
@@ -116,18 +122,28 @@ Analyzing Verilog file "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\i
 Parsing module <ram>.
 Analyzing Verilog file "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Encoder.v" into library work
 Parsing module <Encoder>.
-Analyzing Verilog file "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\DisplayController.v" into library work
-Parsing module <DisplayController>.
 Analyzing Verilog file "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Debouncer.v" into library work
 Parsing module <Debouncer>.
+Analyzing Verilog file "C:\Users\Kara\Desktop\pmodacl_demo_verilog\PmodACL_Demo\spicomponent.v" into library work
+Parsing module <SPIcomponent>.
+Analyzing Verilog file "C:\Users\Kara\Desktop\pmodacl_demo_verilog\PmodACL_Demo\sel_data.v" into library work
+Parsing module <sel_Data>.
+Analyzing Verilog file "C:\Users\Kara\Desktop\pmodacl_demo_verilog\PmodACL_Demo\clkdiv_5hz.v" into library work
+Parsing module <ClkDiv_5Hz>.
 Analyzing Verilog file "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\VGA_Controller.v" into library work
 Parsing module <VGA_Controller>.
 Analyzing Verilog file "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Pmod.v" into library work
-Parsing module <Pmod>.
+Parsing module <PmodEnc>.
+Analyzing Verilog file "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\EncCounter.v" into library work
+Parsing module <EncCounter>.
 Analyzing Verilog file "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\DispatchAndRam.v" into library work
 Parsing module <DispatchAndRam>.
 Analyzing Verilog file "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\CoreI.v" into library work
 Parsing module <CoreI>.
+Analyzing Verilog file "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\ACL_Controller.v" into library work
+Parsing module <ACL_Controller>.
+Analyzing Verilog file "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\ACL.v" into library work
+Parsing module <ACL>.
 Analyzing Verilog file "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Top.v" into library work
 Parsing module <Top>.
 
@@ -154,15 +170,39 @@ WARNING:HDLCompiler:1499 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDispl
 
 Elaborating module <CoreI>.
 
-Elaborating module <Pmod>.
+Elaborating module <PmodEnc>.
 
 Elaborating module <Debouncer>.
 
 Elaborating module <Encoder>.
-WARNING:HDLCompiler:1127 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Pmod.v" Line 66: Assignment to Led ignored, since the identifier is never used
 
-Elaborating module <DisplayController>.
-WARNING:HDLCompiler:1127 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Top.v" Line 47: Assignment to dir ignored, since the identifier is never used
+Elaborating module <EncCounter(max=160)>.
+WARNING:HDLCompiler:1127 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Top.v" Line 70: Assignment to xPixelPos ignored, since the identifier is never used
+
+Elaborating module <EncCounter(max=120)>.
+WARNING:HDLCompiler:1127 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Top.v" Line 71: Assignment to yPixelPos ignored, since the identifier is never used
+
+Elaborating module <ACL>.
+
+Elaborating module <sel_Data>.
+
+Elaborating module <SPIcomponent>.
+
+Elaborating module <SPImaster>.
+
+Elaborating module <SPIinterface>.
+
+Elaborating module <slaveSelect>.
+
+Elaborating module <ClkDiv_5Hz>.
+
+Elaborating module <ACL_Controller>.
+WARNING:HDLCompiler:1127 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Top.v" Line 79: Assignment to aclOut ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Top.v" Line 52: Net <aclRead> does not have a driver.
+WARNING:Xst:2972 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Top.v" line 67. All outputs of instance <xEnc> of block <PmodEnc> are unconnected in block <Top>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Top.v" line 68. All outputs of instance <yEnc> of block <PmodEnc> are unconnected in block <Top>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Top.v" line 70. All outputs of instance <xPos> of block <EncCounter> are unconnected in block <Top>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Top.v" line 71. All outputs of instance <yPos> of block <EncCounter> are unconnected in block <Top>. Underlying logic will be removed.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -170,7 +210,10 @@ WARNING:HDLCompiler:1127 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDispl
 
 Synthesizing Unit <Top>.
     Related source file is "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Top.v".
-INFO:Xst:3210 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Top.v" line 47: Output port <dir> of the instance <knob> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Top.v" line 70: Output port <pixel> of the instance <xPos> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Top.v" line 71: Output port <pixel> of the instance <yPos> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Top.v" line 79: Output port <aclOut> of the instance <aclCon> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <aclRead> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Summary:
 	no macro.
 Unit <Top> synthesized.
@@ -266,121 +309,329 @@ Synthesizing Unit <CoreI>.
 	inferred  11 Multiplexer(s).
 Unit <CoreI> synthesized.
 
-Synthesizing Unit <Pmod>.
-    Related source file is "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Pmod.v".
-INFO:Xst:3210 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Pmod.v" line 60: Output port <LED> of the instance <C1_Encoder> is unconnected or connected to loadless signal.
-    Summary:
-	no macro.
-Unit <Pmod> synthesized.
-
 Synthesizing Unit <Debouncer>.
     Related source file is "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Debouncer.v".
     Found 1-bit register for signal <sampledB>.
     Found 1-bit register for signal <Aout>.
     Found 1-bit register for signal <Bout>.
-    Found 7-bit register for signal <sclk>.
+    Found 1-bit register for signal <sclk<6>>.
+    Found 1-bit register for signal <sclk<5>>.
+    Found 1-bit register for signal <sclk<4>>.
+    Found 1-bit register for signal <sclk<3>>.
+    Found 1-bit register for signal <sclk<2>>.
+    Found 1-bit register for signal <sclk<1>>.
+    Found 1-bit register for signal <sclk<0>>.
     Found 1-bit register for signal <sampledA>.
-    Found 7-bit adder for signal <sclk[6]_GND_11_o_add_4_OUT> created at line 70.
-    Found 1-bit comparator not equal for signal <sampledA_Ain_equal_3_o> created at line 59
-    Found 1-bit comparator not equal for signal <sampledB_Bin_equal_4_o> created at line 63
     Summary:
-	inferred   1 Adder/Subtractor(s).
 	inferred  11 D-type flip-flop(s).
-	inferred   2 Comparator(s).
 Unit <Debouncer> synthesized.
 
 Synthesizing Unit <Encoder>.
     Related source file is "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Encoder.v".
-    Found 5-bit register for signal <EncOut>.
     Found 32-bit register for signal <curState>.
-    Found 2-bit register for signal <dir>.
-    Found finite state machine <FSM_2> for signal <curState>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <Encoder> synthesized.
+
+Synthesizing Unit <ACL>.
+    Related source file is "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\ACL.v".
+    Summary:
+	no macro.
+Unit <ACL> synthesized.
+
+Synthesizing Unit <sel_Data>.
+    Related source file is "C:\Users\Kara\Desktop\pmodacl_demo_verilog\PmodACL_Demo\sel_data.v".
+    Found 10-bit register for signal <DOUT>.
+    Found 9-bit subtractor for signal <GND_17_o_xAxis[8]_sub_12_OUT> created at line 88.
+    Found 9-bit subtractor for signal <GND_17_o_yAxis[8]_sub_7_OUT> created at line 74.
+    Found 9-bit subtractor for signal <GND_17_o_zAxis[8]_sub_10_OUT> created at line 81.
+    Found 10-bit 4-to-1 multiplexer for signal <xAxis[9]_xAxis[9]_mux_14_OUT> created at line 72.
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred  10 D-type flip-flop(s).
+	inferred  28 Multiplexer(s).
+Unit <sel_Data> synthesized.
+
+Synthesizing Unit <SPIcomponent>.
+    Related source file is "C:\Users\Kara\Desktop\pmodacl_demo_verilog\PmodACL_Demo\spicomponent.v".
+    Summary:
+	no macro.
+Unit <SPIcomponent> synthesized.
+
+Synthesizing Unit <SPImaster>.
+    Related source file is "C:\Users\Kara\Desktop\pmodacl_demo_verilog\PmodACL_Demo\spimaster.v".
+        state_type_idle = 3'b000
+        state_type_configure = 3'b001
+        state_type_transmitting = 3'b010
+        state_type_recieving = 3'b011
+        state_type_finished = 3'b100
+        state_type_break = 3'b101
+        state_type_holding = 3'b110
+        data_type_x_axis = 2'b00
+        data_type_y_axis = 2'b01
+        data_type_z_axis = 2'b10
+        configure_type_powerCtl = 2'b00
+        configure_type_bwRate = 2'b01
+        configure_type_dataFormat = 2'b10
+        POWER_CTL = 16'b0010110100001000
+        BW_RATE = 16'b0010110000001000
+        DATA_FORMAT = 16'b0011000100000000
+        xAxis0 = 16'b1011001000000000
+        xAxis1 = 16'b1011001100000000
+        yAxis0 = 16'b1011010000000000
+        yAxis1 = 16'b1011010100000000
+        zAxis0 = 16'b1011011000000000
+        zAxis1 = 16'b1011011100000000
+    Found 1-bit register for signal <transmit>.
+    Found 3-bit register for signal <STATE>.
+    Found 2-bit register for signal <DATA>.
+    Found 12-bit register for signal <break_count>.
+    Found 21-bit register for signal <hold_count>.
+    Found 1-bit register for signal <done_configure>.
+    Found 2-bit register for signal <CONFIGUREsel>.
+    Found 16-bit register for signal <txdata>.
+    Found 1-bit register for signal <register_select>.
+    Found 1-bit register for signal <sample_done>.
+    Found 1-bit register for signal <finish>.
+    Found 1-bit register for signal <x_axis_data<9>>.
+    Found 1-bit register for signal <x_axis_data<8>>.
+    Found 1-bit register for signal <x_axis_data<7>>.
+    Found 1-bit register for signal <x_axis_data<6>>.
+    Found 1-bit register for signal <x_axis_data<5>>.
+    Found 1-bit register for signal <x_axis_data<4>>.
+    Found 1-bit register for signal <x_axis_data<3>>.
+    Found 1-bit register for signal <x_axis_data<2>>.
+    Found 1-bit register for signal <x_axis_data<1>>.
+    Found 1-bit register for signal <x_axis_data<0>>.
+    Found 1-bit register for signal <y_axis_data<9>>.
+    Found 1-bit register for signal <y_axis_data<8>>.
+    Found 1-bit register for signal <y_axis_data<7>>.
+    Found 1-bit register for signal <y_axis_data<6>>.
+    Found 1-bit register for signal <y_axis_data<5>>.
+    Found 1-bit register for signal <y_axis_data<4>>.
+    Found 1-bit register for signal <y_axis_data<3>>.
+    Found 1-bit register for signal <y_axis_data<2>>.
+    Found 1-bit register for signal <y_axis_data<1>>.
+    Found 1-bit register for signal <y_axis_data<0>>.
+    Found 1-bit register for signal <z_axis_data<9>>.
+    Found 1-bit register for signal <z_axis_data<8>>.
+    Found 1-bit register for signal <z_axis_data<7>>.
+    Found 1-bit register for signal <z_axis_data<6>>.
+    Found 1-bit register for signal <z_axis_data<5>>.
+    Found 1-bit register for signal <z_axis_data<4>>.
+    Found 1-bit register for signal <z_axis_data<3>>.
+    Found 1-bit register for signal <z_axis_data<2>>.
+    Found 1-bit register for signal <z_axis_data<1>>.
+    Found 1-bit register for signal <z_axis_data<0>>.
+    Found 1-bit register for signal <end_configure>.
+    Found 4-bit register for signal <prevstart>.
+    Found finite state machine <FSM_2> for signal <STATE>.
     -----------------------------------------------------------------------
-    | States             | 9                                              |
-    | Transitions        | 39                                             |
-    | Inputs             | 4                                              |
-    | Outputs            | 57                                             |
+    | States             | 7                                              |
+    | Transitions        | 27                                             |
+    | Inputs             | 14                                             |
+    | Outputs            | 6                                              |
     | Clock              | clk (rising_edge)                              |
-    | Reset              | BTN (positive)                                 |
-    | Reset type         | asynchronous                                   |
-    | Reset State        | 01101001011001000110110001100101               |
-    | Power Up State     | 01101001011001000110110001100101               |
+    | Reset              | rst (positive)                                 |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 000                                            |
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 5-bit subtractor for signal <EncOut[4]_GND_12_o_sub_9_OUT> created at line 83.
-    Found 5-bit adder for signal <EncOut[4]_GND_12_o_add_4_OUT> created at line 73.
-    Found 32-bit comparator equal for signal <n0001> created at line 70
-    Found 5-bit comparator greater for signal <EncOut[4]_PWR_12_o_LessThan_4_o> created at line 72
+    Found finite state machine <FSM_3> for signal <DATA>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 18                                             |
+    | Inputs             | 5                                              |
+    | Outputs            | 2                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst (positive)                                 |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_4> for signal <CONFIGUREsel>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 9                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 8                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst (positive)                                 |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 12-bit adder for signal <break_count[11]_GND_19_o_add_83_OUT> created at line 391.
+    Found 21-bit adder for signal <hold_count[20]_GND_19_o_add_89_OUT> created at line 405.
+    Found 1-bit comparator greater for signal <n0118> created at line 399
     Summary:
-	inferred   1 Adder/Subtractor(s).
-	inferred   7 D-type flip-flop(s).
-	inferred   2 Comparator(s).
-	inferred   8 Multiplexer(s).
-	inferred   1 Finite State Machine(s).
-Unit <Encoder> synthesized.
+	inferred   2 Adder/Subtractor(s).
+	inferred  89 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred  41 Multiplexer(s).
+	inferred   3 Finite State Machine(s).
+Unit <SPImaster> synthesized.
 
-Synthesizing Unit <DisplayController>.
-    Related source file is "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\DisplayController.v".
-    Found 7-bit register for signal <segOut>.
-    Found 18-bit register for signal <sclk>.
-    Found 4-bit register for signal <anode>.
-    Found 18-bit adder for signal <sclk[17]_GND_14_o_add_10_OUT> created at line 92.
-    Found 32x7-bit Read Only RAM for signal <seg>
-    Found 5-bit comparator lessequal for signal <GND_14_o_DispVal[4]_LessThan_6_o> created at line 74
+Synthesizing Unit <SPIinterface>.
+    Related source file is "C:\Users\Kara\Desktop\pmodacl_demo_verilog\PmodACL_Demo\spiinterface.v".
+        CLKDIVIDER = 8'b11111111
+        TxType_idle = 2'b00
+        TxType_transmitting = 2'b01
+        RxType_idle = 2'b00
+        RxType_recieving = 2'b01
+        SCLKType_idle = 2'b00
+        SCLKType_running = 2'b01
+    Found 4-bit register for signal <tx_count>.
+    Found 1-bit register for signal <sdo>.
+    Found 2-bit register for signal <TxSTATE>.
+    Found 8-bit register for signal <rx_shift_register>.
+    Found 4-bit register for signal <rx_count>.
+    Found 1-bit register for signal <done>.
+    Found 2-bit register for signal <RxSTATE>.
+    Found 8-bit register for signal <clk_count>.
+    Found 2-bit register for signal <SCLKSTATE>.
+    Found 1-bit register for signal <sck_previous>.
+    Found 1-bit register for signal <sck_buffer>.
+    Found 1-bit register for signal <clk_edge_buffer>.
+    Found 16-bit register for signal <tx_shift_register>.
+    Found finite state machine <FSM_5> for signal <TxSTATE>.
+    -----------------------------------------------------------------------
+    | States             | 2                                              |
+    | Transitions        | 6                                              |
+    | Inputs             | 5                                              |
+    | Outputs            | 2                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst (positive)                                 |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 00                                             |
+    | Power Up State     | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_6> for signal <RxSTATE>.
+    -----------------------------------------------------------------------
+    | States             | 2                                              |
+    | Transitions        | 6                                              |
+    | Inputs             | 5                                              |
+    | Outputs            | 2                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst (positive)                                 |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 00                                             |
+    | Power Up State     | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_7> for signal <SCLKSTATE>.
+    -----------------------------------------------------------------------
+    | States             | 2                                              |
+    | Transitions        | 4                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 2                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst (positive)                                 |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 00                                             |
+    | Power Up State     | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 4-bit adder for signal <tx_count[3]_GND_20_o_add_8_OUT> created at line 141.
+    Found 4-bit adder for signal <rx_count[3]_GND_20_o_add_37_OUT> created at line 191.
+    Found 8-bit adder for signal <clk_count[7]_GND_20_o_add_64_OUT> created at line 247.
     Summary:
-	inferred   1 RAM(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred  45 D-type flip-flop(s).
+	inferred  24 Multiplexer(s).
+	inferred   3 Finite State Machine(s).
+Unit <SPIinterface> synthesized.
+
+Synthesizing Unit <slaveSelect>.
+    Related source file is "C:\Users\Kara\Desktop\pmodacl_demo_verilog\PmodACL_Demo\slaveselect.v".
+    Found 1-bit register for signal <ss>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <slaveSelect> synthesized.
+
+Synthesizing Unit <ClkDiv_5Hz>.
+    Related source file is "C:\Users\Kara\Desktop\pmodacl_demo_verilog\PmodACL_Demo\clkdiv_5hz.v".
+        cntEndVal = 24'b100110001001011010000000
+    Found 1-bit register for signal <CLKOUT>.
+    Found 24-bit register for signal <clkCount>.
+    Found 24-bit adder for signal <clkCount[23]_GND_22_o_add_2_OUT> created at line 64.
+    Summary:
 	inferred   1 Adder/Subtractor(s).
-	inferred  29 D-type flip-flop(s).
+	inferred  25 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <ClkDiv_5Hz> synthesized.
+
+Synthesizing Unit <ACL_Controller>.
+    Related source file is "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\ACL_Controller.v".
+        receive = 1'b0
+        send = 1'b1
+    Found 1-bit register for signal <PS>.
+WARNING:Xst:737 - Found 1-bit latch for signal <aclOut<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <aclOut<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <NS>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 10-bit comparator greater for signal <GND_23_o_aclIn[9]_LessThan_2_o> created at line 46
+    Summary:
+	inferred   1 D-type flip-flop(s).
+	inferred   3 Latch(s).
 	inferred   1 Comparator(s).
 	inferred   1 Multiplexer(s).
-Unit <DisplayController> synthesized.
+Unit <ACL_Controller> synthesized.
 
 =========================================================================
 HDL Synthesis Report
 
 Macro Statistics
-# RAMs                                                 : 1
- 32x7-bit single-port Read Only RAM                    : 1
-# Adders/Subtractors                                   : 12
+# Adders/Subtractors                                   : 18
  10-bit adder                                          : 2
  11-bit adder                                          : 1
+ 12-bit adder                                          : 1
  14-bit adder                                          : 1
  16-bit adder                                          : 4
- 18-bit adder                                          : 1
  2-bit adder                                           : 1
- 5-bit addsub                                          : 1
- 7-bit adder                                           : 1
-# Registers                                            : 23
- 1-bit register                                        : 6
- 10-bit register                                       : 2
- 16-bit register                                       : 6
- 18-bit register                                       : 1
- 2-bit register                                        : 2
+ 21-bit adder                                          : 1
+ 24-bit adder                                          : 1
+ 4-bit adder                                           : 2
+ 8-bit adder                                           : 1
+ 9-bit subtractor                                      : 3
+# Registers                                            : 41
+ 1-bit register                                        : 16
+ 10-bit register                                       : 6
+ 12-bit register                                       : 1
+ 16-bit register                                       : 8
+ 2-bit register                                        : 1
+ 21-bit register                                       : 1
+ 24-bit register                                       : 1
  3-bit register                                        : 1
- 4-bit register                                        : 1
- 5-bit register                                        : 1
- 7-bit register                                        : 2
- 8-bit register                                        : 1
-# Comparators                                          : 11
- 1-bit comparator not equal                            : 2
- 10-bit comparator greater                             : 4
+ 4-bit register                                        : 3
+ 8-bit register                                        : 3
+# Latches                                              : 3
+ 1-bit latch                                           : 3
+# Comparators                                          : 8
+ 1-bit comparator greater                              : 1
+ 10-bit comparator greater                             : 5
  10-bit comparator lessequal                           : 2
- 32-bit comparator equal                               : 1
- 5-bit comparator greater                              : 1
- 5-bit comparator lessequal                            : 1
-# Multiplexers                                         : 32
- 1-bit 2-to-1 multiplexer                              : 9
+# Multiplexers                                         : 118
+ 1-bit 2-to-1 multiplexer                              : 82
  1-bit 8-to-1 multiplexer                              : 1
- 16-bit 2-to-1 multiplexer                             : 8
- 2-bit 2-to-1 multiplexer                              : 2
+ 10-bit 2-to-1 multiplexer                             : 3
+ 10-bit 4-to-1 multiplexer                             : 1
+ 12-bit 2-to-1 multiplexer                             : 1
+ 16-bit 2-to-1 multiplexer                             : 15
+ 21-bit 2-to-1 multiplexer                             : 2
+ 24-bit 2-to-1 multiplexer                             : 1
  3-bit 2-to-1 multiplexer                              : 5
- 5-bit 2-to-1 multiplexer                              : 6
- 7-bit 2-to-1 multiplexer                              : 1
-# FSMs                                                 : 1
+ 4-bit 2-to-1 multiplexer                              : 2
+ 8-bit 2-to-1 multiplexer                              : 5
+# FSMs                                                 : 6
 
 =========================================================================
-INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
 
 =========================================================================
 *                       Advanced HDL Synthesis                          *
@@ -388,9 +639,12 @@ INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmet
 
 Reading core <ipcore_dir/ram.ngc>.
 Loading core <ram> for timing and area information for instance <R>.
-INFO:Xst:2261 - The FF/Latch <anode_2> in Unit <C2_DisplayController> is equivalent to the following FF/Latch, which will be removed : <anode_3> 
-WARNING:Xst:1710 - FF/Latch <anode_2> (without init value) has a constant value of 1 in block <C2_DisplayController>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <aclOut_0> in Unit <aclCon> is equivalent to the following FF/Latch, which will be removed : <NS> 
 WARNING:Xst:2677 - Node <AddressA_15> of sequential type is unconnected in block <Dispatch>.
+
+Synthesizing (advanced) Unit <ClkDiv_5Hz>.
+The following registers are absorbed into counter <clkCount>: 1 register on signal <clkCount>.
+Unit <ClkDiv_5Hz> synthesized (advanced).
 
 Synthesizing (advanced) Unit <CoreI>.
 The following registers are absorbed into counter <PC>: 1 register on signal <PC>.
@@ -398,24 +652,14 @@ The following registers are absorbed into counter <MemAddress>: 1 register on si
 The following registers are absorbed into counter <Count>: 1 register on signal <Count>.
 Unit <CoreI> synthesized (advanced).
 
-Synthesizing (advanced) Unit <Debouncer>.
-The following registers are absorbed into counter <sclk>: 1 register on signal <sclk>.
-Unit <Debouncer> synthesized (advanced).
+Synthesizing (advanced) Unit <SPIinterface>.
+The following registers are absorbed into counter <tx_count>: 1 register on signal <tx_count>.
+The following registers are absorbed into counter <rx_count>: 1 register on signal <rx_count>.
+Unit <SPIinterface> synthesized (advanced).
 
-Synthesizing (advanced) Unit <DisplayController>.
-The following registers are absorbed into counter <sclk>: 1 register on signal <sclk>.
-INFO:Xst:3231 - The small RAM <Mram_seg> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
-    -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 32-word x 7-bit                     |          |
-    |     weA            | connected to signal <GND>           | high     |
-    |     addrA          | connected to signal <DispVal>       |          |
-    |     diA            | connected to signal <GND>           |          |
-    |     doA            | connected to signal <seg>           |          |
-    -----------------------------------------------------------------------
-Unit <DisplayController> synthesized (advanced).
+Synthesizing (advanced) Unit <SPImaster>.
+The following registers are absorbed into counter <break_count>: 1 register on signal <break_count>.
+Unit <SPImaster> synthesized (advanced).
 
 Synthesizing (advanced) Unit <VGA_SignalGen>.
 The following registers are absorbed into counter <subPixelCount>: 1 register on signal <subPixelCount>.
@@ -427,68 +671,116 @@ Unit <VGA_SignalGen> synthesized (advanced).
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# RAMs                                                 : 1
- 32x7-bit single-port distributed Read Only RAM        : 1
-# Adders/Subtractors                                   : 4
+# Adders/Subtractors                                   : 8
  11-bit adder                                          : 1
  14-bit adder                                          : 1
  16-bit adder                                          : 1
- 5-bit addsub                                          : 1
-# Counters                                             : 8
+ 21-bit adder                                          : 1
+ 8-bit adder                                           : 1
+ 9-bit subtractor                                      : 3
+# Counters                                             : 10
  10-bit up counter                                     : 2
+ 12-bit up counter                                     : 1
  16-bit up counter                                     : 3
- 18-bit up counter                                     : 1
  2-bit up counter                                      : 1
- 7-bit up counter                                      : 1
-# Registers                                            : 83
- Flip-Flops                                            : 83
-# Comparators                                          : 11
- 1-bit comparator not equal                            : 2
- 10-bit comparator greater                             : 4
+ 24-bit up counter                                     : 1
+ 4-bit up counter                                      : 2
+# Registers                                            : 188
+ Flip-Flops                                            : 188
+# Comparators                                          : 8
+ 1-bit comparator greater                              : 1
+ 10-bit comparator greater                             : 5
  10-bit comparator lessequal                           : 2
- 32-bit comparator equal                               : 1
- 5-bit comparator greater                              : 1
- 5-bit comparator lessequal                            : 1
-# Multiplexers                                         : 30
- 1-bit 2-to-1 multiplexer                              : 9
+# Multiplexers                                         : 112
+ 1-bit 2-to-1 multiplexer                              : 82
  1-bit 8-to-1 multiplexer                              : 1
- 16-bit 2-to-1 multiplexer                             : 6
- 2-bit 2-to-1 multiplexer                              : 2
+ 10-bit 2-to-1 multiplexer                             : 3
+ 10-bit 4-to-1 multiplexer                             : 1
+ 16-bit 2-to-1 multiplexer                             : 13
+ 21-bit 2-to-1 multiplexer                             : 2
  3-bit 2-to-1 multiplexer                              : 5
- 5-bit 2-to-1 multiplexer                              : 6
- 7-bit 2-to-1 multiplexer                              : 1
-# FSMs                                                 : 1
+ 8-bit 2-to-1 multiplexer                              : 5
+# FSMs                                                 : 6
 
 =========================================================================
 
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:1710 - FF/Latch <anode_2> (without init value) has a constant value of 1 in block <DisplayController>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <anode_3> (without init value) has a constant value of 1 in block <DisplayController>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <aclOut_2> has a constant value of 0 in block <ACL_Controller>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <aclOut_0> in Unit <ACL_Controller> is equivalent to the following FF/Latch, which will be removed : <NS> 
 Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <knob/C1_Encoder/FSM_2> on signal <curState[1:9]> with one-hot encoding.
------------------------------------------------
- State                            | Encoding
------------------------------------------------
- 01101001011001000110110001100101 | 000000001
- 00000000000000000101001000110001 | 000000010
- 00000000000000000101001000110010 | 000000100
- 00000000011000010110010001100100 | 000001000
- 00000000000000000100110000110001 | 000010000
- 00000000000000000100110000110010 | 000100000
- 00000000000000000100110000110011 | 001000000
- 00000000000000000101001000110011 | 010000000
- 00000000011100110111010101100010 | 100000000
------------------------------------------------
+Optimizing FSM <_ACL/SPI/C0/FSM_4> on signal <CONFIGUREsel[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 10
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <_ACL/SPI/C0/FSM_3> on signal <DATA[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 10
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <_ACL/SPI/C0/FSM_2> on signal <STATE[1:3]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 000
+ 010   | 010
+ 001   | 001
+ 100   | 100
+ 011   | 011
+ 101   | 101
+ 110   | 110
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <_ACL/SPI/C1/FSM_5> on signal <TxSTATE[1:1]> with sequential encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 0
+ 01    | 1
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <_ACL/SPI/C1/FSM_6> on signal <RxSTATE[1:1]> with sequential encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 0
+ 01    | 1
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <_ACL/SPI/C1/FSM_7> on signal <SCLKSTATE[1:1]> with sequential encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 0
+ 01    | 1
+-------------------
+WARNING:Xst:1710 - FF/Latch <txdata_0> (without init value) has a constant value of 0 in block <SPImaster>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <txdata_1> (without init value) has a constant value of 0 in block <SPImaster>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <txdata_2> (without init value) has a constant value of 0 in block <SPImaster>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <txdata_4> (without init value) has a constant value of 0 in block <SPImaster>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <txdata_5> (without init value) has a constant value of 0 in block <SPImaster>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <txdata_6> (without init value) has a constant value of 0 in block <SPImaster>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <txdata_7> (without init value) has a constant value of 0 in block <SPImaster>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <txdata_14> (without init value) has a constant value of 0 in block <SPImaster>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <txdata_3> in Unit <SPImaster> is equivalent to the following FF/Latch, which will be removed : <txdata_11> 
 
 Optimizing unit <Top> ...
 
-Optimizing unit <Debouncer> ...
+Optimizing unit <sel_Data> ...
 
-Optimizing unit <Encoder> ...
+Optimizing unit <SPImaster> ...
 
-Optimizing unit <DisplayController> ...
+Optimizing unit <SPIinterface> ...
 
 Optimizing unit <VGA_Controller> ...
 
@@ -498,8 +790,9 @@ Optimizing unit <VGA_Dispatch> ...
 
 Optimizing unit <CoreI> ...
 WARNING:Xst:1710 - FF/Latch <DAR/Dispatch/AddressA_14> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:2677 - Node <knob/C1_Encoder/dir_1> of sequential type is unconnected in block <Top>.
-WARNING:Xst:2677 - Node <knob/C1_Encoder/dir_0> of sequential type is unconnected in block <Top>.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_ACL/SPI/C1/tx_shift_register_2> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_ACL/SPI/C1/tx_shift_register_1> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <_ACL/SPI/C1/tx_shift_register_0> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2677 - Node <DAR/Dispatch/AddressA_15> of sequential type is unconnected in block <Top>.
 WARNING:Xst:2677 - Node <c/PC_15> of sequential type is unconnected in block <Top>.
 WARNING:Xst:1293 - FF/Latch <c/MemAddress_15> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
@@ -508,7 +801,8 @@ WARNING:Xst:1293 - FF/Latch <c/MemAddress_13> has a constant value of 0 in block
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block Top, actual ratio is 7.
+Found area constraint ratio of 100 (+ 5) on block Top, actual ratio is 10.
+Latch aclCon/aclOut_0 has been replicated 1 time(s) to handle iob=true attribute.
 
 Final Macro Processing ...
 
@@ -516,8 +810,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 177
- Flip-Flops                                            : 177
+# Registers                                            : 294
+ Flip-Flops                                            : 294
 
 =========================================================================
 
@@ -540,35 +834,36 @@ Top Level Output File Name         : Top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 945
+# BELS                             : 1239
 #      GND                         : 2
-#      INV                         : 21
-#      LUT1                        : 78
-#      LUT2                        : 18
-#      LUT3                        : 52
-#      LUT4                        : 45
-#      LUT5                        : 98
-#      LUT6                        : 375
-#      MUXCY                       : 110
-#      MUXF7                       : 33
+#      INV                         : 27
+#      LUT1                        : 115
+#      LUT2                        : 23
+#      LUT3                        : 90
+#      LUT4                        : 83
+#      LUT5                        : 132
+#      LUT6                        : 436
+#      MUXCY                       : 141
+#      MUXF7                       : 38
 #      VCC                         : 2
-#      XORCY                       : 111
-# FlipFlops/Latches                : 187
-#      FD                          : 19
-#      FDC                         : 13
-#      FDE                         : 97
-#      FDP                         : 1
-#      FDR                         : 9
-#      FDRE                        : 46
-#      FDSE                        : 2
+#      XORCY                       : 150
+# FlipFlops/Latches                : 306
+#      FD                          : 22
+#      FDC                         : 34
+#      FDCE                        : 1
+#      FDE                         : 89
+#      FDR                         : 43
+#      FDRE                        : 111
+#      FDS                         : 4
+#      LD                          : 2
 # RAMS                             : 32
 #      RAMB16BWER                  : 32
 # Clock Buffers                    : 1
 #      BUFG                        : 1
-# IO Buffers                       : 27
-#      IBUF                        : 5
+# IO Buffers                       : 19
+#      IBUF                        : 4
 #      IBUFG                       : 1
-#      OBUF                        : 21
+#      OBUF                        : 14
 
 Device utilization summary:
 ---------------------------
@@ -577,20 +872,21 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             187  out of  18224     1%  
- Number of Slice LUTs:                  687  out of   9112     7%  
-    Number used as Logic:               687  out of   9112     7%  
+ Number of Slice Registers:             305  out of  18224     1%  
+ Number of Slice LUTs:                  906  out of   9112     9%  
+    Number used as Logic:               906  out of   9112     9%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    716
-   Number with an unused Flip Flop:     529  out of    716    73%  
-   Number with an unused LUT:            29  out of    716     4%  
-   Number of fully used LUT-FF pairs:   158  out of    716    22%  
-   Number of unique control sets:        21
+ Number of LUT Flip Flop pairs used:    931
+   Number with an unused Flip Flop:     626  out of    931    67%  
+   Number with an unused LUT:            25  out of    931     2%  
+   Number of fully used LUT-FF pairs:   280  out of    931    30%  
+   Number of unique control sets:        32
 
 IO Utilization: 
  Number of IOs:                          27
- Number of bonded IOBs:                  27  out of    232    11%  
+ Number of bonded IOBs:                  19  out of    232     8%  
+    IOB Flip Flops/Latches:               1
 
 Specific Feature Utilization:
  Number of Block RAM/FIFO:               32  out of     32   100%  
@@ -615,11 +911,16 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
------------------------------------+------------------------+-------+
-Clock Signal                       | Clock buffer(FF name)  | Load  |
------------------------------------+------------------------+-------+
-extClk                             | IBUFG+BUFG             | 219   |
------------------------------------+------------------------+-------+
+--------------------------------------------------------------------+-------------------------+-------+
+Clock Signal                                                        | Clock buffer(FF name)   | Load  |
+--------------------------------------------------------------------+-------------------------+-------+
+extClk                                                              | IBUFG+BUFG              | 336   |
+aclCon/PS_hasBeenRead_Mux_6_o(aclCon/Mmux_PS_hasBeenRead_Mux_6_o1:O)| NONE(*)(aclCon/aclOut_0)| 2     |
+--------------------------------------------------------------------+-------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
 Asynchronous Control Signals Information:
 ----------------------------------------
@@ -630,8 +931,8 @@ Timing Summary:
 Speed Grade: -3
 
    Minimum period: 8.230ns (Maximum Frequency: 121.506MHz)
-   Minimum input arrival time before clock: 4.804ns
-   Maximum output required time after clock: 3.597ns
+   Minimum input arrival time before clock: 6.204ns
+   Maximum output required time after clock: 4.045ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -641,7 +942,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'extClk'
   Clock period: 8.230ns (frequency: 121.506MHz)
-  Total number of paths / destination ports: 169092 / 1698
+  Total number of paths / destination ports: 170356 / 1877
 -------------------------------------------------------------------------
 Delay:               8.230ns (Levels of Logic = 6)
   Source:            DAR/R/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/sel_pipe_2 (FF)
@@ -668,68 +969,98 @@ Delay:               8.230ns (Levels of Logic = 6)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'extClk'
-  Total number of paths / destination ports: 105 / 105
+  Total number of paths / destination ports: 271 / 216
 -------------------------------------------------------------------------
-Offset:              4.804ns (Levels of Logic = 3)
-  Source:            JA<7> (PAD)
-  Destination:       knob/C2_DisplayController/sclk_17 (FF)
+Offset:              6.204ns (Levels of Logic = 5)
+  Source:            sw<1> (PAD)
+  Destination:       _ACL/SDATA/DOUT_7 (FF)
   Destination Clock: extClk rising
 
-  Data Path: JA<7> to knob/C2_DisplayController/sclk_17
+  Data Path: sw<1> to _ACL/SDATA/DOUT_7
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            21   1.222   1.114  JA_7_IBUF (JA_7_IBUF)
-     LUT3:I2->O            1   0.205   0.580  knob/C2_DisplayController/_n0050_SW0 (N10)
-     LUT6:I5->O           18   0.205   1.049  knob/C2_DisplayController/_n0050 (knob/C2_DisplayController/_n0050)
-     FDRE:R                    0.430          knob/C2_DisplayController/sclk_0
+     IBUF:I->O            20   1.222   1.457  sw_1_IBUF (sw_1_IBUF)
+     LUT6:I0->O            4   0.203   0.684  _ACL/SDATA/Mmux_xAxis[9]_xAxis[9]_mux_14_OUT961 (_ACL/SDATA/Mmux_xAxis[9]_xAxis[9]_mux_14_OUT96)
+     LUT3:I2->O            2   0.205   0.981  _ACL/SDATA/Mmux_xAxis[9]_xAxis[9]_mux_14_OUT91311 (_ACL/SDATA/Mmux_xAxis[9]_xAxis[9]_mux_14_OUT9131)
+     LUT6:I0->O            1   0.203   0.944  _ACL/SDATA/Mmux_xAxis[9]_xAxis[9]_mux_14_OUT84 (_ACL/SDATA/Mmux_xAxis[9]_xAxis[9]_mux_14_OUT83)
+     LUT6:I0->O            1   0.203   0.000  _ACL/SDATA/Mmux_xAxis[9]_xAxis[9]_mux_14_OUT87 (_ACL/SDATA/xAxis[9]_xAxis[9]_mux_14_OUT<7>)
+     FDC:D                     0.102          _ACL/SDATA/DOUT_7
     ----------------------------------------
-    Total                      4.804ns (2.062ns logic, 2.742ns route)
-                                       (42.9% logic, 57.1% route)
+    Total                      6.204ns (2.138ns logic, 4.066ns route)
+                                       (34.5% logic, 65.5% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'extClk'
-  Total number of paths / destination ports: 19 / 19
+  Total number of paths / destination ports: 13 / 13
 -------------------------------------------------------------------------
-Offset:              3.597ns (Levels of Logic = 1)
-  Source:            Cont/SignalGen/ColorOut_7 (FF)
-  Destination:       ColorOut<7> (PAD)
+Offset:              4.045ns (Levels of Logic = 1)
+  Source:            _ACL/SPI/C1/sck_buffer (FF)
+  Destination:       sclk (PAD)
   Source Clock:      extClk rising
 
-  Data Path: Cont/SignalGen/ColorOut_7 to ColorOut<7>
+  Data Path: _ACL/SPI/C1/sck_buffer to sclk
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q             1   0.447   0.579  Cont/SignalGen/ColorOut_7 (Cont/SignalGen/ColorOut_7)
-     OBUF:I->O                 2.571          ColorOut_7_OBUF (ColorOut<7>)
+     FDS:C->Q             17   0.447   1.027  _ACL/SPI/C1/sck_buffer (_ACL/SPI/C1/sck_buffer)
+     OBUF:I->O                 2.571          sclk_OBUF (sclk)
     ----------------------------------------
-    Total                      3.597ns (3.018ns logic, 0.579ns route)
-                                       (83.9% logic, 16.1% route)
+    Total                      4.045ns (3.018ns logic, 1.027ns route)
+                                       (74.6% logic, 25.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'aclCon/PS_hasBeenRead_Mux_6_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              3.648ns (Levels of Logic = 1)
+  Source:            aclCon/aclOut_0_1 (LATCH)
+  Destination:       led (PAD)
+  Source Clock:      aclCon/PS_hasBeenRead_Mux_6_o falling
+
+  Data Path: aclCon/aclOut_0_1 to led
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.498   0.579  aclCon/aclOut_0_1 (aclCon/aclOut_0_1)
+     OBUF:I->O                 2.571          led_OBUF (led)
+    ----------------------------------------
+    Total                      3.648ns (3.069ns logic, 0.579ns route)
+                                       (84.1% logic, 15.9% route)
 
 =========================================================================
 
 Cross Clock Domains Report:
 --------------------------
 
-Clock to Setup on destination clock extClk
+Clock to Setup on destination clock aclCon/PS_hasBeenRead_Mux_6_o
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-extClk         |    8.230|         |         |         |
+extClk         |         |         |    1.923|         |
 ---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock extClk
+-----------------------------+---------+---------+---------+---------+
+                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------------------+---------+---------+---------+---------+
+aclCon/PS_hasBeenRead_Mux_6_o|         |    1.179|         |         |
+extClk                       |    8.230|         |         |         |
+-----------------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 10.00 secs
-Total CPU time to Xst completion: 10.39 secs
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 12.21 secs
  
 --> 
 
-Total memory usage is 295704 kilobytes
+Total memory usage is 295736 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   17 (   0 filtered)
-Number of infos    :    5 (   0 filtered)
+Number of warnings :   34 (   0 filtered)
+Number of infos    :    7 (   0 filtered)
 

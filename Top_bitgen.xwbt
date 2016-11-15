@@ -1,8 +1,8 @@
 INTSTYLE=ise
-INFILE=C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\Top.ncd
-OUTFILE=C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\Top.bit
+INFILE=C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Top.ncd
+OUTFILE=C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Top.bit
 FAMILY=Spartan6
 PART=xc6slx16-3csg324
-WORKINGDIR=C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay
+WORKINGDIR=C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay
 LICENSE=WebPack
-USER_INFO=211145540_0_0_352
+USER_INFO=211228503_0_0_215

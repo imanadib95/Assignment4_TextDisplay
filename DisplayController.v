@@ -95,7 +95,7 @@ module DisplayController(
 	 end
 	 
 	 //  Selects the value to display on the SSD
-	 always @(DispVal[4] or DispVal[3] or DispVal[2] or DispVal[1] or DispVal[0])
+	 always @(*)
 	 case (DispVal[4:0])
 
 			5'b00000 : seg <= 7'b1000000;		// 0
@@ -118,6 +118,7 @@ module DisplayController(
 			5'b10001 : seg <= 7'b1111000;		// 17
 			5'b10010 : seg <= 7'b0000000;		// 18
 			5'b10011 : seg <= 7'b0010000;		// 19
+			
 			default : seg <= 7'b0111111;
 
 	 endcase

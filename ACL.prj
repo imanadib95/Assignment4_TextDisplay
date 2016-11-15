@@ -1,0 +1,7 @@
+verilog work "../../../Desktop/pmodacl_demo_verilog/PmodACL_Demo/spimaster.v"
+verilog work "../../../Desktop/pmodacl_demo_verilog/PmodACL_Demo/spiinterface.v"
+verilog work "../../../Desktop/pmodacl_demo_verilog/PmodACL_Demo/slaveselect.v"
+verilog work "../../../Desktop/pmodacl_demo_verilog/PmodACL_Demo/spicomponent.v"
+verilog work "../../../Desktop/pmodacl_demo_verilog/PmodACL_Demo/sel_data.v"
+verilog work "../../../Desktop/pmodacl_demo_verilog/PmodACL_Demo/clkdiv_5hz.v"
+verilog work "ACL.v"
