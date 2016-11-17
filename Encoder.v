@@ -63,7 +63,7 @@ module Encoder(
 	 begin
 			 if (BTN == 1'b1) begin
 				 curState <= "idle";
-				 EncOut <= 5'b00000;
+				 EncOut <= 8'd0;
 			 end
 			 // detect if the shaft is rotated to right or left
 			 // right: add 1 to the position at each click
@@ -75,7 +75,7 @@ module Encoder(
 									EncOut <= EncOut + 1'b1;
 								end
 								else begin
-									EncOut <= 5'b00000;
+									EncOut <= 8'd0;
 								end
 						end
 						else if(curState == "sub") begin
