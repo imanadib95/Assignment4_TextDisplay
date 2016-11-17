@@ -10,12 +10,12 @@ Target Device  : xc6slx16
 Target Package : csg324
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Thu Nov 17 15:13:15 2016
+Mapped Date    : Thu Nov 17 15:16:56 2016
 
 Design Summary
 --------------
 Number of errors:      0
-Number of warnings:   13
+Number of warnings:    0
 Slice Logic Utilization:
   Number of Slice Registers:                   134 out of  18,224    1%
     Number used as Flip Flops:                 134
@@ -52,8 +52,8 @@ Slice Logic Distribution:
   over-mapped for a non-slice resource or if Placement fails.
 
 IO Utilization:
-  Number of bonded IOBs:                        38 out of     232   16%
-    Number of LOCed IOBs:                       38 out of      38  100%
+  Number of bonded IOBs:                        25 out of     232   10%
+    Number of LOCed IOBs:                       25 out of      25  100%
 
 Specific Feature Utilization:
   Number of RAMB16BWERs:                        32 out of      32  100%
@@ -83,7 +83,7 @@ Specific Feature Utilization:
 Average Fanout of Non-Clock Nets:                2.75
 
 Peak Memory Usage:  442 MB
-Total REAL time to MAP completion:  33 secs 
+Total REAL time to MAP completion:  32 secs 
 Total CPU time to MAP completion:   32 secs 
 
 Table of Contents
@@ -107,32 +107,6 @@ Section 1 - Errors
 
 Section 2 - Warnings
 --------------------
-WARNING:PhysDesignRules:368 - The signal <an<0>_OBUF> is incomplete. The signal
-   is not driven by any source pin in the design.
-WARNING:PhysDesignRules:368 - The signal <an<1>_OBUF> is incomplete. The signal
-   is not driven by any source pin in the design.
-WARNING:PhysDesignRules:368 - The signal <an<2>_OBUF> is incomplete. The signal
-   is not driven by any source pin in the design.
-WARNING:PhysDesignRules:368 - The signal <an<3>_OBUF> is incomplete. The signal
-   is not driven by any source pin in the design.
-WARNING:PhysDesignRules:368 - The signal <Led<0>_OBUF> is incomplete. The signal
-   is not driven by any source pin in the design.
-WARNING:PhysDesignRules:368 - The signal <Led<1>_OBUF> is incomplete. The signal
-   is not driven by any source pin in the design.
-WARNING:PhysDesignRules:368 - The signal <seg<0>_OBUF> is incomplete. The signal
-   is not driven by any source pin in the design.
-WARNING:PhysDesignRules:368 - The signal <seg<1>_OBUF> is incomplete. The signal
-   is not driven by any source pin in the design.
-WARNING:PhysDesignRules:368 - The signal <seg<2>_OBUF> is incomplete. The signal
-   is not driven by any source pin in the design.
-WARNING:PhysDesignRules:368 - The signal <seg<3>_OBUF> is incomplete. The signal
-   is not driven by any source pin in the design.
-WARNING:PhysDesignRules:368 - The signal <seg<4>_OBUF> is incomplete. The signal
-   is not driven by any source pin in the design.
-WARNING:PhysDesignRules:368 - The signal <seg<5>_OBUF> is incomplete. The signal
-   is not driven by any source pin in the design.
-WARNING:PhysDesignRules:368 - The signal <seg<6>_OBUF> is incomplete. The signal
-   is not driven by any source pin in the design.
 
 Section 3 - Informational
 -------------------------
@@ -1519,23 +1493,10 @@ Section 6 - IOB Properties
 | JD<5>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
 | JD<6>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
 | JD<7>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
-| Led<0>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| Led<1>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | Vsync                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | aclReset                           | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
-| an<0>                              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
-| an<1>                              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
-| an<2>                              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
-| an<3>                              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
 | extClk                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
 | rst                                | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
-| seg<0>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
-| seg<1>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
-| seg<2>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
-| seg<3>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
-| seg<4>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
-| seg<5>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
-| seg<6>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Section 7 - RPMs

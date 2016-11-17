@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Reading design: Top.prj
 
@@ -168,7 +168,7 @@ WARNING:HDLCompiler:189 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDispla
 WARNING:HDLCompiler:1127 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Pmod.v" Line 72: Assignment to an ignored, since the identifier is never used
 WARNING:HDLCompiler:1127 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Pmod.v" Line 73: Assignment to seg ignored, since the identifier is never used
 WARNING:HDLCompiler:634 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Pmod.v" Line 61: Net <Max> does not have a driver.
-WARNING:HDLCompiler:1127 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Top.v" Line 74: Assignment to xPixelPos ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Top.v" Line 72: Assignment to xPixelPos ignored, since the identifier is never used
 
 Elaborating module <PmodEnc(max=120,factor=0)>.
 WARNING:HDLCompiler:189 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Pmod.v" Line 61: Size mismatch in connection of port <max>. Formal port size is 8-bit while actual signal size is 1-bit.
@@ -178,7 +178,7 @@ WARNING:HDLCompiler:189 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDispla
 WARNING:HDLCompiler:1127 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Pmod.v" Line 72: Assignment to an ignored, since the identifier is never used
 WARNING:HDLCompiler:1127 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Pmod.v" Line 73: Assignment to seg ignored, since the identifier is never used
 WARNING:HDLCompiler:634 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Pmod.v" Line 61: Net <Max> does not have a driver.
-WARNING:HDLCompiler:1127 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Top.v" Line 75: Assignment to yPixelPos ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Top.v" Line 73: Assignment to yPixelPos ignored, since the identifier is never used
 
 Elaborating module <PmodEnc(max=256,factor=1)>.
 WARNING:HDLCompiler:189 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Pmod.v" Line 61: Size mismatch in connection of port <max>. Formal port size is 8-bit while actual signal size is 1-bit.
@@ -188,13 +188,13 @@ WARNING:HDLCompiler:189 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDispla
 WARNING:HDLCompiler:1127 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Pmod.v" Line 72: Assignment to an ignored, since the identifier is never used
 WARNING:HDLCompiler:1127 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Pmod.v" Line 73: Assignment to seg ignored, since the identifier is never used
 WARNING:HDLCompiler:634 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Pmod.v" Line 61: Net <Max> does not have a driver.
-WARNING:HDLCompiler:1127 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Top.v" Line 76: Assignment to colorPos ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Top.v" Line 74: Assignment to colorPos ignored, since the identifier is never used
 WARNING:Xst:2972 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Pmod.v" line 68. All outputs of instance <C2_DisplayController> of block <EncDisplayController> are unconnected in block <PmodEnc_1>. Underlying logic will be removed.
 WARNING:Xst:2972 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Pmod.v" line 68. All outputs of instance <C2_DisplayController> of block <EncDisplayController> are unconnected in block <PmodEnc_2>. Underlying logic will be removed.
 WARNING:Xst:2972 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Pmod.v" line 68. All outputs of instance <C2_DisplayController> of block <EncDisplayController> are unconnected in block <PmodEnc_3>. Underlying logic will be removed.
-WARNING:Xst:2972 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Top.v" line 74. All outputs of instance <xEnc> of block <PmodEnc> are unconnected in block <Top>. Underlying logic will be removed.
-WARNING:Xst:2972 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Top.v" line 75. All outputs of instance <yEnc> of block <PmodEnc> are unconnected in block <Top>. Underlying logic will be removed.
-WARNING:Xst:2972 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Top.v" line 76. All outputs of instance <color> of block <PmodEnc> are unconnected in block <Top>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Top.v" line 72. All outputs of instance <xEnc> of block <PmodEnc> are unconnected in block <Top>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Top.v" line 73. All outputs of instance <yEnc> of block <PmodEnc> are unconnected in block <Top>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Top.v" line 74. All outputs of instance <color> of block <PmodEnc> are unconnected in block <Top>. Underlying logic will be removed.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -203,9 +203,9 @@ WARNING:Xst:2972 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Top.v
 Synthesizing Unit <Top>.
     Related source file is "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Top.v".
 WARNING:Xst:647 - Input <aclReset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Top.v" line 74: Output port <EncO> of the instance <xEnc> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Top.v" line 75: Output port <EncO> of the instance <yEnc> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Top.v" line 76: Output port <EncO> of the instance <color> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Top.v" line 72: Output port <EncO> of the instance <xEnc> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Top.v" line 73: Output port <EncO> of the instance <yEnc> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Top.v" line 74: Output port <EncO> of the instance <color> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <Top> synthesized.
@@ -500,7 +500,7 @@ Slice Logic Distribution:
    Number of unique control sets:        14
 
 IO Utilization: 
- Number of IOs:                          38
+ Number of IOs:                          25
  Number of bonded IOBs:                  12  out of    232     5%  
 
 Specific Feature Utilization:
@@ -632,12 +632,12 @@ extClk         |    8.230|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 11.00 secs
-Total CPU time to Xst completion: 11.49 secs
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 11.46 secs
  
 --> 
 
-Total memory usage is 311408 kilobytes
+Total memory usage is 295748 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   42 (   0 filtered)

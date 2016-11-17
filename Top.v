@@ -26,9 +26,7 @@ module Top(
 	input [7:4] JC,
 	input [7:4] JD, 
 
-    output [3:0] an,
-    output [6:0] seg,
-    output [1:0] Led,
+
 	//input [1:0] sw,
 	//input sdi,				
 	output [7:0] ColorOut,
