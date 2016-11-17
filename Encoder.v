@@ -20,11 +20,13 @@
 //////////////////////////////////////////////////////////////////////////////////
 module Encoder(
     clk,
+	 max,
+	 factor,
     A,
     B,
     BTN,
+    EncOut,
     LED
-	
     );
 
 	 // ===========================================================================
@@ -33,14 +35,16 @@ module Encoder(
 	 input clk;
     input A;
     input B;
+	 input [7:0]max;
+	 input [1:0]factor;
     input BTN;
+    output [7:0] EncOut;
     output [1:0] LED;
-	
 
 	 // ===========================================================================
 	 // 							  Parameters, Regsiters, and Wires
 	 // ===========================================================================
-	 reg [4:0] EncOut;
+	 reg [7:0] EncOut;
 	 reg [1:0] LED;
 	 
 	 
@@ -67,7 +71,7 @@ module Encoder(
 			 else begin
 				 if(curState != nextState) begin
 						if(curState == "add") begin
-								if(EncOut < 5'b10011) begin
+								if(EncOut < max) begin
 									EncOut <= EncOut + 1'b1;
 								end
 								else begin
@@ -75,11 +79,11 @@ module Encoder(
 								end
 						end
 						else if(curState == "sub") begin
-								if(EncOut > 5'b00000) begin
+								if(EncOut > 8'b0) begin
 									EncOut <= EncOut - 1'b1;
 								end
 								else begin
-									EncOut <= 5'b10011;
+									EncOut <= max;
 								end
 						end
 						else begin
@@ -231,5 +235,7 @@ module Encoder(
 							 nextState <= "idle";
 					  end
 				 endcase
+
 	 end
+
 endmodule

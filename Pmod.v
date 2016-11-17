@@ -20,8 +20,8 @@
 //////////////////////////////////////////////////////////////////////////////////
 module PmodEnc(
     clk,
-    JA, 
-    Dir
+    JA,
+    EncO
     );
 
 	 // ===========================================================================
@@ -29,20 +29,24 @@ module PmodEnc(
 	 // ===========================================================================
     input clk;
     input [7:4] JA;
-    output [1:0] Dir;
+    output [7:0]EncO;
 
 	 // ===========================================================================
 	 // 							  Parameters, Regsiters, and Wires
 	 // ===========================================================================
 	 wire [3:0] an;
 	 wire [6:0] seg;
-	 wire [1:0] Dir;
-	 wire [4:0] EncO;
+	 wire [1:0] Led;
+	 
+	 wire [7:0] EncO;
+	 
+	 parameter max = 8'd120;
+	 parameter factor = 2'd0;
 	 
 	 // ===========================================================================
 	 // 										Implementation
 	 // ===========================================================================
- 	 Debouncer _Debouncer (
+ 	 Debouncer C0_Debouncer (
 				  .clk(clk),
 				  .Ain(JA[4]),
 				  .Bin(JA[5]),
@@ -50,12 +54,22 @@ module PmodEnc(
 				  .Bout(BO)
 	 );
 	 
- 	Encoder _Encoder (
+ 	Encoder C1_Encoder (
 				  .clk(clk),
 				  .A(AO),
 				  .B(BO),
+				  .max(Max),
+				  .factor(factor),
 				  .BTN(JA[6]),
-				  .LED(Dir)
+				  .EncOut(EncO),
+				.LED(Led)
 	 ); 
 
+ 	 EncDisplayController C2_DisplayController (
+				  .clk(clk),
+				  .SWT(JA[7]),
+				  .DispVal(EncO),
+				  .anode(an),
+				  .segOut(seg)
+	 );
 endmodule

@@ -25,12 +25,16 @@ module Top(
 	input [7:4] JA, 
 	input [7:4] JC,
 	input [7:4] JD, 
+
+    output [3:0] an,
+    output [6:0] seg,
+    output [1:0] Led,
 	//input [1:0] sw,
 	//input sdi,				
 	output [7:0] ColorOut,
 	output Hsync,
-	output Vsync,
-	output [7:0]led
+	output Vsync
+	//output [7:0]led
 	//output sdo,
 	//output sclk,
 	//output ss
@@ -67,13 +71,14 @@ module Top(
 	CoreI c(clk, readDataB, addressB, writeDataB, writeEnableB);
 	//Core c(clk, readDataB, writeDataB, writeEnableB, addressb);
 	
-	PmodEnc xEnc(clk, JA, xDir); 
-	PmodEnc yEnc(clk, JC, yDir); 
-	PmodEnc color(clk, JD, colorDir); 
+	PmodEnc #(160,0) xEnc (clk, JA, xPixelPos[7:0]); 
+	PmodEnc #(120,0) yEnc (clk, JC, yPixelPos[7:0]); 
+	PmodEnc #(256,1) color(clk, JD, colorPos[7:0]); 
 	
-	EncCounter #(.MAX(160),.FACTOR(1)) xPos(clk, xDir, xPixelPos[7:0]);
-	EncCounter #(.MAX(120),.FACTOR(1)) yPos(clk, yDir, yPixelPos[7:0]);
-	EncCounter #(.MAX(256),.FACTOR(2)) colorEnc(clk, colorDir, led);
+
+	//EncCounter #(.MAX(160),.FACTOR(0)) xPos(clk, xDir, xPixelPos[7:0]);
+	//EncCounter #(.MAX(120),.FACTOR(0)) yPos(clk, yDir, yPixelPos[7:0]);
+	//EncCounter #(.MAX(256),.FACTOR(2)) colorEnc(clk, colorDir, led);
 	
 	//ACL _ACL(clk, rst, sw, sdi, sdo, sclk, ss, aclMag);
 	//ACL_Controller aclCon(clk, aclRead, aclMag, aclOut, ledHolder);

@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> Reading design: Top.prj
 
@@ -116,14 +116,14 @@ Analyzing Verilog file "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\i
 Parsing module <ram>.
 Analyzing Verilog file "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Encoder.v" into library work
 Parsing module <Encoder>.
+Analyzing Verilog file "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\EncDisplayController.v" into library work
+Parsing module <EncDisplayController>.
 Analyzing Verilog file "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Debouncer.v" into library work
 Parsing module <Debouncer>.
 Analyzing Verilog file "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\VGA_Controller.v" into library work
 Parsing module <VGA_Controller>.
 Analyzing Verilog file "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Pmod.v" into library work
 Parsing module <PmodEnc>.
-Analyzing Verilog file "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\EncCounter.v" into library work
-Parsing module <EncCounter>.
 Analyzing Verilog file "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\DispatchAndRam.v" into library work
 Parsing module <DispatchAndRam>.
 Analyzing Verilog file "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\CoreI.v" into library work
@@ -154,23 +154,47 @@ WARNING:HDLCompiler:1499 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDispl
 
 Elaborating module <CoreI>.
 
-Elaborating module <PmodEnc>.
+Elaborating module <PmodEnc(max=160,factor=0)>.
 
 Elaborating module <Debouncer>.
 
 Elaborating module <Encoder>.
+WARNING:HDLCompiler:189 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Pmod.v" Line 61: Size mismatch in connection of port <max>. Formal port size is 8-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Pmod.v" Line 62: Size mismatch in connection of port <factor>. Formal port size is 2-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:1127 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Pmod.v" Line 65: Assignment to Led ignored, since the identifier is never used
 
-Elaborating module <EncCounter(MAX=160,FACTOR=1)>.
+Elaborating module <EncDisplayController>.
+WARNING:HDLCompiler:189 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Pmod.v" Line 71: Size mismatch in connection of port <DispVal>. Formal port size is 5-bit while actual signal size is 8-bit.
+WARNING:HDLCompiler:1127 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Pmod.v" Line 72: Assignment to an ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Pmod.v" Line 73: Assignment to seg ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Pmod.v" Line 61: Net <Max> does not have a driver.
 WARNING:HDLCompiler:1127 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Top.v" Line 74: Assignment to xPixelPos ignored, since the identifier is never used
 
-Elaborating module <EncCounter(MAX=120,FACTOR=1)>.
+Elaborating module <PmodEnc(max=120,factor=0)>.
+WARNING:HDLCompiler:189 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Pmod.v" Line 61: Size mismatch in connection of port <max>. Formal port size is 8-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Pmod.v" Line 62: Size mismatch in connection of port <factor>. Formal port size is 2-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:1127 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Pmod.v" Line 65: Assignment to Led ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Pmod.v" Line 71: Size mismatch in connection of port <DispVal>. Formal port size is 5-bit while actual signal size is 8-bit.
+WARNING:HDLCompiler:1127 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Pmod.v" Line 72: Assignment to an ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Pmod.v" Line 73: Assignment to seg ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Pmod.v" Line 61: Net <Max> does not have a driver.
 WARNING:HDLCompiler:1127 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Top.v" Line 75: Assignment to yPixelPos ignored, since the identifier is never used
 
-Elaborating module <EncCounter(MAX=256,FACTOR=2)>.
-WARNING:Xst:2972 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Top.v" line 70. All outputs of instance <xEnc> of block <PmodEnc> are unconnected in block <Top>. Underlying logic will be removed.
-WARNING:Xst:2972 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Top.v" line 71. All outputs of instance <yEnc> of block <PmodEnc> are unconnected in block <Top>. Underlying logic will be removed.
-WARNING:Xst:2972 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Top.v" line 74. All outputs of instance <xPos> of block <EncCounter> are unconnected in block <Top>. Underlying logic will be removed.
-WARNING:Xst:2972 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Top.v" line 75. All outputs of instance <yPos> of block <EncCounter> are unconnected in block <Top>. Underlying logic will be removed.
+Elaborating module <PmodEnc(max=256,factor=1)>.
+WARNING:HDLCompiler:189 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Pmod.v" Line 61: Size mismatch in connection of port <max>. Formal port size is 8-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Pmod.v" Line 62: Size mismatch in connection of port <factor>. Formal port size is 2-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:1127 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Pmod.v" Line 65: Assignment to Led ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Pmod.v" Line 71: Size mismatch in connection of port <DispVal>. Formal port size is 5-bit while actual signal size is 8-bit.
+WARNING:HDLCompiler:1127 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Pmod.v" Line 72: Assignment to an ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Pmod.v" Line 73: Assignment to seg ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Pmod.v" Line 61: Net <Max> does not have a driver.
+WARNING:HDLCompiler:1127 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Top.v" Line 76: Assignment to colorPos ignored, since the identifier is never used
+WARNING:Xst:2972 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Pmod.v" line 68. All outputs of instance <C2_DisplayController> of block <EncDisplayController> are unconnected in block <PmodEnc_1>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Pmod.v" line 68. All outputs of instance <C2_DisplayController> of block <EncDisplayController> are unconnected in block <PmodEnc_2>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Pmod.v" line 68. All outputs of instance <C2_DisplayController> of block <EncDisplayController> are unconnected in block <PmodEnc_3>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Top.v" line 74. All outputs of instance <xEnc> of block <PmodEnc> are unconnected in block <Top>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Top.v" line 75. All outputs of instance <yEnc> of block <PmodEnc> are unconnected in block <Top>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Top.v" line 76. All outputs of instance <color> of block <PmodEnc> are unconnected in block <Top>. Underlying logic will be removed.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -179,8 +203,9 @@ WARNING:Xst:2972 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Top.v
 Synthesizing Unit <Top>.
     Related source file is "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Top.v".
 WARNING:Xst:647 - Input <aclReset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Top.v" line 74: Output port <pixel> of the instance <xPos> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Top.v" line 75: Output port <pixel> of the instance <yPos> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Top.v" line 74: Output port <EncO> of the instance <xEnc> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Top.v" line 75: Output port <EncO> of the instance <yEnc> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Top.v" line 76: Output port <EncO> of the instance <color> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <Top> synthesized.
@@ -276,94 +301,57 @@ Synthesizing Unit <CoreI>.
 	inferred  11 Multiplexer(s).
 Unit <CoreI> synthesized.
 
-Synthesizing Unit <PmodEnc>.
-    Related source file is "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Pmod.v".
-WARNING:Xst:647 - Input <JA<7:7>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Summary:
-	no macro.
-Unit <PmodEnc> synthesized.
-
 Synthesizing Unit <Debouncer>.
     Related source file is "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Debouncer.v".
     Found 1-bit register for signal <sampledB>.
     Found 1-bit register for signal <Aout>.
     Found 1-bit register for signal <Bout>.
-    Found 7-bit register for signal <sclk>.
+    Found 1-bit register for signal <sclk<6>>.
+    Found 1-bit register for signal <sclk<5>>.
+    Found 1-bit register for signal <sclk<4>>.
+    Found 1-bit register for signal <sclk<3>>.
+    Found 1-bit register for signal <sclk<2>>.
+    Found 1-bit register for signal <sclk<1>>.
+    Found 1-bit register for signal <sclk<0>>.
     Found 1-bit register for signal <sampledA>.
-    Found 7-bit adder for signal <sclk[6]_GND_11_o_add_4_OUT> created at line 70.
-    Found 1-bit comparator not equal for signal <sampledA_Ain_equal_3_o> created at line 59
-    Found 1-bit comparator not equal for signal <sampledB_Bin_equal_4_o> created at line 63
     Summary:
-	inferred   1 Adder/Subtractor(s).
 	inferred  11 D-type flip-flop(s).
-	inferred   2 Comparator(s).
 Unit <Debouncer> synthesized.
 
 Synthesizing Unit <Encoder>.
     Related source file is "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Encoder.v".
+WARNING:Xst:647 - Input <factor> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 8-bit register for signal <EncOut>.
     Found 32-bit register for signal <curState>.
-    Found finite state machine <FSM_2> for signal <curState>.
-    -----------------------------------------------------------------------
-    | States             | 9                                              |
-    | Transitions        | 39                                             |
-    | Inputs             | 4                                              |
-    | Outputs            | 9                                              |
-    | Clock              | clk (rising_edge)                              |
-    | Reset              | BTN (positive)                                 |
-    | Reset type         | asynchronous                                   |
-    | Reset State        | 01101001011001000110110001100101               |
-    | Power Up State     | 01101001011001000110110001100101               |
-    | Encoding           | auto                                           |
-    | Implementation     | LUT                                            |
-    -----------------------------------------------------------------------
     Summary:
-	inferred   2 Multiplexer(s).
-	inferred   1 Finite State Machine(s).
+	inferred  40 D-type flip-flop(s).
 Unit <Encoder> synthesized.
-
-Synthesizing Unit <EncCounter_3>.
-    Related source file is "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\EncCounter.v".
-        MAX = 256
-        FACTOR = 2
-    Found 8-bit register for signal <pixel>.
-    Found 8-bit subtractor for signal <pixel[7]_GND_16_o_sub_4_OUT> created at line 45.
-    Found 8-bit adder for signal <pixel[7]_GND_16_o_add_1_OUT> created at line 40.
-    Summary:
-	inferred   1 Adder/Subtractor(s).
-	inferred   8 D-type flip-flop(s).
-Unit <EncCounter_3> synthesized.
 
 =========================================================================
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 11
+# Adders/Subtractors                                   : 9
  10-bit adder                                          : 2
  11-bit adder                                          : 1
  14-bit adder                                          : 1
  16-bit adder                                          : 4
  2-bit adder                                           : 1
- 7-bit adder                                           : 1
- 8-bit addsub                                          : 1
-# Registers                                            : 19
- 1-bit register                                        : 6
+# Registers                                            : 13
+ 1-bit register                                        : 2
  10-bit register                                       : 2
  16-bit register                                       : 6
  2-bit register                                        : 1
  3-bit register                                        : 1
- 7-bit register                                        : 1
- 8-bit register                                        : 2
-# Comparators                                          : 8
- 1-bit comparator not equal                            : 2
+ 8-bit register                                        : 1
+# Comparators                                          : 6
  10-bit comparator greater                             : 4
  10-bit comparator lessequal                           : 2
-# Multiplexers                                         : 25
+# Multiplexers                                         : 23
  1-bit 2-to-1 multiplexer                              : 9
  1-bit 8-to-1 multiplexer                              : 1
  16-bit 2-to-1 multiplexer                             : 8
- 2-bit 2-to-1 multiplexer                              : 2
  3-bit 2-to-1 multiplexer                              : 5
-# FSMs                                                 : 1
 
 =========================================================================
 
@@ -381,14 +369,6 @@ The following registers are absorbed into counter <MemAddress>: 1 register on si
 The following registers are absorbed into counter <Count>: 1 register on signal <Count>.
 Unit <CoreI> synthesized (advanced).
 
-Synthesizing (advanced) Unit <Debouncer>.
-The following registers are absorbed into counter <sclk>: 1 register on signal <sclk>.
-Unit <Debouncer> synthesized (advanced).
-
-Synthesizing (advanced) Unit <EncCounter_3>.
-The following registers are absorbed into accumulator <pixel>: 1 register on signal <pixel>.
-Unit <EncCounter_3> synthesized (advanced).
-
 Synthesizing (advanced) Unit <VGA_SignalGen>.
 The following registers are absorbed into counter <subPixelCount>: 1 register on signal <subPixelCount>.
 The following registers are absorbed into counter <PixelCount>: 1 register on signal <PixelCount>.
@@ -403,55 +383,28 @@ Macro Statistics
  11-bit adder                                          : 1
  14-bit adder                                          : 1
  16-bit adder                                          : 1
-# Counters                                             : 7
+# Counters                                             : 6
  10-bit up counter                                     : 2
  16-bit up counter                                     : 3
  2-bit up counter                                      : 1
- 7-bit up counter                                      : 1
-# Accumulators                                         : 1
- 8-bit updown accumulator                              : 1
-# Registers                                            : 65
- Flip-Flops                                            : 65
-# Comparators                                          : 8
- 1-bit comparator not equal                            : 2
+# Registers                                            : 61
+ Flip-Flops                                            : 61
+# Comparators                                          : 6
  10-bit comparator greater                             : 4
  10-bit comparator lessequal                           : 2
-# Multiplexers                                         : 23
+# Multiplexers                                         : 21
  1-bit 2-to-1 multiplexer                              : 9
  1-bit 8-to-1 multiplexer                              : 1
  16-bit 2-to-1 multiplexer                             : 6
- 2-bit 2-to-1 multiplexer                              : 2
  3-bit 2-to-1 multiplexer                              : 5
-# FSMs                                                 : 1
 
 =========================================================================
 
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <color/_Encoder/FSM_2> on signal <curState[1:4]> with gray encoding.
-----------------------------------------------
- State                            | Encoding
-----------------------------------------------
- 01101001011001000110110001100101 | 0000
- 00000000000000000101001000110001 | 0001
- 00000000000000000101001000110010 | 0011
- 00000000011000010110010001100100 | 0010
- 00000000000000000100110000110001 | 0110
- 00000000000000000100110000110010 | 0111
- 00000000000000000100110000110011 | 0101
- 00000000000000000101001000110011 | 0100
- 00000000011100110111010101100010 | 1100
-----------------------------------------------
 
 Optimizing unit <Top> ...
-WARNING:Xst:1293 - FF/Latch <colorEnc/pixel_0> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <colorEnc/pixel_1> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
-
-Optimizing unit <Debouncer> ...
-
-Optimizing unit <Encoder> ...
 
 Optimizing unit <VGA_Controller> ...
 
@@ -469,7 +422,7 @@ WARNING:Xst:1293 - FF/Latch <c/MemAddress_13> has a constant value of 0 in block
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block Top, actual ratio is 6.
+Found area constraint ratio of 100 (+ 5) on block Top, actual ratio is 5.
 
 Final Macro Processing ...
 
@@ -477,8 +430,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 146
- Flip-Flops                                            : 146
+# Registers                                            : 125
+ Flip-Flops                                            : 125
 
 =========================================================================
 
@@ -501,33 +454,32 @@ Top Level Output File Name         : Top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 838
+# BELS                             : 810
 #      GND                         : 2
-#      INV                         : 20
+#      INV                         : 18
 #      LUT1                        : 61
-#      LUT2                        : 16
-#      LUT3                        : 46
-#      LUT4                        : 39
-#      LUT5                        : 81
-#      LUT6                        : 357
+#      LUT2                        : 14
+#      LUT3                        : 41
+#      LUT4                        : 35
+#      LUT5                        : 77
+#      LUT6                        : 347
 #      MUXCY                       : 87
-#      MUXF7                       : 34
+#      MUXF7                       : 33
 #      VCC                         : 2
 #      XORCY                       : 93
-# FlipFlops/Latches                : 156
-#      FD                          : 19
-#      FDC                         : 4
-#      FDE                         : 96
-#      FDR                         : 9
+# FlipFlops/Latches                : 135
+#      FD                          : 17
+#      FDE                         : 88
+#      FDR                         : 2
 #      FDRE                        : 28
 # RAMS                             : 32
 #      RAMB16BWER                  : 32
 # Clock Buffers                    : 1
 #      BUFG                        : 1
-# IO Buffers                       : 23
-#      IBUF                        : 4
+# IO Buffers                       : 12
+#      IBUF                        : 1
 #      IBUFG                       : 1
-#      OBUF                        : 18
+#      OBUF                        : 10
 
 Device utilization summary:
 ---------------------------
@@ -536,20 +488,20 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             156  out of  18224     0%  
- Number of Slice LUTs:                  620  out of   9112     6%  
-    Number used as Logic:               620  out of   9112     6%  
+ Number of Slice Registers:             135  out of  18224     0%  
+ Number of Slice LUTs:                  593  out of   9112     6%  
+    Number used as Logic:               593  out of   9112     6%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    646
-   Number with an unused Flip Flop:     490  out of    646    75%  
-   Number with an unused LUT:            26  out of    646     4%  
-   Number of fully used LUT-FF pairs:   130  out of    646    20%  
-   Number of unique control sets:        19
+ Number of LUT Flip Flop pairs used:    615
+   Number with an unused Flip Flop:     480  out of    615    78%  
+   Number with an unused LUT:            22  out of    615     3%  
+   Number of fully used LUT-FF pairs:   113  out of    615    18%  
+   Number of unique control sets:        14
 
 IO Utilization: 
- Number of IOs:                          33
- Number of bonded IOBs:                  23  out of    232     9%  
+ Number of IOs:                          38
+ Number of bonded IOBs:                  12  out of    232     5%  
 
 Specific Feature Utilization:
  Number of Block RAM/FIFO:               32  out of     32   100%  
@@ -577,7 +529,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-extClk                             | IBUFG+BUFG             | 188   |
+extClk                             | IBUFG+BUFG             | 167   |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -590,7 +542,7 @@ Speed Grade: -3
 
    Minimum period: 8.230ns (Maximum Frequency: 121.506MHz)
    Minimum input arrival time before clock: 3.648ns
-   Maximum output required time after clock: 3.847ns
+   Maximum output required time after clock: 3.597ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -600,7 +552,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'extClk'
   Clock period: 8.230ns (frequency: 121.506MHz)
-  Total number of paths / destination ports: 167020 / 1646
+  Total number of paths / destination ports: 166773 / 1614
 -------------------------------------------------------------------------
 Delay:               8.230ns (Levels of Logic = 6)
   Source:            DAR/R/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/sel_pipe_2 (FF)
@@ -627,7 +579,7 @@ Delay:               8.230ns (Levels of Logic = 6)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'extClk'
-  Total number of paths / destination ports: 50 / 50
+  Total number of paths / destination ports: 40 / 40
 -------------------------------------------------------------------------
 Offset:              3.648ns (Levels of Logic = 2)
   Source:            rst (PAD)
@@ -647,22 +599,22 @@ Offset:              3.648ns (Levels of Logic = 2)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'extClk'
-  Total number of paths / destination ports: 16 / 16
+  Total number of paths / destination ports: 10 / 10
 -------------------------------------------------------------------------
-Offset:              3.847ns (Levels of Logic = 1)
-  Source:            colorEnc/pixel_2 (FF)
-  Destination:       led<2> (PAD)
+Offset:              3.597ns (Levels of Logic = 1)
+  Source:            Cont/SignalGen/ColorOut_7 (FF)
+  Destination:       ColorOut<7> (PAD)
   Source Clock:      extClk rising
 
-  Data Path: colorEnc/pixel_2 to led<2>
+  Data Path: Cont/SignalGen/ColorOut_7 to ColorOut<7>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              9   0.447   0.829  colorEnc/pixel_2 (colorEnc/pixel_2)
-     OBUF:I->O                 2.571          led_2_OBUF (led<2>)
+     FDRE:C->Q             1   0.447   0.579  Cont/SignalGen/ColorOut_7 (Cont/SignalGen/ColorOut_7)
+     OBUF:I->O                 2.571          ColorOut_7_OBUF (ColorOut<7>)
     ----------------------------------------
-    Total                      3.847ns (3.018ns logic, 0.829ns route)
-                                       (78.5% logic, 21.5% route)
+    Total                      3.597ns (3.018ns logic, 0.579ns route)
+                                       (83.9% logic, 16.1% route)
 
 =========================================================================
 
@@ -680,14 +632,14 @@ extClk         |    8.230|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 14.00 secs
-Total CPU time to Xst completion: 14.01 secs
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 11.49 secs
  
 --> 
 
-Total memory usage is 295704 kilobytes
+Total memory usage is 311408 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   20 (   0 filtered)
-Number of infos    :    2 (   0 filtered)
+Number of warnings :   42 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
 
