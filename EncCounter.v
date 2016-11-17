@@ -21,28 +21,28 @@
 module EncCounter(
 	input clk,
 	input [1:0] move,
-	output reg [15:0] pixel
+	output reg [7:0] pixel
 	 );
+	 
+	 //Max number of pixels
+	parameter MAX = 256; 
+	parameter FACTOR = 1;
 	
 	//initialize cursor 
 	initial pixel = 16'b0;
-	
-	//Max number of pixels
-	parameter max = 256; 
-	parameter factor = 1;
 	
 	always @ (posedge clk) begin
 		case(move)
 			2'b00: pixel <= pixel;
 			
 			2'b10: begin
-				if(pixel < max)
-					pixel <= pixel + (1'b1 << factor);
+				if(pixel < MAX)
+					pixel <= pixel + (1'b1 << FACTOR);
 			end
 			
 			2'b01: begin
 				if(pixel > 0)
-					pixel <= pixel - (1'b1 << factor);
+					pixel <= pixel - (1'b1 << FACTOR);
 			end
 			
 			default: pixel <= pixel;

@@ -71,12 +71,13 @@ module Top(
 	PmodEnc yEnc(clk, JC, yDir); 
 	PmodEnc color(clk, JD, colorDir); 
 	
-	EncCounter #(160, 1) xPos(clk, xDir, xPixelPos);
-	EncCounter #(120, 1) yPos(clk, yDir, yPixelPos);
-	EncCounter #(256, 2) colorEnc(clk, colorDir, colorPos);
+	EncCounter #(.MAX(160),.FACTOR(1)) xPos(clk, xDir, xPixelPos[7:0]);
+	EncCounter #(.MAX(120),.FACTOR(1)) yPos(clk, yDir, yPixelPos[7:0]);
+	EncCounter #(.MAX(256),.FACTOR(2)) colorEnc(clk, colorDir, led);
 	
 	//ACL _ACL(clk, rst, sw, sdi, sdo, sclk, ss, aclMag);
 	//ACL_Controller aclCon(clk, aclRead, aclMag, aclOut, ledHolder);
 	//ACL_Controller aclCon(clk, aclReset, aclMag, aclOut, ledHolder);
+
 	
 endmodule

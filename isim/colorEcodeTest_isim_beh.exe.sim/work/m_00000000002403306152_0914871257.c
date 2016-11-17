@@ -29,12 +29,12 @@ static int ng4[] = {0, 0};
 
 
 
-static void Initial_28_0(char *t0)
+static void Initial_32_0(char *t0)
 {
     char *t1;
     char *t2;
 
-LAB0:    xsi_set_current_line(28, ng0);
+LAB0:    xsi_set_current_line(32, ng0);
     t1 = ((char*)((ng1)));
     t2 = (t0 + 1880);
     xsi_vlogvar_assign_value(t2, t1, 0, 0, 16);
@@ -238,9 +238,9 @@ LAB31:    xsi_set_current_line(45, ng0);
 }
 
 
-extern void work_m_00000000002260553768_0914871257_init()
+extern void work_m_00000000002403306152_0914871257_init()
 {
-	static char *pe[] = {(void *)Initial_28_0,(void *)Always_34_1};
-	xsi_register_didat("work_m_00000000002260553768_0914871257", "isim/colorEcodeTest_isim_beh.exe.sim/work/m_00000000002260553768_0914871257.didat");
+	static char *pe[] = {(void *)Initial_32_0,(void *)Always_34_1};
+	xsi_register_didat("work_m_00000000002403306152_0914871257", "isim/colorEcodeTest_isim_beh.exe.sim/work/m_00000000002403306152_0914871257.didat");
 	xsi_register_executes(pe);
 }

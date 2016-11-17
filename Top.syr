@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Reading design: Top.prj
 
@@ -160,13 +160,13 @@ Elaborating module <Debouncer>.
 
 Elaborating module <Encoder>.
 
-Elaborating module <EncCounter(max=160,factor=1)>.
+Elaborating module <EncCounter(MAX=160,FACTOR=1)>.
 WARNING:HDLCompiler:1127 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Top.v" Line 74: Assignment to xPixelPos ignored, since the identifier is never used
 
-Elaborating module <EncCounter(max=120,factor=1)>.
+Elaborating module <EncCounter(MAX=120,FACTOR=1)>.
 WARNING:HDLCompiler:1127 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Top.v" Line 75: Assignment to yPixelPos ignored, since the identifier is never used
 
-Elaborating module <EncCounter(max=256,factor=2)>.
+Elaborating module <EncCounter(MAX=256,FACTOR=2)>.
 WARNING:Xst:2972 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Top.v" line 70. All outputs of instance <xEnc> of block <PmodEnc> are unconnected in block <Top>. Underlying logic will be removed.
 WARNING:Xst:2972 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Top.v" line 71. All outputs of instance <yEnc> of block <PmodEnc> are unconnected in block <Top>. Underlying logic will be removed.
 WARNING:Xst:2972 - "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Top.v" line 74. All outputs of instance <xPos> of block <EncCounter> are unconnected in block <Top>. Underlying logic will be removed.
@@ -323,16 +323,14 @@ Unit <Encoder> synthesized.
 
 Synthesizing Unit <EncCounter_3>.
     Related source file is "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\EncCounter.v".
-        max = 256
-        factor = 2
-    Found 16-bit register for signal <pixel>.
-    Found 16-bit subtractor for signal <pixel[15]_GND_16_o_sub_6_OUT> created at line 45.
-    Found 16-bit adder for signal <pixel[15]_GND_16_o_add_2_OUT> created at line 40.
-    Found 16-bit comparator lessequal for signal <pixel[15]_GND_16_o_LessThan_2_o> created at line 39
+        MAX = 256
+        FACTOR = 2
+    Found 8-bit register for signal <pixel>.
+    Found 8-bit subtractor for signal <pixel[7]_GND_16_o_sub_4_OUT> created at line 45.
+    Found 8-bit adder for signal <pixel[7]_GND_16_o_add_1_OUT> created at line 40.
     Summary:
 	inferred   1 Adder/Subtractor(s).
-	inferred  16 D-type flip-flop(s).
-	inferred   1 Comparator(s).
+	inferred   8 D-type flip-flop(s).
 Unit <EncCounter_3> synthesized.
 
 =========================================================================
@@ -344,22 +342,21 @@ Macro Statistics
  11-bit adder                                          : 1
  14-bit adder                                          : 1
  16-bit adder                                          : 4
- 16-bit addsub                                         : 1
  2-bit adder                                           : 1
  7-bit adder                                           : 1
+ 8-bit addsub                                          : 1
 # Registers                                            : 19
  1-bit register                                        : 6
  10-bit register                                       : 2
- 16-bit register                                       : 7
+ 16-bit register                                       : 6
  2-bit register                                        : 1
  3-bit register                                        : 1
  7-bit register                                        : 1
- 8-bit register                                        : 1
-# Comparators                                          : 9
+ 8-bit register                                        : 2
+# Comparators                                          : 8
  1-bit comparator not equal                            : 2
  10-bit comparator greater                             : 4
  10-bit comparator lessequal                           : 2
- 16-bit comparator lessequal                           : 1
 # Multiplexers                                         : 25
  1-bit 2-to-1 multiplexer                              : 9
  1-bit 8-to-1 multiplexer                              : 1
@@ -412,14 +409,13 @@ Macro Statistics
  2-bit up counter                                      : 1
  7-bit up counter                                      : 1
 # Accumulators                                         : 1
- 16-bit updown accumulator                             : 1
+ 8-bit updown accumulator                              : 1
 # Registers                                            : 65
  Flip-Flops                                            : 65
-# Comparators                                          : 9
+# Comparators                                          : 8
  1-bit comparator not equal                            : 2
  10-bit comparator greater                             : 4
  10-bit comparator lessequal                           : 2
- 16-bit comparator lessequal                           : 1
 # Multiplexers                                         : 23
  1-bit 2-to-1 multiplexer                              : 9
  1-bit 8-to-1 multiplexer                              : 1
@@ -450,6 +446,8 @@ Optimizing FSM <color/_Encoder/FSM_2> on signal <curState[1:4]> with gray encodi
 ----------------------------------------------
 
 Optimizing unit <Top> ...
+WARNING:Xst:1293 - FF/Latch <colorEnc/pixel_0> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <colorEnc/pixel_1> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
 
 Optimizing unit <Debouncer> ...
 
@@ -459,23 +457,12 @@ Optimizing unit <VGA_Controller> ...
 
 Optimizing unit <VGA_SignalGen> ...
 
-Optimizing unit <EncCounter_3> ...
-
 Optimizing unit <VGA_Dispatch> ...
 
 Optimizing unit <CoreI> ...
 WARNING:Xst:1710 - FF/Latch <DAR/Dispatch/AddressA_14> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2677 - Node <DAR/Dispatch/AddressA_15> of sequential type is unconnected in block <Top>.
 WARNING:Xst:2677 - Node <c/PC_15> of sequential type is unconnected in block <Top>.
-WARNING:Xst:1293 - FF/Latch <colorEnc/pixel_15> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <colorEnc/pixel_14> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <colorEnc/pixel_13> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <colorEnc/pixel_12> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <colorEnc/pixel_11> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <colorEnc/pixel_10> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <colorEnc/pixel_9> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <colorEnc/pixel_1> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <colorEnc/pixel_0> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <c/MemAddress_15> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <c/MemAddress_14> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <c/MemAddress_13> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
@@ -490,8 +477,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 147
- Flip-Flops                                            : 147
+# Registers                                            : 146
+ Flip-Flops                                            : 146
 
 =========================================================================
 
@@ -514,23 +501,23 @@ Top Level Output File Name         : Top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 854
+# BELS                             : 838
 #      GND                         : 2
-#      INV                         : 19
+#      INV                         : 20
 #      LUT1                        : 61
 #      LUT2                        : 16
-#      LUT3                        : 45
-#      LUT4                        : 41
-#      LUT5                        : 87
-#      LUT6                        : 353
-#      MUXCY                       : 95
-#      MUXF7                       : 33
+#      LUT3                        : 46
+#      LUT4                        : 39
+#      LUT5                        : 81
+#      LUT6                        : 357
+#      MUXCY                       : 87
+#      MUXF7                       : 34
 #      VCC                         : 2
-#      XORCY                       : 100
-# FlipFlops/Latches                : 157
+#      XORCY                       : 93
+# FlipFlops/Latches                : 156
 #      FD                          : 19
 #      FDC                         : 4
-#      FDE                         : 97
+#      FDE                         : 96
 #      FDR                         : 9
 #      FDRE                        : 28
 # RAMS                             : 32
@@ -549,15 +536,15 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             157  out of  18224     0%  
- Number of Slice LUTs:                  622  out of   9112     6%  
-    Number used as Logic:               622  out of   9112     6%  
+ Number of Slice Registers:             156  out of  18224     0%  
+ Number of Slice LUTs:                  620  out of   9112     6%  
+    Number used as Logic:               620  out of   9112     6%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    648
-   Number with an unused Flip Flop:     491  out of    648    75%  
-   Number with an unused LUT:            26  out of    648     4%  
-   Number of fully used LUT-FF pairs:   131  out of    648    20%  
+ Number of LUT Flip Flop pairs used:    646
+   Number with an unused Flip Flop:     490  out of    646    75%  
+   Number with an unused LUT:            26  out of    646     4%  
+   Number of fully used LUT-FF pairs:   130  out of    646    20%  
    Number of unique control sets:        19
 
 IO Utilization: 
@@ -590,7 +577,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-extClk                             | IBUFG+BUFG             | 189   |
+extClk                             | IBUFG+BUFG             | 188   |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -603,7 +590,7 @@ Speed Grade: -3
 
    Minimum period: 8.230ns (Maximum Frequency: 121.506MHz)
    Minimum input arrival time before clock: 3.648ns
-   Maximum output required time after clock: 3.668ns
+   Maximum output required time after clock: 3.847ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -613,7 +600,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'extClk'
   Clock period: 8.230ns (frequency: 121.506MHz)
-  Total number of paths / destination ports: 167239 / 1648
+  Total number of paths / destination ports: 167020 / 1646
 -------------------------------------------------------------------------
 Delay:               8.230ns (Levels of Logic = 6)
   Source:            DAR/R/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/sel_pipe_2 (FF)
@@ -662,20 +649,20 @@ Offset:              3.648ns (Levels of Logic = 2)
 Timing constraint: Default OFFSET OUT AFTER for Clock 'extClk'
   Total number of paths / destination ports: 16 / 16
 -------------------------------------------------------------------------
-Offset:              3.668ns (Levels of Logic = 1)
-  Source:            colorEnc/pixel_7 (FF)
-  Destination:       led<7> (PAD)
+Offset:              3.847ns (Levels of Logic = 1)
+  Source:            colorEnc/pixel_2 (FF)
+  Destination:       led<2> (PAD)
   Source Clock:      extClk rising
 
-  Data Path: colorEnc/pixel_7 to led<7>
+  Data Path: colorEnc/pixel_2 to led<2>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              3   0.447   0.650  colorEnc/pixel_7 (colorEnc/pixel_7)
-     OBUF:I->O                 2.571          led_7_OBUF (led<7>)
+     FDE:C->Q              9   0.447   0.829  colorEnc/pixel_2 (colorEnc/pixel_2)
+     OBUF:I->O                 2.571          led_2_OBUF (led<2>)
     ----------------------------------------
-    Total                      3.668ns (3.018ns logic, 0.650ns route)
-                                       (82.3% logic, 17.7% route)
+    Total                      3.847ns (3.018ns logic, 0.829ns route)
+                                       (78.5% logic, 21.5% route)
 
 =========================================================================
 
@@ -693,14 +680,14 @@ extClk         |    8.230|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 10.00 secs
-Total CPU time to Xst completion: 10.61 secs
+Total REAL time to Xst completion: 14.00 secs
+Total CPU time to Xst completion: 14.01 secs
  
 --> 
 
-Total memory usage is 295692 kilobytes
+Total memory usage is 295704 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   27 (   0 filtered)
+Number of warnings :   20 (   0 filtered)
 Number of infos    :    2 (   0 filtered)
 

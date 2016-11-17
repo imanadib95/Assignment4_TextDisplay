@@ -2,14 +2,14 @@ Command line:
    colorEcodeTest_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  63318
+     -socket  63941
 
-Thu Nov 17 12:35:55 2016
+Thu Nov 17 13:50:54 2016
 
 
- Elaboration Time: 0.03125 sec
+ Elaboration Time: 0.046875 sec
 
- Current Memory Usage: 841.523 Meg
+ Current Memory Usage: 841.617 Meg
 
  Total Signals          : 16
  Total Nets             : 32
@@ -21,9 +21,9 @@ Thu Nov 17 12:35:55 2016
  Total Scalar Nets and Variables : 195
 Total Line Count : 36
 
- Total Simulation Time: 0.078125 sec
+ Total Simulation Time: 0.0625 sec
 
- Current Memory Usage: 684.237 Meg
+ Current Memory Usage: 841.617 Meg
 
-Thu Nov 17 12:37:32 2016
+Thu Nov 17 13:51:09 2016
 
