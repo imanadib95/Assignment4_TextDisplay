@@ -28,7 +28,7 @@ module EncCounter(
 	initial pixel = 16'b0;
 	
 	//Max number of pixels
-	parameter max = 0; 
+	parameter max = 256; 
 	parameter factor = 1;
 	
 	always @ (posedge clk) begin

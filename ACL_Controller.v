@@ -42,7 +42,7 @@ module ACL_Controller(
 		case(PS)
 			//receive singal from accelerameter
 			receive: begin
-				if(aclIn > 9'b000010000) begin //above threshold
+				if(aclIn > 9'b00000001) begin //above threshold
 					aclOut = 16'b1;
 					NS = send;
 				end

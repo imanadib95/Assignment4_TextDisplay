@@ -21,18 +21,19 @@
 module Top(
 	input extClk, 
 	input rst, 
+	input aclReset,
 	input [7:4] JA, 
-	input [7:4] JB,
-	input [7:4] JC, 
-	input [1:0] sw,
-	input sdi,				
+	input [7:4] JC,
+	input [7:4] JD, 
+	//input [1:0] sw,
+	//input sdi,				
 	output [7:0] ColorOut,
 	output Hsync,
 	output Vsync,
-	output [7:0]led,
-	output sdo,
-	output sclk,
-	output ss
+	output [7:0]led
+	//output sdo,
+	//output sclk,
+	//output ss
 	);
 
 	wire [1:0] SubPixelCount;
@@ -68,15 +69,14 @@ module Top(
 	
 	PmodEnc xEnc(clk, JA, xDir); 
 	PmodEnc yEnc(clk, JC, yDir); 
-	PmodEnc color(clk, JB, colorDir); 
+	PmodEnc color(clk, JD, colorDir); 
 	
 	EncCounter #(160, 1) xPos(clk, xDir, xPixelPos);
 	EncCounter #(120, 1) yPos(clk, yDir, yPixelPos);
 	EncCounter #(256, 2) colorEnc(clk, colorDir, colorPos);
 	
-	ACL _ACL(clk, rst, sw, sdi, sdo, sclk, ss, aclMag);
-	ACL_Controller aclCon(clk, aclRead, aclMag, aclOut, ledHolder);
-	
-	assign led = colorPos[7:0];
+	//ACL _ACL(clk, rst, sw, sdi, sdo, sclk, ss, aclMag);
+	//ACL_Controller aclCon(clk, aclRead, aclMag, aclOut, ledHolder);
+	//ACL_Controller aclCon(clk, aclReset, aclMag, aclOut, ledHolder);
 	
 endmodule

@@ -10,40 +10,40 @@ Target Device  : xc6slx16
 Target Package : csg324
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Tue Nov 15 15:56:53 2016
+Mapped Date    : Thu Nov 17 12:33:54 2016
 
 Design Summary
 --------------
 Number of errors:      0
 Number of warnings:    0
 Slice Logic Utilization:
-  Number of Slice Registers:                   276 out of  18,224    1%
-    Number used as Flip Flops:                 276
+  Number of Slice Registers:                   156 out of  18,224    1%
+    Number used as Flip Flops:                 156
     Number used as Latches:                      0
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                        661 out of   9,112    7%
-    Number used as logic:                      653 out of   9,112    7%
-      Number using O6 output only:             427
-      Number using O5 output only:             108
-      Number using O5 and O6:                  118
+  Number of Slice LUTs:                        473 out of   9,112    5%
+    Number used as logic:                      468 out of   9,112    5%
+      Number using O6 output only:             324
+      Number using O5 output only:              57
+      Number using O5 and O6:                   87
       Number used as ROM:                        0
     Number used as Memory:                       0 out of   2,176    0%
-    Number used exclusively as route-thrus:      8
+    Number used exclusively as route-thrus:      5
       Number with same-slice register load:      0
-      Number with same-slice carry load:         8
+      Number with same-slice carry load:         5
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                   261 out of   2,278   11%
-  Number of MUXCYs used:                       176 out of   4,556    3%
-  Number of LUT Flip Flop pairs used:          671
-    Number with an unused Flip Flop:           428 out of     671   63%
-    Number with an unused LUT:                  10 out of     671    1%
-    Number of fully used LUT-FF pairs:         233 out of     671   34%
-    Number of unique control sets:              30
+  Number of occupied Slices:                   220 out of   2,278    9%
+  Number of MUXCYs used:                       116 out of   4,556    2%
+  Number of LUT Flip Flop pairs used:          480
+    Number with an unused Flip Flop:           343 out of     480   71%
+    Number with an unused LUT:                   7 out of     480    1%
+    Number of fully used LUT-FF pairs:         130 out of     480   27%
+    Number of unique control sets:              17
     Number of slice register sites lost
-      to control set restrictions:             124 out of  18,224    1%
+      to control set restrictions:              60 out of  18,224    1%
 
   A LUT Flip Flop pair for this architecture represents one LUT paired with
   one Flip Flop within a slice.  A control set is a unique combination of
@@ -52,8 +52,8 @@ Slice Logic Distribution:
   over-mapped for a non-slice resource or if Placement fails.
 
 IO Utilization:
-  Number of bonded IOBs:                        38 out of     232   16%
-    Number of LOCed IOBs:                       38 out of      38  100%
+  Number of bonded IOBs:                        33 out of     232   14%
+    Number of LOCed IOBs:                       33 out of      33  100%
 
 Specific Feature Utilization:
   Number of RAMB16BWERs:                        32 out of      32  100%
@@ -80,11 +80,11 @@ Specific Feature Utilization:
   Number of STARTUPs:                            0 out of       1    0%
   Number of SUSPEND_SYNCs:                       0 out of       1    0%
 
-Average Fanout of Non-Clock Nets:                2.94
+Average Fanout of Non-Clock Nets:                2.79
 
 Peak Memory Usage:  442 MB
-Total REAL time to MAP completion:  41 secs 
-Total CPU time to MAP completion:   38 secs 
+Total REAL time to MAP completion:  34 secs 
+Total CPU time to MAP completion:   34 secs 
 
 Table of Contents
 -----------------
@@ -111,13 +111,13 @@ Section 2 - Warnings
 Section 3 - Informational
 -------------------------
 INFO:LIT:243 - Logical network JA<7>_IBUF has no load.
-INFO:LIT:395 - The above info message is repeated 11 more times for the
-   following (max. 5 shown):
+INFO:LIT:395 - The above info message is repeated 9 more times for the following
+   (max. 5 shown):
    JA<6>_IBUF,
    JA<5>_IBUF,
    JA<4>_IBUF,
-   JB<7>_IBUF,
-   JC<7>_IBUF
+   JC<7>_IBUF,
+   JC<6>_IBUF
    To see the details of these info messages, please use the -detail switch.
 INFO:MapLib:562 - No environment variables are currently set.
 INFO:LIT:244 - All of the single ended outputs in this design are using slew
@@ -1485,15 +1485,16 @@ Section 6 - IOB Properties
 | JA<5>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
 | JA<6>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
 | JA<7>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
-| JB<4>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
-| JB<5>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
-| JB<6>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
-| JB<7>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
 | JC<4>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
 | JC<5>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
 | JC<6>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
 | JC<7>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| JD<4>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| JD<5>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| JD<6>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| JD<7>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
 | Vsync                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| aclReset                           | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
 | extClk                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
 | led<0>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | led<1>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
@@ -1504,12 +1505,6 @@ Section 6 - IOB Properties
 | led<6>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | led<7>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | rst                                | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
-| sclk                               | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| sdi                                | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
-| sdo                                | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| ss                                 | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| sw<0>                              | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
-| sw<1>                              | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Section 7 - RPMs
