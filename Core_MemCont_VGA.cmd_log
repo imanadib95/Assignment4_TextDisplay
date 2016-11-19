@@ -1,0 +1,9 @@
+xst -intstyle ise -ifn "C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/Core_MemCont_VGA.xst" -ofn "C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/Core_MemCont_VGA.syr" 
+xst -intstyle ise -ifn "C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/Core_MemCont_VGA.xst" -ofn "C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/Core_MemCont_VGA.syr" 
+xst -intstyle ise -ifn "C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/Core_MemCont_VGA.xst" -ofn "C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/Core_MemCont_VGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Top.ucf -uc C:/Users/imana/OneDrive/Documents/GitHub/Core/Core_MemCont_VGA.ucf -p xc6slx16-csg324-3 Core_MemCont_VGA.ngc Core_MemCont_VGA.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/imana/OneDrive/Documents/GitHub/Core/Core_MemCont_VGA.ucf -p xc6slx16-csg324-3 Core_MemCont_VGA.ngc Core_MemCont_VGA.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Core_MemCont_VGA_map.ncd Core_MemCont_VGA.ngd Core_MemCont_VGA.pcf 
+par -w -intstyle ise -ol high -mt off Core_MemCont_VGA_map.ncd Core_MemCont_VGA.ncd Core_MemCont_VGA.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Core_MemCont_VGA.twx Core_MemCont_VGA.ncd -o Core_MemCont_VGA.twr Core_MemCont_VGA.pcf 
+bitgen -intstyle ise -f Core_MemCont_VGA.ut Core_MemCont_VGA.ncd 

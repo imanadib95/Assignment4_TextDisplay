@@ -3,7 +3,7 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    20:18:48 10/14/2016 
+// Create Date:    11:05:42 11/03/2016 
 // Design Name: 
 // Module Name:    VGA_Controller 
 // Project Name: 
@@ -18,58 +18,23 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module VGA_Controller(clk, rst, ASCIIColChar,GlyphWord,SubPixelCount,LineCountOut,TextAreaAddress,ColorOut,Hsync,Vsync
-    );
-	 input clk, rst;
-	 input [15:0] ASCIIColChar;
-	 input [15:0] GlyphWord;
-	 //Signals for Dispatch
-	 output [1:0] SubPixelCount;
-//	 output [9:0] PixelCount;
-	 output [2:1] LineCountOut;
-	 output [15:0] TextAreaAddress;
-//	 output [15:0] GlyphAreaAddress;
-	 // Signals for Screen
-	 output [7:0] ColorOut;
-	 output Hsync, Vsync;
+module VGA_Controller(clk,ColorIn,Address,Hsync,Vsync,ColorOut);
+input clk;
+input[7:0] ColorIn;
+output[14:0] Address;
+output Hsync;
+output Vsync;
+output [7:0] ColorOut;
 
-	// Intermodule Wires
-	wire [9:0] PixelCount;
-	wire [9:0]	LineCount;
-	
-	//Assign Output LineCount Values
-		assign LineCountOut = LineCount[2:1];
-	
-	// Intermediate Wires
-	wire [7:0] GlyphHalfWord;
-	
-	// Intermediate Registers
-	reg PixelOnOff;
-	
-	
-	
-	// Determine address in text area
-	assign TextAreaAddress = {LineCount[8:3],PixelCount[9:3]} +16'd895;
-//	// Determine address of ASCII Character in glyph table
-//	assign GlyphAreaAddress = ({3'b000,ASCIIColChar[7:0],2'b00}+LineCount[2:1]);
-	// Extract Proper line from 16'b glyph word
-	assign GlyphHalfWord = LineCount[0]? GlyphWord[7:0]:GlyphWord[15:8];	
-	// Extract Bit from 8'b Glyph line
-	always @(*)
-		case (PixelCount[2:0])
-		0: PixelOnOff = GlyphHalfWord[7];
-		1: PixelOnOff = GlyphHalfWord[0];
-		2: PixelOnOff = GlyphHalfWord[1];
-		3: PixelOnOff = GlyphHalfWord[2];
-		4: PixelOnOff = GlyphHalfWord[3];
-		5: PixelOnOff = GlyphHalfWord[4];
-		6: PixelOnOff = GlyphHalfWord[5];
-		7: PixelOnOff = GlyphHalfWord[6];
-		endcase
+wire [9:0] LineCount;
+wire [9:0] PixelCount;
+
+
+	// Determine address of Area on screen in text area
+	assign Address = {LineCount[8:2],PixelCount[9:2]} +15'd1000;
 
 // Signal Generator and Output to Screen
-	VGA_SignalGen SignalGen(clk, rst,{ASCIIColChar[15:8]&{8{PixelOnOff}}}, SubPixelCount, PixelCount, LineCount, Hsync,Vsync, ColorOut);
-
+	VGA_SignalGen SignalGen(clk, 1'b0,ColorIn, PixelCount, LineCount, Hsync,Vsync, ColorOut);
 
 
 

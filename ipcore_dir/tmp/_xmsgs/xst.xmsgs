@@ -218,13 +218,13 @@
 <msg type="warning" file="HDLCompiler" num="220" delta="old" >"C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\ipcore_dir\tmp\_cg\_dbg\blk_mem_gen_v7_3\blk_mem_gen_prim_width.vhd" Line 979: Assignment ignored
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/ram.mif</arg>
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/BRAM.mif</arg>
 </msg>
 
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) depth is smaller than memory depth.
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) depth is smaller than memory depth.
 </msg>
 
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
 </msg>
 
 <msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
@@ -233,13 +233,13 @@
 <msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/ram.mif</arg>
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/BRAM.mif</arg>
 </msg>
 
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) depth is smaller than memory depth.
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) depth is smaller than memory depth.
 </msg>
 
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
 </msg>
 
 <msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
@@ -251,40 +251,13 @@
 <msg type="warning" file="HDLCompiler" num="634" delta="old" >"C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\ipcore_dir\tmp\_cg\_dbg\blk_mem_gen_v7_3\blk_mem_gen_prim_width.vhd" Line 434: Net &lt;<arg fmt="%s" index="1">dinb_pad[17]</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/ram.mif</arg>
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/BRAM.mif</arg>
 </msg>
 
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) depth is smaller than memory depth.
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) depth is smaller than memory depth.
 </msg>
 
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
-</msg>
-
-<msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
-</msg>
-
-<msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
-</msg>
-
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/ram.mif</arg>
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) depth is smaller than memory depth.
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
-</msg>
-
-<msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
-</msg>
-
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/ram.mif</arg>
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) depth is smaller than memory depth.
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
 </msg>
 
 <msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
@@ -293,52 +266,25 @@
 <msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/ram.mif</arg>
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/BRAM.mif</arg>
 </msg>
 
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) depth is smaller than memory depth.
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) depth is smaller than memory depth.
 </msg>
 
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
-</msg>
-
-<msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
-</msg>
-
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/ram.mif</arg>
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) depth is smaller than memory depth.
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
 </msg>
 
 <msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/BRAM.mif</arg>
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/ram.mif</arg>
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) depth is smaller than memory depth.
 </msg>
 
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) depth is smaller than memory depth.
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
-</msg>
-
-<msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
-</msg>
-
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/ram.mif</arg>
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) depth is smaller than memory depth.
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
 </msg>
 
 <msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
@@ -347,52 +293,25 @@
 <msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/ram.mif</arg>
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/BRAM.mif</arg>
 </msg>
 
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) depth is smaller than memory depth.
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) depth is smaller than memory depth.
 </msg>
 
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
-</msg>
-
-<msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
-</msg>
-
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/ram.mif</arg>
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) depth is smaller than memory depth.
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
 </msg>
 
 <msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/BRAM.mif</arg>
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/ram.mif</arg>
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) depth is smaller than memory depth.
 </msg>
 
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) depth is smaller than memory depth.
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
-</msg>
-
-<msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
-</msg>
-
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/ram.mif</arg>
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) depth is smaller than memory depth.
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
 </msg>
 
 <msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
@@ -401,52 +320,25 @@
 <msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/ram.mif</arg>
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/BRAM.mif</arg>
 </msg>
 
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) depth is smaller than memory depth.
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) depth is smaller than memory depth.
 </msg>
 
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
-</msg>
-
-<msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
-</msg>
-
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/ram.mif</arg>
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) depth is smaller than memory depth.
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
 </msg>
 
 <msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/BRAM.mif</arg>
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/ram.mif</arg>
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) depth is smaller than memory depth.
 </msg>
 
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) depth is smaller than memory depth.
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
-</msg>
-
-<msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
-</msg>
-
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/ram.mif</arg>
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) depth is smaller than memory depth.
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
 </msg>
 
 <msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
@@ -455,52 +347,25 @@
 <msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/ram.mif</arg>
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/BRAM.mif</arg>
 </msg>
 
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) depth is smaller than memory depth.
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) depth is smaller than memory depth.
 </msg>
 
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
-</msg>
-
-<msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
-</msg>
-
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/ram.mif</arg>
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) depth is smaller than memory depth.
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
 </msg>
 
 <msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/BRAM.mif</arg>
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/ram.mif</arg>
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) depth is smaller than memory depth.
 </msg>
 
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) depth is smaller than memory depth.
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
-</msg>
-
-<msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
-</msg>
-
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/ram.mif</arg>
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) depth is smaller than memory depth.
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
 </msg>
 
 <msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
@@ -509,52 +374,25 @@
 <msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/ram.mif</arg>
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/BRAM.mif</arg>
 </msg>
 
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) depth is smaller than memory depth.
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) depth is smaller than memory depth.
 </msg>
 
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
-</msg>
-
-<msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
-</msg>
-
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/ram.mif</arg>
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) depth is smaller than memory depth.
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
 </msg>
 
 <msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/BRAM.mif</arg>
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/ram.mif</arg>
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) depth is smaller than memory depth.
 </msg>
 
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) depth is smaller than memory depth.
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
-</msg>
-
-<msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
-</msg>
-
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/ram.mif</arg>
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) depth is smaller than memory depth.
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
 </msg>
 
 <msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
@@ -563,52 +401,25 @@
 <msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/ram.mif</arg>
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/BRAM.mif</arg>
 </msg>
 
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) depth is smaller than memory depth.
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) depth is smaller than memory depth.
 </msg>
 
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
-</msg>
-
-<msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
-</msg>
-
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/ram.mif</arg>
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) depth is smaller than memory depth.
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
 </msg>
 
 <msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/BRAM.mif</arg>
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/ram.mif</arg>
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) depth is smaller than memory depth.
 </msg>
 
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) depth is smaller than memory depth.
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
-</msg>
-
-<msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
-</msg>
-
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/ram.mif</arg>
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) depth is smaller than memory depth.
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
 </msg>
 
 <msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
@@ -617,52 +428,25 @@
 <msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/ram.mif</arg>
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/BRAM.mif</arg>
 </msg>
 
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) depth is smaller than memory depth.
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) depth is smaller than memory depth.
 </msg>
 
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
-</msg>
-
-<msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
-</msg>
-
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/ram.mif</arg>
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) depth is smaller than memory depth.
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
 </msg>
 
 <msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/BRAM.mif</arg>
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/ram.mif</arg>
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) depth is smaller than memory depth.
 </msg>
 
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) depth is smaller than memory depth.
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
-</msg>
-
-<msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
-</msg>
-
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/ram.mif</arg>
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) depth is smaller than memory depth.
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
 </msg>
 
 <msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
@@ -671,52 +455,25 @@
 <msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/ram.mif</arg>
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/BRAM.mif</arg>
 </msg>
 
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) depth is smaller than memory depth.
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) depth is smaller than memory depth.
 </msg>
 
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
-</msg>
-
-<msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
-</msg>
-
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/ram.mif</arg>
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) depth is smaller than memory depth.
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
 </msg>
 
 <msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/BRAM.mif</arg>
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/ram.mif</arg>
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) depth is smaller than memory depth.
 </msg>
 
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) depth is smaller than memory depth.
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
-</msg>
-
-<msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
-</msg>
-
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/ram.mif</arg>
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) depth is smaller than memory depth.
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
 </msg>
 
 <msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
@@ -725,52 +482,25 @@
 <msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/ram.mif</arg>
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/BRAM.mif</arg>
 </msg>
 
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) depth is smaller than memory depth.
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) depth is smaller than memory depth.
 </msg>
 
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
-</msg>
-
-<msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
-</msg>
-
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/ram.mif</arg>
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) depth is smaller than memory depth.
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
 </msg>
 
 <msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/BRAM.mif</arg>
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/ram.mif</arg>
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) depth is smaller than memory depth.
 </msg>
 
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) depth is smaller than memory depth.
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
-</msg>
-
-<msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
-</msg>
-
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/ram.mif</arg>
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) depth is smaller than memory depth.
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
 </msg>
 
 <msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
@@ -779,52 +509,25 @@
 <msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/ram.mif</arg>
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/BRAM.mif</arg>
 </msg>
 
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) depth is smaller than memory depth.
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) depth is smaller than memory depth.
 </msg>
 
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
-</msg>
-
-<msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
-</msg>
-
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/ram.mif</arg>
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) depth is smaller than memory depth.
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
 </msg>
 
 <msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/BRAM.mif</arg>
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/ram.mif</arg>
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) depth is smaller than memory depth.
 </msg>
 
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) depth is smaller than memory depth.
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
-</msg>
-
-<msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
-</msg>
-
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/ram.mif</arg>
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) depth is smaller than memory depth.
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
 </msg>
 
 <msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
@@ -833,52 +536,25 @@
 <msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/ram.mif</arg>
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/BRAM.mif</arg>
 </msg>
 
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) depth is smaller than memory depth.
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) depth is smaller than memory depth.
 </msg>
 
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
-</msg>
-
-<msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
-</msg>
-
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/ram.mif</arg>
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) depth is smaller than memory depth.
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
 </msg>
 
 <msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/BRAM.mif</arg>
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/ram.mif</arg>
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) depth is smaller than memory depth.
 </msg>
 
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) depth is smaller than memory depth.
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
-</msg>
-
-<msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
-</msg>
-
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/ram.mif</arg>
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) depth is smaller than memory depth.
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
 </msg>
 
 <msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
@@ -887,52 +563,25 @@
 <msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/ram.mif</arg>
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/BRAM.mif</arg>
 </msg>
 
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) depth is smaller than memory depth.
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) depth is smaller than memory depth.
 </msg>
 
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
-</msg>
-
-<msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
-</msg>
-
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/ram.mif</arg>
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) depth is smaller than memory depth.
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
 </msg>
 
 <msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/BRAM.mif</arg>
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/ram.mif</arg>
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) depth is smaller than memory depth.
 </msg>
 
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) depth is smaller than memory depth.
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
-</msg>
-
-<msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
-</msg>
-
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/ram.mif</arg>
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) depth is smaller than memory depth.
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
 </msg>
 
 <msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
@@ -941,52 +590,25 @@
 <msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/ram.mif</arg>
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/BRAM.mif</arg>
 </msg>
 
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) depth is smaller than memory depth.
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) depth is smaller than memory depth.
 </msg>
 
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
-</msg>
-
-<msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
-</msg>
-
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/ram.mif</arg>
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) depth is smaller than memory depth.
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
 </msg>
 
 <msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/BRAM.mif</arg>
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/ram.mif</arg>
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) depth is smaller than memory depth.
 </msg>
 
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) depth is smaller than memory depth.
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
-</msg>
-
-<msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
-</msg>
-
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/ram.mif</arg>
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) depth is smaller than memory depth.
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
 </msg>
 
 <msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
@@ -995,52 +617,25 @@
 <msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/ram.mif</arg>
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/BRAM.mif</arg>
 </msg>
 
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) depth is smaller than memory depth.
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) depth is smaller than memory depth.
 </msg>
 
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
-</msg>
-
-<msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
-</msg>
-
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/ram.mif</arg>
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) depth is smaller than memory depth.
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
 </msg>
 
 <msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/BRAM.mif</arg>
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/ram.mif</arg>
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) depth is smaller than memory depth.
 </msg>
 
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) depth is smaller than memory depth.
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
-</msg>
-
-<msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
-</msg>
-
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/ram.mif</arg>
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) depth is smaller than memory depth.
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
 </msg>
 
 <msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
@@ -1049,25 +644,25 @@
 <msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/ram.mif</arg>
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/BRAM.mif</arg>
 </msg>
 
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) depth is smaller than memory depth.
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) depth is smaller than memory depth.
 </msg>
 
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
 </msg>
 
 <msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/ram.mif</arg>
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/BRAM.mif</arg>
 </msg>
 
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) depth is smaller than memory depth.
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) depth is smaller than memory depth.
 </msg>
 
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
 </msg>
 
 <msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
@@ -1076,13 +671,418 @@
 <msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/ram.mif</arg>
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/BRAM.mif</arg>
 </msg>
 
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) depth is smaller than memory depth.
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) depth is smaller than memory depth.
 </msg>
 
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">ram.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/BRAM.mif</arg>
+</msg>
+
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) depth is smaller than memory depth.
+</msg>
+
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/BRAM.mif</arg>
+</msg>
+
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) depth is smaller than memory depth.
+</msg>
+
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/BRAM.mif</arg>
+</msg>
+
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) depth is smaller than memory depth.
+</msg>
+
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/BRAM.mif</arg>
+</msg>
+
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) depth is smaller than memory depth.
+</msg>
+
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/BRAM.mif</arg>
+</msg>
+
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) depth is smaller than memory depth.
+</msg>
+
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/BRAM.mif</arg>
+</msg>
+
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) depth is smaller than memory depth.
+</msg>
+
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/BRAM.mif</arg>
+</msg>
+
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) depth is smaller than memory depth.
+</msg>
+
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/BRAM.mif</arg>
+</msg>
+
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) depth is smaller than memory depth.
+</msg>
+
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/BRAM.mif</arg>
+</msg>
+
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) depth is smaller than memory depth.
+</msg>
+
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/BRAM.mif</arg>
+</msg>
+
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) depth is smaller than memory depth.
+</msg>
+
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/BRAM.mif</arg>
+</msg>
+
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) depth is smaller than memory depth.
+</msg>
+
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/BRAM.mif</arg>
+</msg>
+
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) depth is smaller than memory depth.
+</msg>
+
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/BRAM.mif</arg>
+</msg>
+
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) depth is smaller than memory depth.
+</msg>
+
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/BRAM.mif</arg>
+</msg>
+
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) depth is smaller than memory depth.
+</msg>
+
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/BRAM.mif</arg>
+</msg>
+
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) depth is smaller than memory depth.
+</msg>
+
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/BRAM.mif</arg>
+</msg>
+
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) depth is smaller than memory depth.
+</msg>
+
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/BRAM.mif</arg>
+</msg>
+
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) depth is smaller than memory depth.
+</msg>
+
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/BRAM.mif</arg>
+</msg>
+
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) depth is smaller than memory depth.
+</msg>
+
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/BRAM.mif</arg>
+</msg>
+
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) depth is smaller than memory depth.
+</msg>
+
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/BRAM.mif</arg>
+</msg>
+
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) depth is smaller than memory depth.
+</msg>
+
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/BRAM.mif</arg>
+</msg>
+
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) depth is smaller than memory depth.
+</msg>
+
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/BRAM.mif</arg>
+</msg>
+
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) depth is smaller than memory depth.
+</msg>
+
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/BRAM.mif</arg>
+</msg>
+
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) depth is smaller than memory depth.
+</msg>
+
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/BRAM.mif</arg>
+</msg>
+
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) depth is smaller than memory depth.
+</msg>
+
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/BRAM.mif</arg>
+</msg>
+
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) depth is smaller than memory depth.
+</msg>
+
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/BRAM.mif</arg>
+</msg>
+
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) depth is smaller than memory depth.
+</msg>
+
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/BRAM.mif</arg>
+</msg>
+
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) depth is smaller than memory depth.
+</msg>
+
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/BRAM.mif</arg>
+</msg>
+
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) depth is smaller than memory depth.
+</msg>
+
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/BRAM.mif</arg>
+</msg>
+
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) depth is smaller than memory depth.
+</msg>
+
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/Users/imana/OneDrive/Documents/GitHub/Assignment4_TextDisplay/ipcore_dir/tmp/_cg/BRAM.mif</arg>
+</msg>
+
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) depth is smaller than memory depth.
+</msg>
+
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">BRAM.mif</arg>) has words wider than <arg fmt="%0d" index="2">16</arg> bits, right-aligning.
 </msg>
 
 <msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
@@ -1112,55 +1112,55 @@
 <msg type="warning" file="HDLCompiler" num="634" delta="old" >"C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\ipcore_dir\tmp\_cg\_dbg\blk_mem_gen_v7_3\blk_mem_gen_generic_cstr.vhd" Line 448: Net &lt;<arg fmt="%s" index="1">dbiterr_array[63]</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\ipcore_dir\tmp\_cg\_dbg\ram.vhd</arg>&quot; line <arg fmt="%s" index="2">161</arg>: Output port &lt;<arg fmt="%s" index="3">rdaddrecc</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\ipcore_dir\tmp\_cg\_dbg\BRAM.vhd</arg>&quot; line <arg fmt="%s" index="2">161</arg>: Output port &lt;<arg fmt="%s" index="3">rdaddrecc</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\ipcore_dir\tmp\_cg\_dbg\ram.vhd</arg>&quot; line <arg fmt="%s" index="2">161</arg>: Output port &lt;<arg fmt="%s" index="3">s_axi_bid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\ipcore_dir\tmp\_cg\_dbg\BRAM.vhd</arg>&quot; line <arg fmt="%s" index="2">161</arg>: Output port &lt;<arg fmt="%s" index="3">s_axi_bid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\ipcore_dir\tmp\_cg\_dbg\ram.vhd</arg>&quot; line <arg fmt="%s" index="2">161</arg>: Output port &lt;<arg fmt="%s" index="3">s_axi_bresp</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\ipcore_dir\tmp\_cg\_dbg\BRAM.vhd</arg>&quot; line <arg fmt="%s" index="2">161</arg>: Output port &lt;<arg fmt="%s" index="3">s_axi_bresp</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\ipcore_dir\tmp\_cg\_dbg\ram.vhd</arg>&quot; line <arg fmt="%s" index="2">161</arg>: Output port &lt;<arg fmt="%s" index="3">s_axi_rid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\ipcore_dir\tmp\_cg\_dbg\BRAM.vhd</arg>&quot; line <arg fmt="%s" index="2">161</arg>: Output port &lt;<arg fmt="%s" index="3">s_axi_rid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\ipcore_dir\tmp\_cg\_dbg\ram.vhd</arg>&quot; line <arg fmt="%s" index="2">161</arg>: Output port &lt;<arg fmt="%s" index="3">s_axi_rdata</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\ipcore_dir\tmp\_cg\_dbg\BRAM.vhd</arg>&quot; line <arg fmt="%s" index="2">161</arg>: Output port &lt;<arg fmt="%s" index="3">s_axi_rdata</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\ipcore_dir\tmp\_cg\_dbg\ram.vhd</arg>&quot; line <arg fmt="%s" index="2">161</arg>: Output port &lt;<arg fmt="%s" index="3">s_axi_rresp</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\ipcore_dir\tmp\_cg\_dbg\BRAM.vhd</arg>&quot; line <arg fmt="%s" index="2">161</arg>: Output port &lt;<arg fmt="%s" index="3">s_axi_rresp</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\ipcore_dir\tmp\_cg\_dbg\ram.vhd</arg>&quot; line <arg fmt="%s" index="2">161</arg>: Output port &lt;<arg fmt="%s" index="3">s_axi_rdaddrecc</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\ipcore_dir\tmp\_cg\_dbg\BRAM.vhd</arg>&quot; line <arg fmt="%s" index="2">161</arg>: Output port &lt;<arg fmt="%s" index="3">s_axi_rdaddrecc</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\ipcore_dir\tmp\_cg\_dbg\ram.vhd</arg>&quot; line <arg fmt="%s" index="2">161</arg>: Output port &lt;<arg fmt="%s" index="3">sbiterr</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\ipcore_dir\tmp\_cg\_dbg\BRAM.vhd</arg>&quot; line <arg fmt="%s" index="2">161</arg>: Output port &lt;<arg fmt="%s" index="3">sbiterr</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\ipcore_dir\tmp\_cg\_dbg\ram.vhd</arg>&quot; line <arg fmt="%s" index="2">161</arg>: Output port &lt;<arg fmt="%s" index="3">dbiterr</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\ipcore_dir\tmp\_cg\_dbg\BRAM.vhd</arg>&quot; line <arg fmt="%s" index="2">161</arg>: Output port &lt;<arg fmt="%s" index="3">dbiterr</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\ipcore_dir\tmp\_cg\_dbg\ram.vhd</arg>&quot; line <arg fmt="%s" index="2">161</arg>: Output port &lt;<arg fmt="%s" index="3">s_axi_awready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\ipcore_dir\tmp\_cg\_dbg\BRAM.vhd</arg>&quot; line <arg fmt="%s" index="2">161</arg>: Output port &lt;<arg fmt="%s" index="3">s_axi_awready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\ipcore_dir\tmp\_cg\_dbg\ram.vhd</arg>&quot; line <arg fmt="%s" index="2">161</arg>: Output port &lt;<arg fmt="%s" index="3">s_axi_wready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\ipcore_dir\tmp\_cg\_dbg\BRAM.vhd</arg>&quot; line <arg fmt="%s" index="2">161</arg>: Output port &lt;<arg fmt="%s" index="3">s_axi_wready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\ipcore_dir\tmp\_cg\_dbg\ram.vhd</arg>&quot; line <arg fmt="%s" index="2">161</arg>: Output port &lt;<arg fmt="%s" index="3">s_axi_bvalid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\ipcore_dir\tmp\_cg\_dbg\BRAM.vhd</arg>&quot; line <arg fmt="%s" index="2">161</arg>: Output port &lt;<arg fmt="%s" index="3">s_axi_bvalid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\ipcore_dir\tmp\_cg\_dbg\ram.vhd</arg>&quot; line <arg fmt="%s" index="2">161</arg>: Output port &lt;<arg fmt="%s" index="3">s_axi_arready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\ipcore_dir\tmp\_cg\_dbg\BRAM.vhd</arg>&quot; line <arg fmt="%s" index="2">161</arg>: Output port &lt;<arg fmt="%s" index="3">s_axi_arready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\ipcore_dir\tmp\_cg\_dbg\ram.vhd</arg>&quot; line <arg fmt="%s" index="2">161</arg>: Output port &lt;<arg fmt="%s" index="3">s_axi_rlast</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\ipcore_dir\tmp\_cg\_dbg\BRAM.vhd</arg>&quot; line <arg fmt="%s" index="2">161</arg>: Output port &lt;<arg fmt="%s" index="3">s_axi_rlast</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\ipcore_dir\tmp\_cg\_dbg\ram.vhd</arg>&quot; line <arg fmt="%s" index="2">161</arg>: Output port &lt;<arg fmt="%s" index="3">s_axi_rvalid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\ipcore_dir\tmp\_cg\_dbg\BRAM.vhd</arg>&quot; line <arg fmt="%s" index="2">161</arg>: Output port &lt;<arg fmt="%s" index="3">s_axi_rvalid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\ipcore_dir\tmp\_cg\_dbg\ram.vhd</arg>&quot; line <arg fmt="%s" index="2">161</arg>: Output port &lt;<arg fmt="%s" index="3">s_axi_sbiterr</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\ipcore_dir\tmp\_cg\_dbg\BRAM.vhd</arg>&quot; line <arg fmt="%s" index="2">161</arg>: Output port &lt;<arg fmt="%s" index="3">s_axi_sbiterr</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\ipcore_dir\tmp\_cg\_dbg\ram.vhd</arg>&quot; line <arg fmt="%s" index="2">161</arg>: Output port &lt;<arg fmt="%s" index="3">s_axi_dbiterr</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\imana\OneDrive\Documents\GitHub\Assignment4_TextDisplay\ipcore_dir\tmp\_cg\_dbg\BRAM.vhd</arg>&quot; line <arg fmt="%s" index="2">161</arg>: Output port &lt;<arg fmt="%s" index="3">s_axi_dbiterr</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">S_AXI_AWID</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.

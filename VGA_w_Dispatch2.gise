@@ -29,6 +29,41 @@
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="CoreAndRam_Test_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="CoreAndRam_Test_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="CoreAndRam_Test_stx_beh.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="Core_MemCont_VGA.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Core_MemCont_VGA.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Core_MemCont_VGA.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="Core_MemCont_VGA.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Core_MemCont_VGA.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="Core_MemCont_VGA.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Core_MemCont_VGA.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="Core_MemCont_VGA.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="Core_MemCont_VGA.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="Core_MemCont_VGA.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Core_MemCont_VGA.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="Core_MemCont_VGA.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Core_MemCont_VGA.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Core_MemCont_VGA.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="Core_MemCont_VGA.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="Core_MemCont_VGA.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="Core_MemCont_VGA.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="Core_MemCont_VGA.ut" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="Core_MemCont_VGA.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Core_MemCont_VGA.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Core_MemCont_VGA_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="Core_MemCont_VGA_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="Core_MemCont_VGA_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="Core_MemCont_VGA_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="Core_MemCont_VGA_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="Core_MemCont_VGA_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Core_MemCont_VGA_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Core_MemCont_VGA_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="Core_MemCont_VGA_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="Core_MemCont_VGA_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Core_MemCont_VGA_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Core_MemCont_VGA_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Core_MemCont_VGA_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="Core_MemCont_VGA_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Core_MemCont_VGA_xst.xrpt"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="EncCounter_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="EncCounter_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Pmod.prj"/>
@@ -83,6 +118,9 @@
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="colorEcodeTest_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="colorEcodeTest_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="colorEcodeTest_stx_beh.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="core_memcont_vga.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="core_memcont_vga.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="core_memcont_vga.drc" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="ipcore_dir/coregen.log"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
@@ -134,7 +172,9 @@
     <transform xil_pn:end_ts="1479412913" xil_pn:in_ck="-7186897567536050201" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-4991591913869282729" xil_pn:start_ts="1479412913">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="InputAdded"/>
       <outfile xil_pn:name="ipcore_dir/ram.ngc"/>
       <outfile xil_pn:name="ipcore_dir/ram.v"/>
     </transform>
@@ -156,6 +196,7 @@
       <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputRemoved"/>
@@ -175,11 +216,113 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1479421008" xil_pn:in_ck="112961945055" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="3734212952577109" xil_pn:start_ts="1479421008">
+    <transform xil_pn:end_ts="1479596121" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="9181595235024885229" xil_pn:start_ts="1479596121">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
+    </transform>
+    <transform xil_pn:end_ts="1479596121" xil_pn:in_ck="-4171505795205491824" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="4979393884084025532" xil_pn:start_ts="1479596121">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="ipcore_dir/BRAM.ngc"/>
+      <outfile xil_pn:name="ipcore_dir/BRAM.v"/>
+    </transform>
+    <transform xil_pn:name="TRAN_SubProjectAbstractToPreProxy">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1479596121" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="8147865723775457775" xil_pn:start_ts="1479596121">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1479596121" xil_pn:in_ck="-5183151766175240402" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="1106364426758808884" xil_pn:start_ts="1479596121">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1479596121" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-4216548342961782842" xil_pn:start_ts="1479596121">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1479598460" xil_pn:in_ck="4485271130913961954" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-1479199203522240501" xil_pn:start_ts="1479598445">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Core_MemCont_VGA.lso"/>
+      <outfile xil_pn:name="Core_MemCont_VGA.ngc"/>
+      <outfile xil_pn:name="Core_MemCont_VGA.ngr"/>
+      <outfile xil_pn:name="Core_MemCont_VGA.prj"/>
+      <outfile xil_pn:name="Core_MemCont_VGA.stx"/>
+      <outfile xil_pn:name="Core_MemCont_VGA.syr"/>
+      <outfile xil_pn:name="Core_MemCont_VGA.xst"/>
+      <outfile xil_pn:name="Core_MemCont_VGA_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1479598664" xil_pn:in_ck="-381995422544641785" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="3108471168689364506" xil_pn:start_ts="1479598664">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1479598670" xil_pn:in_ck="1460676543236305610" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-1000754615177606051" xil_pn:start_ts="1479598664">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Core_MemCont_VGA.bld"/>
+      <outfile xil_pn:name="Core_MemCont_VGA.ngd"/>
+      <outfile xil_pn:name="Core_MemCont_VGA_ngdbuild.xrpt"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1479598706" xil_pn:in_ck="3847680667716476416" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1463976855095865663" xil_pn:start_ts="1479598674">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Core_MemCont_VGA.pcf"/>
+      <outfile xil_pn:name="Core_MemCont_VGA_map.map"/>
+      <outfile xil_pn:name="Core_MemCont_VGA_map.mrp"/>
+      <outfile xil_pn:name="Core_MemCont_VGA_map.ncd"/>
+      <outfile xil_pn:name="Core_MemCont_VGA_map.ngm"/>
+      <outfile xil_pn:name="Core_MemCont_VGA_map.xrpt"/>
+      <outfile xil_pn:name="Core_MemCont_VGA_summary.xml"/>
+      <outfile xil_pn:name="Core_MemCont_VGA_usage.xml"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1479598728" xil_pn:in_ck="-1457319542062318190" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-1178055513630676559" xil_pn:start_ts="1479598706">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Core_MemCont_VGA.ncd"/>
+      <outfile xil_pn:name="Core_MemCont_VGA.pad"/>
+      <outfile xil_pn:name="Core_MemCont_VGA.par"/>
+      <outfile xil_pn:name="Core_MemCont_VGA.ptwx"/>
+      <outfile xil_pn:name="Core_MemCont_VGA.unroutes"/>
+      <outfile xil_pn:name="Core_MemCont_VGA.xpi"/>
+      <outfile xil_pn:name="Core_MemCont_VGA_pad.csv"/>
+      <outfile xil_pn:name="Core_MemCont_VGA_pad.txt"/>
+      <outfile xil_pn:name="Core_MemCont_VGA_par.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1479598742" xil_pn:in_ck="313141744461741265" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1479598728">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Core_MemCont_VGA.ut"/>
+      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="core_memcont_vga.bgn"/>
+      <outfile xil_pn:name="core_memcont_vga.bit"/>
+      <outfile xil_pn:name="core_memcont_vga.drc"/>
+      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
+      <outfile xil_pn:name="webtalk.log"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1479598956" xil_pn:in_ck="3475991443684367877" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="8482462020707587906" xil_pn:start_ts="1479598742">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1479598728" xil_pn:in_ck="3847675042082003320" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1479598722">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Core_MemCont_VGA.twr"/>
+      <outfile xil_pn:name="Core_MemCont_VGA.twx"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
     </transform>
   </transforms>
 

@@ -18,10 +18,11 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module VGA_SignalGen(clk, rst,ColorIn, subPixelCount, PixelCount, LineCount, Hsync,Vsync, ColorOut);
+module VGA_SignalGen(clk, rst,ColorIn,  PixelCount, LineCount, Hsync,Vsync, ColorOut);
 	input clk, rst;
 	input [7:0] ColorIn;
-	output reg [subPixelCountNBITS-1:0] subPixelCount;
+	//output reg [subPixelCountNBITS-1:0] subPixelCount;
+	reg [subPixelCountNBITS-1:0] subPixelCount;
 	output reg [HorzPixNBITS-1:0] PixelCount;
 	output reg [VertPixNBITS-1:0] LineCount;
 	output reg Hsync;
