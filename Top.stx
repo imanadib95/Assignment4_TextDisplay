@@ -1,0 +1,90 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/Kara/Documents/GitHub/Assignment4_TextDisplay/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/Kara/Documents/GitHub/Assignment4_TextDisplay/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: Top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\Kara\Desktop\pmodacl_demo_verilog\PmodACL_Demo\spimaster.v" into library work
+Parsing module <SPImaster>.
+Analyzing Verilog file "C:\Users\Kara\Desktop\pmodacl_demo_verilog\PmodACL_Demo\spiinterface.v" into library work
+Parsing module <SPIinterface>.
+Analyzing Verilog file "C:\Users\Kara\Desktop\pmodacl_demo_verilog\PmodACL_Demo\slaveselect.v" into library work
+Parsing module <slaveSelect>.
+Analyzing Verilog file "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\VGA_SignalGen.v" into library work
+Parsing module <VGA_SignalGen>.
+Analyzing Verilog file "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\VGA_Dispatch.v" into library work
+Parsing module <VGA_Dispatch>.
+Analyzing Verilog file "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\ipcore_dir\ram.v" into library work
+Parsing module <ram>.
+Analyzing Verilog file "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Encoder.v" into library work
+Parsing module <Encoder>.
+Analyzing Verilog file "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Debouncer.v" into library work
+Parsing module <Debouncer>.
+Analyzing Verilog file "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\ACL_Controller.v" into library work
+Parsing module <ACL_Controller>.
+Analyzing Verilog file "C:\Users\Kara\Desktop\pmodacl_demo_verilog\PmodACL_Demo\spicomponent.v" into library work
+Parsing module <SPIcomponent>.
+Analyzing Verilog file "C:\Users\Kara\Desktop\pmodacl_demo_verilog\PmodACL_Demo\sel_data.v" into library work
+Parsing module <sel_Data>.
+Analyzing Verilog file "C:\Users\Kara\Desktop\pmodacl_demo_verilog\PmodACL_Demo\clkdiv_5hz.v" into library work
+Parsing module <ClkDiv_5Hz>.
+Analyzing Verilog file "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\VGA_Controller.v" into library work
+Parsing module <VGA_Controller>.
+Analyzing Verilog file "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Pmod.v" into library work
+Parsing module <PmodEnc>.
+Analyzing Verilog file "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\DispatchAndRam.v" into library work
+Parsing module <DispatchAndRam>.
+Analyzing Verilog file "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\CoreI.v" into library work
+Parsing module <CoreI>.
+Analyzing Verilog file "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\ACL.v" into library work
+Parsing module <ACL>.
+Analyzing Verilog file "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\Top.v" into library work
+Parsing module <Top>.
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.98 secs
+ 
+--> 
+
+Total memory usage is 239680 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

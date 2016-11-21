@@ -21,9 +21,8 @@
 module ACL_Controller(
     input clk,
 	 input hasBeenRead,
-	 input [9:0]aclIn,
-	 output reg[15:0]aclOut,
-	 output led
+	 input [9:0]selData,
+	 output reg [15:0]aclOut
 	 );
 
 	 reg PS, NS;
@@ -36,13 +35,11 @@ module ACL_Controller(
 		PS <= NS;	
 	 end
 	 
-	 assign led = aclOut[0] & 1'b1;
-	 
 	 always@(*) begin
 		case(PS)
 			//receive singal from accelerameter
 			receive: begin
-				if(aclIn > 9'b00000001) begin //above threshold
+				if(selData[8:7] == 2'b11) begin //above threshold
 					aclOut = 16'b1;
 					NS = send;
 				end
@@ -67,10 +64,7 @@ module ACL_Controller(
 				NS = receive;
 				aclOut = 16'b0;
 			end
-		
 		endcase
 	 end
-
-	
-
 endmodule
+

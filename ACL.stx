@@ -10,7 +10,7 @@ Total CPU time to Xst completion: 0.09 secs
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> Reading design: ACL.prj
 
@@ -45,6 +45,8 @@ Analyzing Verilog file "C:\Users\Kara\Desktop\pmodacl_demo_verilog\PmodACL_Demo\
 Parsing module <SPIinterface>.
 Analyzing Verilog file "C:\Users\Kara\Desktop\pmodacl_demo_verilog\PmodACL_Demo\slaveselect.v" into library work
 Parsing module <slaveSelect>.
+Analyzing Verilog file "C:\Users\Kara\Documents\GitHub\Assignment4_TextDisplay\ACL_Controller.v" into library work
+Parsing module <ACL_Controller>.
 Analyzing Verilog file "C:\Users\Kara\Desktop\pmodacl_demo_verilog\PmodACL_Demo\spicomponent.v" into library work
 Parsing module <SPIcomponent>.
 Analyzing Verilog file "C:\Users\Kara\Desktop\pmodacl_demo_verilog\PmodACL_Demo\sel_data.v" into library work
@@ -56,7 +58,7 @@ Parsing module <ACL>.
 
 
 Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 3.94 secs
+Total CPU time to Xst completion: 4.01 secs
  
 --> 
 

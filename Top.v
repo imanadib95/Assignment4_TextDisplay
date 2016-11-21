@@ -27,15 +27,15 @@ module Top(
 	input [7:4] JD, 
 
 
-	//input [1:0] sw,
-	//input sdi,				
+	input [1:0] sw,
+	input sdi,				
 	output [7:0] ColorOut,
 	output Hsync,
-	output Vsync
-	//output [7:0]led
-	//output sdo,
-	//output sclk,
-	//output ss
+	output Vsync,
+	output [7:0]led,
+	output sdo,
+	output sclk,
+	output ss
 	);
 
 	wire [1:0] SubPixelCount;
@@ -73,5 +73,6 @@ module Top(
 	PmodEnc #(120) yEnc (clk, JC, yPixelPos[7:0]); 
 	PmodEnc #(63) color(clk, JD, colorPos[9:2]); 
 	
-
+	ACL _ACL(clk, rst, sw, sdi, aclRead, sdo, sclk, ss, led, aclOut);
+	
 endmodule
