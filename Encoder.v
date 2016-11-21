@@ -20,13 +20,12 @@
 //////////////////////////////////////////////////////////////////////////////////
 module Encoder(
     clk,
-	 max,
-	 factor,
     A,
     B,
+	 max,
     BTN,
-    EncOut,
-    LED
+    EncOut
+   // LED
     );
 
 	 // ===========================================================================
@@ -36,10 +35,9 @@ module Encoder(
     input A;
     input B;
 	 input [7:0]max;
-	 input [1:0]factor;
     input BTN;
     output [7:0] EncOut;
-    output [1:0] LED;
+    //output [1:0] LED;
 
 	 // ===========================================================================
 	 // 							  Parameters, Regsiters, and Wires
@@ -63,7 +61,7 @@ module Encoder(
 	 begin
 			 if (BTN == 1'b1) begin
 				 curState <= "idle";
-				 EncOut <= 8'd0;
+				 EncOut <= 8'b00000000;
 			 end
 			 // detect if the shaft is rotated to right or left
 			 // right: add 1 to the position at each click
@@ -75,15 +73,15 @@ module Encoder(
 									EncOut <= EncOut + 1'b1;
 								end
 								else begin
-									EncOut <= 8'd0;
+									EncOut <= EncOut;
 								end
 						end
 						else if(curState == "sub") begin
-								if(EncOut > 8'b0) begin
+								if(EncOut > 8'b00000000) begin
 									EncOut <= EncOut - 1'b1;
 								end
 								else begin
-									EncOut <= max;
+									EncOut <= 8'b00000000;
 								end
 						end
 						else begin
