@@ -48,7 +48,7 @@ module Top(
 	wire [15:0] writeDataB;
 	wire writeEnableB;
 	wire [15:0] addressB;
-	wire [15:0] xPixelPos, yPixelPos, colorPos;//**pixel output 
+	wire [15:0] xPixelPos, yPixelPos, colorPos;
 	wire [9:0] aclMag;					
 	wire [1:0] xDir, yDir, colorDir; 
 	wire [1:0] x;
@@ -69,18 +69,9 @@ module Top(
 	CoreI c(clk, readDataB, addressB, writeDataB, writeEnableB);
 	//Core c(clk, readDataB, writeDataB, writeEnableB, addressb);
 	
-	PmodEnc #(160,0) xEnc (clk, JA, xPixelPos[7:0]); 
-	PmodEnc #(120,0) yEnc (clk, JC, yPixelPos[7:0]); 
-	PmodEnc #(256,1) color(clk, JD, colorPos[7:0]); 
+	PmodEnc #(160) xEnc (clk, JA, xPixelPos[7:0]); 
+	PmodEnc #(120) yEnc (clk, JC, yPixelPos[7:0]); 
+	PmodEnc #(63) color(clk, JD, colorPos[9:2]); 
 	
 
-	//EncCounter #(.MAX(160),.FACTOR(0)) xPos(clk, xDir, xPixelPos[7:0]);
-	//EncCounter #(.MAX(120),.FACTOR(0)) yPos(clk, yDir, yPixelPos[7:0]);
-	//EncCounter #(.MAX(256),.FACTOR(2)) colorEnc(clk, colorDir, led);
-	
-	//ACL _ACL(clk, rst, sw, sdi, sdo, sclk, ss, aclMag);
-	//ACL_Controller aclCon(clk, aclRead, aclMag, aclOut, ledHolder);
-	//ACL_Controller aclCon(clk, aclReset, aclMag, aclOut, ledHolder);
-
-	
 endmodule
