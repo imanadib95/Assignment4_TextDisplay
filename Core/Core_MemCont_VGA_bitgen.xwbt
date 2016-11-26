@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\imana\OneDrive\Documents\GitHub\Core\Core_MemCont_VGA.ncd
+OUTFILE=C:\Users\imana\OneDrive\Documents\GitHub\Core\Core_MemCont_VGA.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=C:\Users\imana\OneDrive\Documents\GitHub\Core
+LICENSE=WebPack
+USER_INFO=211145540_0_0_352

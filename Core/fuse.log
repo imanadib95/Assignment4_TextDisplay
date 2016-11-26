@@ -1,0 +1,51 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/imana/OneDrive/Documents/GitHub/Core/Core_MemCont_VGA_Test_isim_beh.exe -prj C:/Users/imana/OneDrive/Documents/GitHub/Core/Core_MemCont_VGA_Test_beh.prj work.Core_MemCont_VGA_Test work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/imana/OneDrive/Documents/GitHub/Core/VGA_SignalGen.v" into library work
+Analyzing Verilog file "C:/Users/imana/OneDrive/Documents/GitHub/Core/RegisterFile.v" into library work
+Analyzing Verilog file "C:/Users/imana/OneDrive/Documents/GitHub/Core/ipcore_dir/RAM.v" into library work
+Analyzing Verilog file "C:/Users/imana/OneDrive/Documents/GitHub/Core/Dispatch.v" into library work
+Analyzing Verilog file "C:/Users/imana/OneDrive/Documents/GitHub/Core/ALU.v" into library work
+Analyzing Verilog file "C:/Users/imana/OneDrive/Documents/GitHub/Core/VGA_Controller.v" into library work
+Analyzing Verilog file "C:/Users/imana/OneDrive/Documents/GitHub/Core/SevSegDisplay4DigController.v" into library work
+Analyzing Verilog file "C:/Users/imana/OneDrive/Documents/GitHub/Core/MemCont.v" into library work
+Analyzing Verilog file "C:/Users/imana/OneDrive/Documents/GitHub/Core/debounce.v" into library work
+Analyzing Verilog file "C:/Users/imana/OneDrive/Documents/GitHub/Core/CoreTop.v" into library work
+Analyzing Verilog file "C:/Users/imana/OneDrive/Documents/GitHub/Core/buttonCount.v" into library work
+Analyzing Verilog file "C:/Users/imana/OneDrive/Documents/GitHub/Core/BinaryTo4DigHex7SegDisplay.v" into library work
+Analyzing Verilog file "C:/Users/imana/OneDrive/Documents/GitHub/Core/Core_MemCont_VGA.v" into library work
+Analyzing Verilog file "C:/Users/imana/OneDrive/Documents/GitHub/Core/Core_MemCont_VGA_Test.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:1016 - "C:/Users/imana/OneDrive/Documents/GitHub/Core/Core_MemCont_VGA_Test.v" Line 36: Port up is not connected to this instance
+WARNING:HDLCompiler:189 - "C:/Users/imana/OneDrive/Documents/GitHub/Core/Core_MemCont_VGA.v" Line 41: Size mismatch in connection of port <R1Out>. Formal port size is 16-bit while actual signal size is 1-bit.
+Completed static elaboration
+Compiling module IBUFG
+Compiling module BUFG
+Compiling module RegisterFile
+Compiling module ALU
+Compiling module CoreTop
+Compiling module Dispatch
+Compiling module BLK_MEM_GEN_V7_3_output_stage(C_...
+Compiling module BLK_MEM_GEN_V7_3_softecc_output_...
+Compiling module BLK_MEM_GEN_V7_3_mem_module(C_CO...
+Compiling module BLK_MEM_GEN_V7_3(C_FAMILY="spart...
+Compiling module RAM
+Compiling module MemCont
+Compiling module VGA_SignalGen
+Compiling module VGA_Controller
+Compiling module debounce
+Compiling module buttonCount
+Compiling module SevSegDisplay4DigController
+Compiling module BinaryTo4DigHex7SegDisplay
+Compiling module Core_MemCont_VGA
+Compiling module Core_MemCont_VGA_Test
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 10 sub-compilation(s) to finish...
+Compiled 21 Verilog Units
+Built simulation executable C:/Users/imana/OneDrive/Documents/GitHub/Core/Core_MemCont_VGA_Test_isim_beh.exe
+Fuse Memory Usage: 33008 KB
+Fuse CPU Usage: 561 ms

@@ -1,0 +1,563 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: CoreTop.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "CoreTop.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "CoreTop"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : CoreTop
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\imana\OneDrive\Documents\GitHub\Core\RegisterFile.v" into library work
+Parsing module <RegisterFile>.
+Analyzing Verilog file "C:\Users\imana\OneDrive\Documents\GitHub\Core\ALU.v" into library work
+Parsing module <ALU>.
+Analyzing Verilog file "C:\Users\imana\OneDrive\Documents\GitHub\Core\CoreTop.v" into library work
+Parsing module <CoreTop>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <CoreTop>.
+
+Elaborating module <RegisterFile>.
+
+Elaborating module <ALU>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <CoreTop>.
+    Related source file is "C:\Users\imana\OneDrive\Documents\GitHub\Core\CoreTop.v".
+        Fetch = 2'b00
+        Receive = 2'b01
+        Execute = 2'b10
+        add = 4'b0000
+        addi = 4'b0001
+        sub = 4'b0010
+        load = 4'b0011
+        store = 4'b0100
+        seq = 4'b0101
+        slt = 4'b0110
+        beq = 4'b0111
+        j = 4'b1000
+        jal = 4'b1010
+        shr = 4'b1010
+        shl = 4'b1011
+        nan = 4'b1100
+        loadi = 4'b1101
+    Found 2-bit register for signal <PS>.
+    Found 32-bit register for signal <Instruction>.
+    Found 16-bit register for signal <PC>.
+    Found finite state machine <FSM_0> for signal <PS>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 3                                              |
+    | Inputs             | 0                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Power Up State     | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 16-bit adder for signal <PC[15]_GND_1_o_add_8_OUT> created at line 82.
+    Found 16-bit adder for signal <PC[15]_GND_1_o_add_16_OUT> created at line 124.
+    Found 16x1-bit Read Only RAM for signal <Instruction[31]_GND_1_o_Mux_30_o>
+    Found 24-bit 3-to-1 multiplexer for signal <Address> created at line 116.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred  48 D-type flip-flop(s).
+	inferred  42 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <CoreTop> synthesized.
+
+Synthesizing Unit <RegisterFile>.
+    Related source file is "C:\Users\imana\OneDrive\Documents\GitHub\Core\RegisterFile.v".
+    Found 16-bit register for signal <R14>.
+    Found 16-bit register for signal <R13>.
+    Found 16-bit register for signal <R12>.
+    Found 16-bit register for signal <R11>.
+    Found 16-bit register for signal <R10>.
+    Found 16-bit register for signal <R9>.
+    Found 16-bit register for signal <R8>.
+    Found 16-bit register for signal <R7>.
+    Found 16-bit register for signal <R6>.
+    Found 16-bit register for signal <R5>.
+    Found 16-bit register for signal <R4>.
+    Found 16-bit register for signal <R3>.
+    Found 16-bit register for signal <R2>.
+    Found 16-bit register for signal <R1>.
+    Found 16-bit register for signal <R0>.
+    Found 16-bit register for signal <R15>.
+    Found 16-bit 16-to-1 multiplexer for signal <Aout> created at line 57.
+    Found 16-bit 16-to-1 multiplexer for signal <Bout> created at line 75.
+    Summary:
+	inferred 256 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <RegisterFile> synthesized.
+
+Synthesizing Unit <ALU>.
+    Related source file is "C:\Users\imana\OneDrive\Documents\GitHub\Core\ALU.v".
+WARNING:Xst:647 - Input <Instruction<11:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 16-bit adder for signal <Ain[15]_Bin[15]_add_0_OUT> created at line 37.
+    Found 16-bit adder for signal <Ain[15]_GND_3_o_add_1_OUT> created at line 38.
+    Found 16-bit adder for signal <n0040> created at line 39.
+    Found 16-bit adder for signal <Ain[15]_GND_3_o_add_4_OUT> created at line 39.
+    Found 16-bit shifter logical right for signal <Ain[15]_Instruction[3]_shift_right_9_OUT> created at line 47
+    Found 16-bit shifter logical left for signal <Ain[15]_Instruction[3]_shift_left_10_OUT> created at line 48
+    Found 16-bit 9-to-1 multiplexer for signal <Output> created at line 36.
+    Found 16-bit comparator equal for signal <Ain[15]_Bin[15]_equal_6_o> created at line 42
+    Found 16-bit comparator greater for signal <Ain[15]_Bin[15]_LessThan_8_o> created at line 43
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+	inferred   9 Multiplexer(s).
+	inferred   2 Combinational logic shifter(s).
+Unit <ALU> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 16x1-bit single-port Read Only RAM                    : 1
+# Adders/Subtractors                                   : 4
+ 16-bit adder                                          : 4
+# Registers                                            : 18
+ 16-bit register                                       : 17
+ 32-bit register                                       : 1
+# Comparators                                          : 2
+ 16-bit comparator equal                               : 1
+ 16-bit comparator greater                             : 1
+# Multiplexers                                         : 53
+ 1-bit 2-to-1 multiplexer                              : 34
+ 16-bit 16-to-1 multiplexer                            : 2
+ 16-bit 2-to-1 multiplexer                             : 12
+ 24-bit 2-to-1 multiplexer                             : 3
+ 24-bit 3-to-1 multiplexer                             : 1
+ 32-bit 2-to-1 multiplexer                             : 1
+# Logic shifters                                       : 2
+ 16-bit shifter logical left                           : 1
+ 16-bit shifter logical right                          : 1
+# FSMs                                                 : 1
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <CoreTop>.
+The following registers are absorbed into accumulator <PC>: 1 register on signal <PC>.
+INFO:Xst:3231 - The small RAM <Mram_Instruction[31]_GND_1_o_Mux_30_o> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 1-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <Instruction<31:28>> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <CoreTop> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 16x1-bit single-port distributed Read Only RAM        : 1
+# Adders/Subtractors                                   : 3
+ 16-bit adder                                          : 3
+# Accumulators                                         : 1
+ 16-bit up loadable accumulator                        : 1
+# Registers                                            : 288
+ Flip-Flops                                            : 288
+# Comparators                                          : 2
+ 16-bit comparator equal                               : 1
+ 16-bit comparator greater                             : 1
+# Multiplexers                                         : 81
+ 1-bit 16-to-1 multiplexer                             : 32
+ 1-bit 2-to-1 multiplexer                              : 33
+ 16-bit 2-to-1 multiplexer                             : 11
+ 24-bit 2-to-1 multiplexer                             : 3
+ 24-bit 3-to-1 multiplexer                             : 1
+ 32-bit 2-to-1 multiplexer                             : 1
+# Logic shifters                                       : 2
+ 16-bit shifter logical left                           : 1
+ 16-bit shifter logical right                          : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <PS[1:3]> with one-hot encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 001
+ 01    | 010
+ 10    | 100
+-------------------
+
+Optimizing unit <CoreTop> ...
+
+Optimizing unit <RegisterFile> ...
+
+Optimizing unit <ALU> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block CoreTop, actual ratio is 8.
+FlipFlop Instruction_16 has been replicated 4 time(s)
+FlipFlop Instruction_17 has been replicated 4 time(s)
+FlipFlop Instruction_18 has been replicated 2 time(s)
+FlipFlop Instruction_19 has been replicated 1 time(s)
+FlipFlop Instruction_20 has been replicated 3 time(s)
+FlipFlop Instruction_21 has been replicated 3 time(s)
+FlipFlop Instruction_22 has been replicated 2 time(s)
+FlipFlop Instruction_23 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 327
+ Flip-Flops                                            : 327
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : CoreTop.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 716
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 15
+#      LUT2                        : 19
+#      LUT3                        : 37
+#      LUT4                        : 61
+#      LUT5                        : 83
+#      LUT6                        : 254
+#      MUXCY                       : 74
+#      MUXF7                       : 73
+#      MUXF8                       : 32
+#      VCC                         : 1
+#      XORCY                       : 64
+# FlipFlops/Latches                : 327
+#      FD                          : 3
+#      FDE                         : 324
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 57
+#      IBUF                        : 16
+#      OBUF                        : 41
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             327  out of  18224     1%  
+ Number of Slice LUTs:                  471  out of   9112     5%  
+    Number used as Logic:               471  out of   9112     5%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    569
+   Number with an unused Flip Flop:     242  out of    569    42%  
+   Number with an unused LUT:            98  out of    569    17%  
+   Number of fully used LUT-FF pairs:   229  out of    569    40%  
+   Number of unique control sets:        19
+
+IO Utilization: 
+ Number of IOs:                          58
+ Number of bonded IOBs:                  58  out of    232    25%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 327   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 6.292ns (Maximum Frequency: 158.926MHz)
+   Minimum input arrival time before clock: 2.213ns
+   Maximum output required time after clock: 8.952ns
+   Maximum combinational path delay: 8.295ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 6.292ns (frequency: 158.926MHz)
+  Total number of paths / destination ports: 2204217 / 651
+-------------------------------------------------------------------------
+Delay:               6.292ns (Levels of Logic = 7)
+  Source:            Instruction_20_1 (FF)
+  Destination:       RF/R15_7 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: Instruction_20_1 to RF/R15_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             18   0.447   1.154  Instruction_20_1 (Instruction_20_1)
+     LUT6:I4->O            1   0.203   0.000  RF/mux7_4 (RF/mux7_4)
+     MUXF7:I1->O           1   0.140   0.000  RF/mux7_3_f7 (RF/mux7_3_f7)
+     MUXF8:I1->O          14   0.152   1.205  RF/mux7_2_f8 (WriteData_1_OBUF)
+     LUT6:I2->O            4   0.203   0.684  alu/Sh351 (alu/Sh35)
+     LUT6:I5->O            1   0.205   0.808  Mmux_RFWriteData31 (Mmux_RFWriteData3)
+     LUT6:I3->O            1   0.205   0.580  Mmux_RFWriteData36 (Mmux_RFWriteData35)
+     LUT6:I5->O           16   0.205   0.000  Mmux_RFWriteData37 (RFWriteData<11>)
+     FDE:D                     0.102          RF/R12_11
+    ----------------------------------------
+    Total                      6.292ns (1.862ns logic, 4.430ns route)
+                                       (29.6% logic, 70.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 52 / 52
+-------------------------------------------------------------------------
+Offset:              2.213ns (Levels of Logic = 2)
+  Source:            ReadData<12> (PAD)
+  Destination:       Instruction_12 (FF)
+  Destination Clock: clk rising
+
+  Data Path: ReadData<12> to Instruction_12
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   1.222   0.684  ReadData_12_IBUF (ReadData_12_IBUF)
+     LUT3:I2->O            1   0.205   0.000  Mmux__n011041 (_n0110<3>)
+     FDE:D                     0.102          Instruction_28
+    ----------------------------------------
+    Total                      2.213ns (1.529ns logic, 0.684ns route)
+                                       (69.1% logic, 30.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 1005 / 41
+-------------------------------------------------------------------------
+Offset:              8.952ns (Levels of Logic = 4)
+  Source:            Instruction_30 (FF)
+  Destination:       Address<15> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: Instruction_30 to Address<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q            102   0.447   2.111  Instruction_30 (Instruction_30)
+     LUT4:I1->O           41   0.205   1.524  Instruction[31]_GND_1_o_equal_19_o<31>1 (Instruction[31]_GND_1_o_equal_19_o)
+     LUT6:I4->O           16   0.203   1.109  PS_Address<0>11 (PS_Address<0>1)
+     LUT6:I4->O            1   0.203   0.579  PS_Address<10> (Address_10_OBUF)
+     OBUF:I->O                 2.571          Address_10_OBUF (Address<10>)
+    ----------------------------------------
+    Total                      8.952ns (3.629ns logic, 5.323ns route)
+                                       (40.5% logic, 59.5% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 144 / 16
+-------------------------------------------------------------------------
+Delay:               8.295ns (Levels of Logic = 5)
+  Source:            ReadData<15> (PAD)
+  Destination:       Address<15> (PAD)
+
+  Data Path: ReadData<15> to Address<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   1.222   0.931  ReadData_15_IBUF (ReadData_15_IBUF)
+     LUT4:I0->O           17   0.203   1.275  ReadData[15]_ReadData[15]_OR_5_o1 (ReadData[15]_ReadData[15]_OR_5_o)
+     LUT6:I2->O           16   0.203   1.109  PS_Address<0>11 (PS_Address<0>1)
+     LUT6:I4->O            1   0.203   0.579  PS_Address<10> (Address_10_OBUF)
+     OBUF:I->O                 2.571          Address_10_OBUF (Address<10>)
+    ----------------------------------------
+    Total                      8.295ns (4.402ns logic, 3.893ns route)
+                                       (53.1% logic, 46.9% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    6.292|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 7.31 secs
+ 
+--> 
+
+Total memory usage is 294632 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

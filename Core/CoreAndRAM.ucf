@@ -1,0 +1,14 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "ExternalClk" LOC = V10;
+NET "Vsync" LOC = P7;
+NET "Hsync" LOC = N6;
+NET "ColorOut[0]" LOC = T7;
+NET "ColorOut[1]" LOC = R7;
+NET "ColorOut[2]" LOC = V6;
+NET "ColorOut[3]" LOC = T6;
+NET "ColorOut[4]" LOC = P8;
+NET "ColorOut[5]" LOC = N7;
+NET "ColorOut[6]" LOC = V7;
+NET "ColorOut[7]" LOC = U7;

@@ -1,0 +1,8 @@
+verilog isim_temp "VGA_SignalGen.v"
+verilog isim_temp "RegisterFile.v"
+verilog isim_temp "ALU.v"
+verilog isim_temp "VGA_Controller.v"
+verilog isim_temp "CoreTop.v"
+verilog isim_temp "Core_RAM_VGA.v"
+verilog isim_temp "Core_RAM_VGA_Test.v"
+verilog isim_temp "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

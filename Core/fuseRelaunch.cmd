@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/imana/OneDrive/Documents/GitHub/Core/Core_MemCont_VGA_Test_isim_beh.exe" -prj "C:/Users/imana/OneDrive/Documents/GitHub/Core/Core_MemCont_VGA_Test_beh.prj" "work.Core_MemCont_VGA_Test" "work.glbl" 

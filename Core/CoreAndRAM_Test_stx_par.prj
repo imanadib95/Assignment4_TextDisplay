@@ -1,0 +1,2 @@
+verilog isim_temp "netgen/par/CoreAndRAM_timesim.v"
+verilog isim_temp "CoreAndRAM_Test.v"

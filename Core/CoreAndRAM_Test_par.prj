@@ -1,0 +1,2 @@
+verilog work "netgen/par/CoreAndRAM_timesim.v"
+verilog work "CoreAndRAM_Test.v"

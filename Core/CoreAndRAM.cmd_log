@@ -1,0 +1,35 @@
+xst -intstyle ise -ifn "C:/Users/imana/OneDrive/Documents/GitHub/Core/CoreAndRAM.xst" -ofn "C:/Users/imana/OneDrive/Documents/GitHub/Core/CoreAndRAM.syr" 
+xst -intstyle ise -ifn "C:/Users/imana/OneDrive/Documents/GitHub/Core/CoreAndRAM.xst" -ofn "C:/Users/imana/OneDrive/Documents/GitHub/Core/CoreAndRAM.syr" 
+xst -intstyle ise -ifn "C:/Users/imana/OneDrive/Documents/GitHub/Core/CoreAndRAM.xst" -ofn "C:/Users/imana/OneDrive/Documents/GitHub/Core/CoreAndRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc CoreAndRAM.ucf -p xc6slx16-csg324-3 CoreAndRAM.ngc CoreAndRAM.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o CoreAndRAM_map.ncd CoreAndRAM.ngd CoreAndRAM.pcf 
+xst -intstyle ise -ifn "C:/Users/imana/OneDrive/Documents/GitHub/Core/CoreAndRAM.xst" -ofn "C:/Users/imana/OneDrive/Documents/GitHub/Core/CoreAndRAM.syr" 
+xst -intstyle ise -ifn "C:/Users/imana/OneDrive/Documents/GitHub/Core/CoreAndRAM.xst" -ofn "C:/Users/imana/OneDrive/Documents/GitHub/Core/CoreAndRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc CoreAndRAM.ucf -p xc6slx16-csg324-3 CoreAndRAM.ngc CoreAndRAM.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o CoreAndRAM_map.ncd CoreAndRAM.ngd CoreAndRAM.pcf 
+xst -intstyle ise -ifn "C:/Users/imana/OneDrive/Documents/GitHub/Core/CoreAndRAM.xst" -ofn "C:/Users/imana/OneDrive/Documents/GitHub/Core/CoreAndRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc CoreAndRAM.ucf -p xc6slx16-csg324-3 CoreAndRAM.ngc CoreAndRAM.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o CoreAndRAM_map.ncd CoreAndRAM.ngd CoreAndRAM.pcf 
+par -w -intstyle ise -ol high -mt off CoreAndRAM_map.ncd CoreAndRAM.ncd CoreAndRAM.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml CoreAndRAM.twx CoreAndRAM.ncd -o CoreAndRAM.twr CoreAndRAM.pcf -ucf CoreAndRAM.ucf 
+netgen -intstyle ise -s 3  -pcf CoreAndRAM.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim CoreAndRAM.ncd CoreAndRAM_timesim.v 
+xst -intstyle ise -ifn "C:/Users/imana/OneDrive/Documents/GitHub/Core/CoreAndRAM.xst" -ofn "C:/Users/imana/OneDrive/Documents/GitHub/Core/CoreAndRAM.syr" 
+xst -intstyle ise -ifn "C:/Users/imana/OneDrive/Documents/GitHub/Core/CoreAndRAM.xst" -ofn "C:/Users/imana/OneDrive/Documents/GitHub/Core/CoreAndRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc CoreAndRAM.ucf -p xc6slx16-csg324-3 CoreAndRAM.ngc CoreAndRAM.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o CoreAndRAM_map.ncd CoreAndRAM.ngd CoreAndRAM.pcf 
+par -w -intstyle ise -ol high -mt off CoreAndRAM_map.ncd CoreAndRAM.ncd CoreAndRAM.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml CoreAndRAM.twx CoreAndRAM.ncd -o CoreAndRAM.twr CoreAndRAM.pcf -ucf CoreAndRAM.ucf 
+netgen -intstyle ise -s 3  -pcf CoreAndRAM.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim CoreAndRAM.ncd CoreAndRAM_timesim.v 
+xst -intstyle ise -ifn "C:/Users/imana/OneDrive/Documents/GitHub/Core/CoreAndRAM.xst" -ofn "C:/Users/imana/OneDrive/Documents/GitHub/Core/CoreAndRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc CoreAndRAM.ucf -p xc6slx16-csg324-3 CoreAndRAM.ngc CoreAndRAM.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o CoreAndRAM_map.ncd CoreAndRAM.ngd CoreAndRAM.pcf 
+par -w -intstyle ise -ol high -mt off CoreAndRAM_map.ncd CoreAndRAM.ncd CoreAndRAM.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml CoreAndRAM.twx CoreAndRAM.ncd -o CoreAndRAM.twr CoreAndRAM.pcf -ucf CoreAndRAM.ucf 
+netgen -intstyle ise -s 3  -pcf CoreAndRAM.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim CoreAndRAM.ncd CoreAndRAM_timesim.v 
+xst -intstyle ise -ifn "C:/Users/imana/OneDrive/Documents/GitHub/Core/CoreAndRAM.xst" -ofn "C:/Users/imana/OneDrive/Documents/GitHub/Core/CoreAndRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc CoreAndRAM.ucf -p xc6slx16-csg324-3 CoreAndRAM.ngc CoreAndRAM.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o CoreAndRAM_map.ncd CoreAndRAM.ngd CoreAndRAM.pcf 
+par -w -intstyle ise -ol high -mt off CoreAndRAM_map.ncd CoreAndRAM.ncd CoreAndRAM.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml CoreAndRAM.twx CoreAndRAM.ncd -o CoreAndRAM.twr CoreAndRAM.pcf -ucf CoreAndRAM.ucf 
+netgen -intstyle ise -s 3  -pcf CoreAndRAM.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim CoreAndRAM.ncd CoreAndRAM_timesim.v 
+xst -intstyle ise -ifn "C:/Users/imana/OneDrive/Documents/GitHub/Core/CoreAndRAM.xst" -ofn "C:/Users/imana/OneDrive/Documents/GitHub/Core/CoreAndRAM.syr" 

@@ -1,0 +1,71 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml Core_RAM_VGA.twx Core_RAM_VGA.ncd -o Core_RAM_VGA.twr
+Core_RAM_VGA.pcf -ucf CoreAndRAM.ucf
+
+Design file:              Core_RAM_VGA.ncd
+Physical constraint file: Core_RAM_VGA.pcf
+Device,package,speed:     xc6slx16,csg324,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock ExternalClk to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+ColorOut<0> |         8.828(R)|      SLOW  |         4.683(R)|      FAST  |clk               |   0.000|
+ColorOut<1> |         8.936(R)|      SLOW  |         4.767(R)|      FAST  |clk               |   0.000|
+ColorOut<2> |         8.967(R)|      SLOW  |         4.811(R)|      FAST  |clk               |   0.000|
+ColorOut<3> |         8.837(R)|      SLOW  |         4.738(R)|      FAST  |clk               |   0.000|
+ColorOut<4> |         8.665(R)|      SLOW  |         4.681(R)|      FAST  |clk               |   0.000|
+ColorOut<5> |         8.716(R)|      SLOW  |         4.673(R)|      FAST  |clk               |   0.000|
+ColorOut<6> |         8.464(R)|      SLOW  |         4.537(R)|      FAST  |clk               |   0.000|
+ColorOut<7> |         8.973(R)|      SLOW  |         4.807(R)|      FAST  |clk               |   0.000|
+Hsync       |         8.995(R)|      SLOW  |         4.878(R)|      FAST  |clk               |   0.000|
+Vsync       |         9.107(R)|      SLOW  |         4.941(R)|      FAST  |clk               |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock ExternalClk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+ExternalClk    |   13.902|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Thu Nov 10 15:43:45 2016 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 262 MB
+
+
+

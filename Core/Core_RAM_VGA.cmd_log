@@ -1,0 +1,100 @@
+xst -intstyle ise -ifn "C:/Users/imana/OneDrive/Documents/GitHub/Core/Core_RAM_VGA.xst" -ofn "C:/Users/imana/OneDrive/Documents/GitHub/Core/Core_RAM_VGA.syr" 
+xst -intstyle ise -ifn "C:/Users/imana/OneDrive/Documents/GitHub/Core/Core_RAM_VGA.xst" -ofn "C:/Users/imana/OneDrive/Documents/GitHub/Core/Core_RAM_VGA.syr" 
+xst -intstyle ise -ifn "C:/Users/imana/OneDrive/Documents/GitHub/Core/Core_RAM_VGA.xst" -ofn "C:/Users/imana/OneDrive/Documents/GitHub/Core/Core_RAM_VGA.syr" 
+xst -intstyle ise -ifn "C:/Users/imana/OneDrive/Documents/GitHub/Core/Core_RAM_VGA.xst" -ofn "C:/Users/imana/OneDrive/Documents/GitHub/Core/Core_RAM_VGA.syr" 
+xst -intstyle ise -ifn "C:/Users/imana/OneDrive/Documents/GitHub/Core/Core_RAM_VGA.xst" -ofn "C:/Users/imana/OneDrive/Documents/GitHub/Core/Core_RAM_VGA.syr" 
+xst -intstyle ise -ifn "C:/Users/imana/OneDrive/Documents/GitHub/Core/Core_RAM_VGA.xst" -ofn "C:/Users/imana/OneDrive/Documents/GitHub/Core/Core_RAM_VGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc CoreAndRAM.ucf -p xc6slx16-csg324-3 Core_RAM_VGA.ngc Core_RAM_VGA.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Core_RAM_VGA_map.ncd Core_RAM_VGA.ngd Core_RAM_VGA.pcf 
+par -w -intstyle ise -ol high -mt off Core_RAM_VGA_map.ncd Core_RAM_VGA.ncd Core_RAM_VGA.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Core_RAM_VGA.twx Core_RAM_VGA.ncd -o Core_RAM_VGA.twr Core_RAM_VGA.pcf -ucf CoreAndRAM.ucf 
+xst -intstyle ise -ifn "C:/Users/imana/OneDrive/Documents/GitHub/Core/Core_RAM_VGA.xst" -ofn "C:/Users/imana/OneDrive/Documents/GitHub/Core/Core_RAM_VGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc CoreAndRAM.ucf -p xc6slx16-csg324-3 Core_RAM_VGA.ngc Core_RAM_VGA.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Core_RAM_VGA_map.ncd Core_RAM_VGA.ngd Core_RAM_VGA.pcf 
+par -w -intstyle ise -ol high -mt off Core_RAM_VGA_map.ncd Core_RAM_VGA.ncd Core_RAM_VGA.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Core_RAM_VGA.twx Core_RAM_VGA.ncd -o Core_RAM_VGA.twr Core_RAM_VGA.pcf -ucf CoreAndRAM.ucf 
+bitgen -intstyle ise -f Core_RAM_VGA.ut Core_RAM_VGA.ncd 
+xst -intstyle ise -ifn "C:/Users/imana/OneDrive/Documents/GitHub/Core/Core_RAM_VGA.xst" -ofn "C:/Users/imana/OneDrive/Documents/GitHub/Core/Core_RAM_VGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc CoreAndRAM.ucf -p xc6slx16-csg324-3 Core_RAM_VGA.ngc Core_RAM_VGA.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Core_RAM_VGA_map.ncd Core_RAM_VGA.ngd Core_RAM_VGA.pcf 
+par -w -intstyle ise -ol high -mt off Core_RAM_VGA_map.ncd Core_RAM_VGA.ncd Core_RAM_VGA.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Core_RAM_VGA.twx Core_RAM_VGA.ncd -o Core_RAM_VGA.twr Core_RAM_VGA.pcf -ucf CoreAndRAM.ucf 
+bitgen -intstyle ise -f Core_RAM_VGA.ut Core_RAM_VGA.ncd 
+xst -intstyle ise -ifn "C:/Users/imana/OneDrive/Documents/GitHub/Core/Core_RAM_VGA.xst" -ofn "C:/Users/imana/OneDrive/Documents/GitHub/Core/Core_RAM_VGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc CoreAndRAM.ucf -p xc6slx16-csg324-3 Core_RAM_VGA.ngc Core_RAM_VGA.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Core_RAM_VGA_map.ncd Core_RAM_VGA.ngd Core_RAM_VGA.pcf 
+par -w -intstyle ise -ol high -mt off Core_RAM_VGA_map.ncd Core_RAM_VGA.ncd Core_RAM_VGA.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Core_RAM_VGA.twx Core_RAM_VGA.ncd -o Core_RAM_VGA.twr Core_RAM_VGA.pcf -ucf CoreAndRAM.ucf 
+bitgen -intstyle ise -f Core_RAM_VGA.ut Core_RAM_VGA.ncd 
+xst -intstyle ise -ifn "C:/Users/imana/OneDrive/Documents/GitHub/Core/Core_RAM_VGA.xst" -ofn "C:/Users/imana/OneDrive/Documents/GitHub/Core/Core_RAM_VGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc CoreAndRAM.ucf -p xc6slx16-csg324-3 Core_RAM_VGA.ngc Core_RAM_VGA.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Core_RAM_VGA_map.ncd Core_RAM_VGA.ngd Core_RAM_VGA.pcf 
+par -w -intstyle ise -ol high -mt off Core_RAM_VGA_map.ncd Core_RAM_VGA.ncd Core_RAM_VGA.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Core_RAM_VGA.twx Core_RAM_VGA.ncd -o Core_RAM_VGA.twr Core_RAM_VGA.pcf -ucf CoreAndRAM.ucf 
+bitgen -intstyle ise -f Core_RAM_VGA.ut Core_RAM_VGA.ncd 
+xst -intstyle ise -ifn "C:/Users/imana/OneDrive/Documents/GitHub/Core/Core_RAM_VGA.xst" -ofn "C:/Users/imana/OneDrive/Documents/GitHub/Core/Core_RAM_VGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc CoreAndRAM.ucf -p xc6slx16-csg324-3 Core_RAM_VGA.ngc Core_RAM_VGA.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Core_RAM_VGA_map.ncd Core_RAM_VGA.ngd Core_RAM_VGA.pcf 
+par -w -intstyle ise -ol high -mt off Core_RAM_VGA_map.ncd Core_RAM_VGA.ncd Core_RAM_VGA.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Core_RAM_VGA.twx Core_RAM_VGA.ncd -o Core_RAM_VGA.twr Core_RAM_VGA.pcf -ucf CoreAndRAM.ucf 
+bitgen -intstyle ise -f Core_RAM_VGA.ut Core_RAM_VGA.ncd 
+xst -intstyle ise -ifn "C:/Users/imana/OneDrive/Documents/GitHub/Core/Core_RAM_VGA.xst" -ofn "C:/Users/imana/OneDrive/Documents/GitHub/Core/Core_RAM_VGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc CoreAndRAM.ucf -p xc6slx16-csg324-3 Core_RAM_VGA.ngc Core_RAM_VGA.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Core_RAM_VGA_map.ncd Core_RAM_VGA.ngd Core_RAM_VGA.pcf 
+par -w -intstyle ise -ol high -mt off Core_RAM_VGA_map.ncd Core_RAM_VGA.ncd Core_RAM_VGA.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Core_RAM_VGA.twx Core_RAM_VGA.ncd -o Core_RAM_VGA.twr Core_RAM_VGA.pcf -ucf CoreAndRAM.ucf 
+bitgen -intstyle ise -f Core_RAM_VGA.ut Core_RAM_VGA.ncd 
+xst -intstyle ise -ifn "C:/Users/imana/OneDrive/Documents/GitHub/Core/Core_RAM_VGA.xst" -ofn "C:/Users/imana/OneDrive/Documents/GitHub/Core/Core_RAM_VGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc CoreAndRAM.ucf -p xc6slx16-csg324-3 Core_RAM_VGA.ngc Core_RAM_VGA.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Core_RAM_VGA_map.ncd Core_RAM_VGA.ngd Core_RAM_VGA.pcf 
+par -w -intstyle ise -ol high -mt off Core_RAM_VGA_map.ncd Core_RAM_VGA.ncd Core_RAM_VGA.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Core_RAM_VGA.twx Core_RAM_VGA.ncd -o Core_RAM_VGA.twr Core_RAM_VGA.pcf -ucf CoreAndRAM.ucf 
+bitgen -intstyle ise -f Core_RAM_VGA.ut Core_RAM_VGA.ncd 
+xst -intstyle ise -ifn "C:/Users/imana/OneDrive/Documents/GitHub/Core/Core_RAM_VGA.xst" -ofn "C:/Users/imana/OneDrive/Documents/GitHub/Core/Core_RAM_VGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc CoreAndRAM.ucf -p xc6slx16-csg324-3 Core_RAM_VGA.ngc Core_RAM_VGA.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Core_RAM_VGA_map.ncd Core_RAM_VGA.ngd Core_RAM_VGA.pcf 
+par -w -intstyle ise -ol high -mt off Core_RAM_VGA_map.ncd Core_RAM_VGA.ncd Core_RAM_VGA.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Core_RAM_VGA.twx Core_RAM_VGA.ncd -o Core_RAM_VGA.twr Core_RAM_VGA.pcf -ucf CoreAndRAM.ucf 
+bitgen -intstyle ise -f Core_RAM_VGA.ut Core_RAM_VGA.ncd 
+xst -intstyle ise -ifn "C:/Users/imana/OneDrive/Documents/GitHub/Core/Core_RAM_VGA.xst" -ofn "C:/Users/imana/OneDrive/Documents/GitHub/Core/Core_RAM_VGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc CoreAndRAM.ucf -p xc6slx16-csg324-3 Core_RAM_VGA.ngc Core_RAM_VGA.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Core_RAM_VGA_map.ncd Core_RAM_VGA.ngd Core_RAM_VGA.pcf 
+par -w -intstyle ise -ol high -mt off Core_RAM_VGA_map.ncd Core_RAM_VGA.ncd Core_RAM_VGA.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Core_RAM_VGA.twx Core_RAM_VGA.ncd -o Core_RAM_VGA.twr Core_RAM_VGA.pcf -ucf CoreAndRAM.ucf 
+bitgen -intstyle ise -f Core_RAM_VGA.ut Core_RAM_VGA.ncd 
+xst -intstyle ise -ifn "C:/Users/imana/OneDrive/Documents/GitHub/Core/Core_RAM_VGA.xst" -ofn "C:/Users/imana/OneDrive/Documents/GitHub/Core/Core_RAM_VGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc CoreAndRAM.ucf -p xc6slx16-csg324-3 Core_RAM_VGA.ngc Core_RAM_VGA.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Core_RAM_VGA_map.ncd Core_RAM_VGA.ngd Core_RAM_VGA.pcf 
+par -w -intstyle ise -ol high -mt off Core_RAM_VGA_map.ncd Core_RAM_VGA.ncd Core_RAM_VGA.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Core_RAM_VGA.twx Core_RAM_VGA.ncd -o Core_RAM_VGA.twr Core_RAM_VGA.pcf -ucf CoreAndRAM.ucf 
+bitgen -intstyle ise -f Core_RAM_VGA.ut Core_RAM_VGA.ncd 
+xst -intstyle ise -ifn "C:/Users/imana/OneDrive/Documents/GitHub/Core/Core_RAM_VGA.xst" -ofn "C:/Users/imana/OneDrive/Documents/GitHub/Core/Core_RAM_VGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc CoreAndRAM.ucf -p xc6slx16-csg324-3 Core_RAM_VGA.ngc Core_RAM_VGA.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Core_RAM_VGA_map.ncd Core_RAM_VGA.ngd Core_RAM_VGA.pcf 
+par -w -intstyle ise -ol high -mt off Core_RAM_VGA_map.ncd Core_RAM_VGA.ncd Core_RAM_VGA.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Core_RAM_VGA.twx Core_RAM_VGA.ncd -o Core_RAM_VGA.twr Core_RAM_VGA.pcf -ucf CoreAndRAM.ucf 
+bitgen -intstyle ise -f Core_RAM_VGA.ut Core_RAM_VGA.ncd 
+xst -intstyle ise -ifn "C:/Users/imana/OneDrive/Documents/GitHub/Core/Core_RAM_VGA.xst" -ofn "C:/Users/imana/OneDrive/Documents/GitHub/Core/Core_RAM_VGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc CoreAndRAM.ucf -p xc6slx16-csg324-3 Core_RAM_VGA.ngc Core_RAM_VGA.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Core_RAM_VGA_map.ncd Core_RAM_VGA.ngd Core_RAM_VGA.pcf 
+par -w -intstyle ise -ol high -mt off Core_RAM_VGA_map.ncd Core_RAM_VGA.ncd Core_RAM_VGA.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Core_RAM_VGA.twx Core_RAM_VGA.ncd -o Core_RAM_VGA.twr Core_RAM_VGA.pcf -ucf CoreAndRAM.ucf 
+bitgen -intstyle ise -f Core_RAM_VGA.ut Core_RAM_VGA.ncd 
+xst -intstyle ise -ifn "C:/Users/imana/OneDrive/Documents/GitHub/Core/Core_RAM_VGA.xst" -ofn "C:/Users/imana/OneDrive/Documents/GitHub/Core/Core_RAM_VGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc CoreAndRAM.ucf -p xc6slx16-csg324-3 Core_RAM_VGA.ngc Core_RAM_VGA.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Core_RAM_VGA_map.ncd Core_RAM_VGA.ngd Core_RAM_VGA.pcf 
+par -w -intstyle ise -ol high -mt off Core_RAM_VGA_map.ncd Core_RAM_VGA.ncd Core_RAM_VGA.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Core_RAM_VGA.twx Core_RAM_VGA.ncd -o Core_RAM_VGA.twr Core_RAM_VGA.pcf -ucf CoreAndRAM.ucf 
+bitgen -intstyle ise -f Core_RAM_VGA.ut Core_RAM_VGA.ncd 
+xst -intstyle ise -ifn "C:/Users/imana/OneDrive/Documents/GitHub/Core/Core_RAM_VGA.xst" -ofn "C:/Users/imana/OneDrive/Documents/GitHub/Core/Core_RAM_VGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc CoreAndRAM.ucf -p xc6slx16-csg324-3 Core_RAM_VGA.ngc Core_RAM_VGA.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Core_RAM_VGA_map.ncd Core_RAM_VGA.ngd Core_RAM_VGA.pcf 
+par -w -intstyle ise -ol high -mt off Core_RAM_VGA_map.ncd Core_RAM_VGA.ncd Core_RAM_VGA.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Core_RAM_VGA.twx Core_RAM_VGA.ncd -o Core_RAM_VGA.twr Core_RAM_VGA.pcf -ucf CoreAndRAM.ucf 
+bitgen -intstyle ise -f Core_RAM_VGA.ut Core_RAM_VGA.ncd 
+xst -intstyle ise -ifn "C:/Users/imana/OneDrive/Documents/GitHub/Core/Core_RAM_VGA.xst" -ofn "C:/Users/imana/OneDrive/Documents/GitHub/Core/Core_RAM_VGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc CoreAndRAM.ucf -p xc6slx16-csg324-3 Core_RAM_VGA.ngc Core_RAM_VGA.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Core_RAM_VGA_map.ncd Core_RAM_VGA.ngd Core_RAM_VGA.pcf 
+par -w -intstyle ise -ol high -mt off Core_RAM_VGA_map.ncd Core_RAM_VGA.ncd Core_RAM_VGA.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Core_RAM_VGA.twx Core_RAM_VGA.ncd -o Core_RAM_VGA.twr Core_RAM_VGA.pcf -ucf CoreAndRAM.ucf 
+bitgen -intstyle ise -f Core_RAM_VGA.ut Core_RAM_VGA.ncd 

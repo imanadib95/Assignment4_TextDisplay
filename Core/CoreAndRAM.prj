@@ -1,0 +1,5 @@
+verilog work "RegisterFile.v"
+verilog work "ALU.v"
+verilog work "ipcore_dir/RAM.v"
+verilog work "CoreTop.v"
+verilog work "CoreAndRAM.v"
